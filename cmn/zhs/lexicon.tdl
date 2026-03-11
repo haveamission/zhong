@@ -2357,7 +2357,7 @@ JlnＢｕｋｉｔＢｉｎｔａｎｇ_n_1 := n_-_pn_le &
   [ STEM < "上演" >,
     SYNSEM.LOCAL.CAT.HEAD.CHAR [ FCHAR "上", LENGTH two ],
     SYNSEM [ LOCAL.CAT.HEAD.LZG le+zhe+guo,
-             LKEYS.KEYREL.PRED "_上演_v_1_rel" ],
+             LKEYS.KEYREL.PRED "_上g演_v_1_rel" ],
     TRAITS native_token_list ].
 
 上环_n_1 := n_-_l_pn_le &

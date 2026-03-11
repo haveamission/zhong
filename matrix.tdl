@@ -31,6 +31,12 @@
 ; Types for Sign, Word, Phrase, and Lex-Entry
 
 sign-min := avm &
+"""
+This type makes sign's small for effeciency purposes see <ref>sdlkjflsdkjf
+<features>
+STEM: sdkfhksdfhkjsdf
+
+"""
   [ STEM list ].
 
 basic-sign := sign-min &

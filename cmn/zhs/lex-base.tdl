@@ -1180,7 +1180,7 @@ comma_c := conj_-_e_le &
 ;;adv_-_vp-pre_le, should be scopal
 也_r_1 := adv_-_scop-prehd_le &
 """
-Should appear between the suvject and the verb.
+Should appear between the subject and the verb.
 """
   [ STEM < "也" >,
     SYNSEM.LOCAL.CAT.HEAD.CHAR [ FCHAR "也", LENGTH one ],

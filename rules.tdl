@@ -32,6 +32,7 @@ head specifier rule used for adjectives and adverbs.
 ;; ZZF 20161123 changed COG-ST "type-id" to "cog-st" (underspecified), to allow combining with determiners, which is "uniq+fam+act". Example: [[这 [两 只]] 猫]. To be refined with Sanghoun when reviewing definiteness.
 spr-head-cl := spr-head-h-sem-phrase &
 """
+
 """
   [ STYLE robust,
     HEAD-DTR.SYNSEM [ LOCAL [ CAT.HEAD classifier,
