@@ -99,4 +99,5 @@ BCP_47="zh_Hant"
 
 LKB_SCRIPT_FILE="lkb/script"
 CHEAP_GRM_FILE_NAME="mandarint.grm"
-ACE_CONFIG_FILE="ace/config.tdl"
+# FCB can't parse at the moment
+#ACE_CONFIG_FILE="ace/config.tdl"
