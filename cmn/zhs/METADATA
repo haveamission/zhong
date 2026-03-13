@@ -24,8 +24,8 @@
 
 ## Grammar maintainers and contributors
 
-MAINTAINER="FanZhenZhen and Luis Morgado da Costa"
-CONTRIBUTORS="FrancisBond MichaelGoodman SanghounSong JustinChunleiYang DanFlickinger NatHillard HuiZhenWang"
+MAINTAINER="Fan Zhen Zhen and Luis Morgado da Costa"
+CONTRIBUTORS="Francis Bond, Michael Goodman, Sanghoun Song, Justin Chunlei Yang, Dan Flickinger, Nat Hillard,  Hui Zhen Wang"
 CONTACT_EMAIL="bond@ieee.org"
 
 ## Grammar name and web presence
@@ -98,5 +98,13 @@ BCP_47="zh_Hans"
 ## Paths relative to top of grammar directory
 
 LKB_SCRIPT_FILE="lkb/script"
-CHEAP_GRM_FILE_NAME="mandarins.grm"
+CHEAP_GRM_FILE_NAME="mandarin.grm"
 ACE_CONFIG_FILE="ace/config.tdl"
+  EXAMPLES = [ 
+    "狗 跑", 
+    "他 吃 了 苹果", 
+    "谁 吃", 
+    "两 只 猫 跑", 
+    "他 正在 吃", 
+    "我 给 他 书" 
+  ]
