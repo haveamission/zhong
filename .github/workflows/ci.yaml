@@ -65,7 +65,8 @@ jobs:
             echo "=== Test suite: $SUITE ==="
 
             echo "Creating profile..."
-            delphin mkprof -s tsdb/skeletons/$SUITE tsdb/current/$SUITE --overwrite 2>&1
+            rm -rf tsdb/current/$SUITE
+            delphin mkprof -s tsdb/skeletons/$SUITE tsdb/current/$SUITE 2>&1
 
             echo "Parsing with ACE..."
             delphin process -g ${GRAMMAR_NAME}.dat tsdb/current/$SUITE 2>&1
