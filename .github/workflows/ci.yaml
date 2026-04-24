@@ -66,7 +66,11 @@ jobs:
 
             echo "Creating profile..."
             rm -rf tsdb/current/$SUITE
-            delphin mkprof -s tsdb/skeletons/$SUITE tsdb/current/$SUITE 2>&1
+            if [ -f "tsdb/skeletons/$SUITE/relations" ]; then
+              delphin mkprof -s tsdb/skeletons/$SUITE tsdb/current/$SUITE 2>&1
+            else
+              delphin mkprof -s tsdb/skeletons/$SUITE -r tsdb/skeletons/Relations tsdb/current/$SUITE 2>&1
+            fi
 
             echo "Parsing with ACE..."
             delphin process -g ${GRAMMAR_NAME}.dat tsdb/current/$SUITE 2>&1
@@ -133,13 +137,13 @@ jobs:
             cp /mnt/volume_nyc3_01/grammars/${{ env.GRAMMAR_NAME }}.dat /mnt/volume_nyc3_01/grammars/${{ env.GRAMMAR_NAME }}.dat.bak 2>/dev/null || true
 
       - name: Copy grammar to droplet
-        uses: appleboy/scp-action@v0.1.7
-        with:
-          host: ${{ secrets.DROPLET_HOST }}
-          username: root
-          key: ${{ secrets.DROPLET_SSH_KEY }}
-          source: ${{ env.GRAMMAR_NAME }}.dat
-          target: /mnt/volume_nyc3_01/grammars/
+        run: |
+          mkdir -p ~/.ssh
+          echo "${{ secrets.DROPLET_SSH_KEY }}" > ~/.ssh/deploy_key
+          chmod 600 ~/.ssh/deploy_key
+          ssh-keyscan -H ${{ secrets.DROPLET_HOST }} >> ~/.ssh/known_hosts 2>/dev/null
+          scp -i ~/.ssh/deploy_key ${{ env.GRAMMAR_NAME }}.dat root@${{ secrets.DROPLET_HOST }}:/mnt/volume_nyc3_01/grammars/
+          rm ~/.ssh/deploy_key
 
       - name: Verify deployment
         uses: appleboy/ssh-action@v1
