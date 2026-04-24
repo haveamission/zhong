@@ -1,0 +1,160 @@
+name: Grammar CI/CD
+
+on:
+  push:
+    branches: [main, master]
+  pull_request:
+    branches: [main, master]
+
+env:
+  GRAMMAR_NAME: zhs
+  GRAMMAR_DIR: cmn/zhs
+  ACE_VERSION: "0.9.34"
+
+jobs:
+  compile-and-test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install ACE
+        run: |
+          wget -q http://sweaglesw.org/linguistics/ace/download/ace-${ACE_VERSION}-x86-64.tar.gz
+          tar xzf ace-${ACE_VERSION}-x86-64.tar.gz
+          sudo mv ace-${ACE_VERSION} /opt/ace
+          echo "/opt/ace" >> $GITHUB_PATH
+
+      - name: Install pyDelphin
+        run: pip install pydelphin
+
+      - name: Verify tools
+        run: |
+          ace -V
+          delphin --version
+
+      - name: Compile grammar
+        working-directory: ${{ env.GRAMMAR_DIR }}
+        run: |
+          echo "Compiling ${GRAMMAR_NAME}.dat..."
+          ace -g ace/config.tdl -G ${GRAMMAR_NAME}.dat 2>&1 | tee compile.log
+          if [ ! -f "${GRAMMAR_NAME}.dat" ]; then
+            echo "::error::Compilation failed - no .dat file produced"
+            cat compile.log
+            exit 1
+          fi
+          echo "Compiled successfully:"
+          ls -lh ${GRAMMAR_NAME}.dat
+
+      - name: Run regression tests
+        working-directory: ${{ env.GRAMMAR_DIR }}
+        run: |
+          mkdir -p tsdb/current
+          FAILURES=0
+          TOTAL=0
+
+          while IFS= read -r SUITE; do
+            [ -z "$SUITE" ] && continue
+            TOTAL=$((TOTAL + 1))
+
+            echo ""
+            echo "=== Test suite: $SUITE ==="
+
+            echo "Creating profile..."
+            delphin mkprof -s tsdb/skeletons/$SUITE tsdb/current/$SUITE --overwrite 2>&1
+
+            echo "Parsing with ACE..."
+            delphin process -g ${GRAMMAR_NAME}.dat tsdb/current/$SUITE 2>&1
+
+            echo "Comparing against gold..."
+            DIFF=$(delphin compare tsdb/fools_gold/$SUITE tsdb/current/$SUITE 2>&1)
+            echo "$DIFF"
+
+            REGRESSIONS=$(echo "$DIFF" | grep -E '<[0-9]+,[0-9]+,[1-9]' || true)
+            if [ -n "$REGRESSIONS" ]; then
+              echo "::error::Regression in $SUITE — lost parses:"
+              echo "$REGRESSIONS"
+              FAILURES=$((FAILURES + 1))
+            else
+              echo "✓ $SUITE passed"
+            fi
+          done < utils/COMPARISON
+
+          echo ""
+          echo "=== Regression Test Summary ==="
+          PASSED=$((TOTAL - FAILURES))
+          echo "Passed: $PASSED/$TOTAL"
+
+          if [ $FAILURES -gt 0 ]; then
+            echo "::error::$FAILURES regression test(s) failed"
+            exit 1
+          fi
+
+          echo "All regression tests passed"
+
+      - name: Upload compiled grammar
+        if: success()
+        uses: actions/upload-artifact@v4
+        with:
+          name: ${{ env.GRAMMAR_NAME }}-dat
+          path: ${{ env.GRAMMAR_DIR }}/${{ env.GRAMMAR_NAME }}.dat
+          retention-days: 7
+
+      - name: Upload test results
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: regression-test-results
+          path: ${{ env.GRAMMAR_DIR }}/tsdb/current/
+          retention-days: 30
+
+  deploy:
+    needs: compile-and-test
+    runs-on: ubuntu-latest
+    if: github.event_name == 'push' && (github.ref == 'refs/heads/main' || github.ref == 'refs/heads/master')
+    steps:
+      - name: Download compiled grammar
+        uses: actions/download-artifact@v4
+        with:
+          name: ${{ env.GRAMMAR_NAME }}-dat
+
+      - name: Backup current grammar
+        uses: appleboy/ssh-action@v1
+        with:
+          host: ${{ secrets.DROPLET_HOST }}
+          username: root
+          key: ${{ secrets.DROPLET_SSH_KEY }}
+          script: |
+            cp /mnt/volume_nyc3_01/grammars/${{ env.GRAMMAR_NAME }}.dat /mnt/volume_nyc3_01/grammars/${{ env.GRAMMAR_NAME }}.dat.bak 2>/dev/null || true
+
+      - name: Copy grammar to droplet
+        uses: appleboy/scp-action@v0.1.7
+        with:
+          host: ${{ secrets.DROPLET_HOST }}
+          username: root
+          key: ${{ secrets.DROPLET_SSH_KEY }}
+          source: ${{ env.GRAMMAR_NAME }}.dat
+          target: /mnt/volume_nyc3_01/grammars/
+
+      - name: Verify deployment
+        uses: appleboy/ssh-action@v1
+        with:
+          host: ${{ secrets.DROPLET_HOST }}
+          username: root
+          key: ${{ secrets.DROPLET_SSH_KEY }}
+          script: |
+            echo "Deployed grammar:"
+            ls -lh /mnt/volume_nyc3_01/grammars/${{ env.GRAMMAR_NAME }}.dat
+            echo ""
+            echo "Parse verification:"
+            docker exec grammarengine bash -c "echo '他 说 了' | ace -g /runpod-volume/grammars/${{ env.GRAMMAR_NAME }}.dat -n 1 2>/dev/null | head -1"
+            if [ $? -eq 0 ]; then
+              echo "Deployment verified"
+            else
+              echo "::warning::Parse verification failed - consider rolling back"
+              echo "Rollback: cp /mnt/volume_nyc3_01/grammars/${{ env.GRAMMAR_NAME }}.dat.bak /mnt/volume_nyc3_01/grammars/${{ env.GRAMMAR_NAME }}.dat"
+            fi
