@@ -9492,3 +9492,10 @@
     SYNSEM.LOCAL.CAT.HEAD.CHAR [ FCHAR "龙", LENGTH more-than-two ],
     SYNSEM.LKEYS.KEYREL.PRED "_龙卷风_n_1_rel",
     TRAITS native_token_list ].
+
+; Mahjongg - causes massive issues with grammar parsing
+麻将_n_1 := n_-_le &
+  [ STEM < "麻将" >,
+    SYNSEM.LOCAL.CAT.HEAD.CHAR [ FCHAR "麻", LENGTH two ],
+    SYNSEM.LKEYS.KEYREL.PRED "_麻将_n_1_rel",
+    TRAITS native_token_list ].
