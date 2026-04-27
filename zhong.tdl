@@ -1216,15 +1216,6 @@ np3-bottom-coord-rule := unary-bottom-coord-rule & np-bottom-coord-phrase &
 
 ;;; Coordination Strategy 3
 
-vp3-top-coord-rule := basic-vp-top-coord-rule & apoly-top-coord-rule &
-  [ SYNSEM.LOCAL.COORD-STRAT "3" ].
-
-vp3-bottom-coord-rule := unary-bottom-coord-rule & vp-bottom-coord-phrase &
-  [ SYNSEM.LOCAL [ COORD-STRAT "3",
-                   COORD-REL.PRED "_and_coord_rel" ] ].
-
-;;; Coordination Strategy 3
-
 s1-top-coord-rule := basic-s-top-coord-rule & apoly-top-coord-rule &
   [ SYNSEM.LOCAL.COORD-STRAT "1" ].
 
@@ -1233,6 +1224,20 @@ s1-top-coord-rule := basic-s-top-coord-rule & apoly-top-coord-rule &
 ;   [ SYNSEM.LOCAL [ COORD-STRAT "1",
 ;                    COORD-REL.PRED "_and_coord_rel" ] ].
 ; |#
+
+;;; Coordination Strategy 1c (clause-boundary commas)
+
+vp1c-top-coord-rule := basic-vp-top-coord-rule & apoly-top-coord-rule &
+  [ SYNSEM.LOCAL.COORD-STRAT "1c" ].
+
+s1c-top-coord-rule := basic-s-top-coord-rule & apoly-top-coord-rule &
+  [ SYNSEM.LOCAL.COORD-STRAT "1c" ].
+
+n1c-top-coord-rule := basic-np-top-coord-rule & monopoly-top-coord-rule &
+  [ SYNSEM.LOCAL.COORD-STRAT "1c" ].
+
+n1c-mid-coord-rule := basic-np-mid-coord-rule & monopoly-mid-coord-rule &
+  [ SYNSEM.LOCAL.COORD-STRAT "1c" ].
 
 ;;; Coordination Strategy 4
 

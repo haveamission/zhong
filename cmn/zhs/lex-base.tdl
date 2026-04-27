@@ -1164,6 +1164,7 @@ Note: There is another entry for 得 with the meaning 'to obtain'.
 
 和_c := conj_-_x_le &
   [ STEM < "和" >,
+    CFORM "1",
     SYNSEM.LOCAL.CAT.HEAD.CHAR [ FCHAR "和", LENGTH one ],
     SYNSEM.LKEYS.KEYREL.PRED "_和_coord_rel",
     TRAITS native_token_list ].
@@ -1176,30 +1177,35 @@ Note: There is another entry for 得 with the meaning 'to obtain'.
 
 ，_c_1 := conj_-_e_le &
   [ STEM < "，" >,
+    CFORM "1c",
     SYNSEM.LOCAL.CAT.HEAD.CHAR [ FCHAR "，", LENGTH one ],
     SYNSEM.LKEYS.KEYREL.PRED "_，_coord_rel",
     TRAITS native_token_list ].
 
 ，_c_2 := conj_-_x_le &
   [ STEM < "，" >,
+    CFORM "1c",
     SYNSEM.LOCAL.CAT.HEAD.CHAR [ FCHAR "，", LENGTH one ],
     SYNSEM.LKEYS.KEYREL.PRED "_，_coord_rel",
     TRAITS native_token_list ].
 
 comma_c := conj_-_e_le &
   [ STEM < "," >,
+    CFORM "1c",
     SYNSEM.LOCAL.CAT.HEAD.CHAR [ FCHAR "，", LENGTH one ],
     SYNSEM.LKEYS.KEYREL.PRED "_，_coord_rel",
     TRAITS native_token_list ].
 
 、_c_1 := conj_-_x_le &
   [ STEM < "、" >,
+    CFORM "1",
     SYNSEM.LOCAL.CAT.HEAD.CHAR [ FCHAR "、", LENGTH one ],
     SYNSEM.LKEYS.KEYREL.PRED "_、_coord_rel",
     TRAITS native_token_list ].
 
 、_c_2 := conj_-_e_le &
   [ STEM < "、" >,
+    CFORM "1",
     SYNSEM.LOCAL.CAT.HEAD.CHAR [ FCHAR "、", LENGTH one ],
     SYNSEM.LKEYS.KEYREL.PRED "_、_coord_rel",
     TRAITS native_token_list ].
