@@ -145,6 +145,17 @@ jobs:
           scp -i ~/.ssh/deploy_key ${{ env.GRAMMAR_NAME }}.dat root@${{ secrets.DROPLET_HOST }}:/mnt/volume_nyc3_01/grammars/
           rm ~/.ssh/deploy_key
 
+      - name: Restart grammar engine
+        uses: appleboy/ssh-action@v1
+        with:
+          host: ${{ secrets.DROPLET_HOST }}
+          username: root
+          key: ${{ secrets.DROPLET_SSH_KEY }}
+          script: |
+            docker restart grammarengine
+            echo "Waiting for grammar engine to start..."
+            sleep 10
+
       - name: Verify deployment
         uses: appleboy/ssh-action@v1
         with:
