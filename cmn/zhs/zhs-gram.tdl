@@ -64,6 +64,7 @@
 :include "lex-numbers".
 :include "lexicon".
 :include "lexicon-core".
+:include "lexicon-new-confident".
 :end :instance.
 
 :begin :instance :status generic-lex-entry.
