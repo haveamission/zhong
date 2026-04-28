@@ -1227,10 +1227,10 @@ s1-top-coord-rule := basic-s-top-coord-rule & apoly-top-coord-rule &
 
 ;;; Coordination Strategy 1c (clause-boundary commas)
 
-vp1c-top-coord-rule := basic-vp-top-coord-rule & apoly-top-coord-rule &
+vp1c-top-coord-rule := basic-vp-top-coord-rule & monopoly-top-coord-rule &
   [ SYNSEM.LOCAL.COORD-STRAT "1c" ].
 
-s1c-top-coord-rule := basic-s-top-coord-rule & apoly-top-coord-rule &
+s1c-top-coord-rule := basic-s-top-coord-rule & monopoly-top-coord-rule &
   [ SYNSEM.LOCAL.COORD-STRAT "1c" ].
 
 n1c-top-coord-rule := basic-np-top-coord-rule & monopoly-top-coord-rule &
