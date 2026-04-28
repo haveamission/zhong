@@ -183,13 +183,6 @@
     SYNSEM [ LKEYS.KEYREL.PRED "_征收_v_1_rel" ],
     TRAITS native_token_list ].
 
-; 网络 (network/internet) is a general common noun. Used in '网络直播', '该网络', '网络投票'. Standard common noun.
-网络_n_1 := n_-_le &
-  [ STEM < "网络" >,
-    SYNSEM.LOCAL.CAT.HEAD.CHAR [ FCHAR "网", LENGTH two ],
-    SYNSEM.LKEYS.KEYREL.PRED "_网络_n_1_rel",
-    TRAITS native_token_list ].
-
 ; 拘留 means 'to detain' and takes an NP object (e.g., 被拘留, 拘留人员). It is a transitive verb.
 拘留_v_1 := v_np_le &
   [ STEM < "拘留" >,

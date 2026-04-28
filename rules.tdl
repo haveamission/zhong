@@ -152,13 +152,13 @@ vp1-top-coord := vp1-top-coord-rule & [ STYLE robust ].
 
 s1-top-coord := s1-top-coord-rule & [ STYLE robust ].
 
-vp1c-top-coord := vp1c-top-coord-rule & [ STYLE robust ].
+;vp1c-top-coord := vp1c-top-coord-rule & [ STYLE robust ].
 
-s1c-top-coord := s1c-top-coord-rule & [ STYLE robust ].
+;s1c-top-coord := s1c-top-coord-rule & [ STYLE robust ].
 
-n1c-top-coord := n1c-top-coord-rule & [ STYLE robust ].
+;n1c-top-coord := n1c-top-coord-rule & [ STYLE robust ].
 
-n1c-mid-coord := n1c-mid-coord-rule & [ STYLE robust ].
+;n1c-mid-coord := n1c-mid-coord-rule & [ STYLE robust ].
 
 ; #|
 ; n3-top-coord := n3-top-coord-rule.
