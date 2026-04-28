@@ -19942,7 +19942,7 @@ s_不是_sc := conj_-_sub-pre_le &
     SYNSEM [ LKEYS.KEYREL.PRED "_参赛_v_1_rel" ],
     TRAITS native_token_list ].
 
-又_c := conj_-_le &
+又_c := conj-lex & nonque-item &
   [ STEM < "又" >,
     SYNSEM.LOCAL.CAT.HEAD.CHAR [ FCHAR "又", LENGTH one ],
     SYNSEM.LKEYS.KEYREL.PRED "_又_coord_rel",

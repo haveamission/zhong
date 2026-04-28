@@ -190,13 +190,6 @@
     SYNSEM.LKEYS.KEYREL.PRED "_网络_n_1_rel",
     TRAITS native_token_list ].
 
-; 用户 means 'user', referring to people. It is a human noun used as a general noun for people who use a service/product.
-用户_n_1 := n_-_h_le &
-  [ STEM < "用户" >,
-    SYNSEM.LOCAL.CAT.HEAD.CHAR [ FCHAR "用", LENGTH two ],
-    SYNSEM.LKEYS.KEYREL.PRED "_用户_n_1_rel",
-    TRAITS native_token_list ].
-
 ; 拘留 means 'to detain' and takes an NP object (e.g., 被拘留, 拘留人员). It is a transitive verb.
 拘留_v_1 := v_np_le &
   [ STEM < "拘留" >,
@@ -237,13 +230,6 @@
   [ STEM < "教皇" >,
     SYNSEM.LOCAL.CAT.HEAD.CHAR [ FCHAR "教", LENGTH two ],
     SYNSEM.LKEYS.KEYREL.PRED "_教皇_n_1_rel",
-    TRAITS native_token_list ].
-
-; 信息 means 'information/message' and is a common noun used in typical noun positions.
-信息_n_1 := n_-_le &
-  [ STEM < "信息" >,
-    SYNSEM.LOCAL.CAT.HEAD.CHAR [ FCHAR "信", LENGTH two ],
-    SYNSEM.LKEYS.KEYREL.PRED "_信息_n_1_rel",
     TRAITS native_token_list ].
 
 ; 推迟 means 'to postpone/delay' and takes an NP complement (推迟到X, 被推迟). It is a transitive verb.
@@ -328,13 +314,6 @@
   [ STEM < "飞船" >,
     SYNSEM.LOCAL.CAT.HEAD.CHAR [ FCHAR "飞", LENGTH two ],
     SYNSEM.LKEYS.KEYREL.PRED "_飞船_n_1_rel",
-    TRAITS native_token_list ].
-
-; Proper noun for the country 'Australia'. Clearly a location proper noun.
-澳大利亚_n_1 := n_-_l_pn_le &
-  [ STEM < "澳大利亚" >,
-    SYNSEM.LOCAL.CAT.HEAD.CHAR [ FCHAR "澳", LENGTH more-than-two ],
-    SYNSEM.LKEYS.KEYREL.CARG "澳大利亚",
     TRAITS native_token_list ].
 
 ; Common noun meaning 'ban/prohibition'. Used as object (实施禁令, 发布禁令).
@@ -440,13 +419,6 @@
   [ STEM < "估计" >,
     SYNSEM.LOCAL.CAT.HEAD.CHAR [ FCHAR "估", LENGTH two ],
     SYNSEM [ LKEYS.KEYREL.PRED "_估计_v_1_rel" ],
-    TRAITS native_token_list ].
-
-; Common noun meaning 'earthquake'. Used as subject/object (发生强烈地震).
-地震_n_1 := n_-_le &
-  [ STEM < "地震" >,
-    SYNSEM.LOCAL.CAT.HEAD.CHAR [ FCHAR "地", LENGTH two ],
-    SYNSEM.LKEYS.KEYREL.PRED "_地震_n_1_rel",
     TRAITS native_token_list ].
 
 ; Transitive verb meaning 'to advance/promote'. Takes NP objects (推进嫦娥七号任务). Also used intransitively (推进了30公里) but transitive is more common.
@@ -799,13 +771,6 @@
     SYNSEM.LKEYS.KEYREL.PRED "_刑事_a_1_rel",
     TRAITS native_token_list ].
 
-; 墨西哥 (Mexico) is a country name, clearly a location proper noun.
-墨西哥_n_1 := n_-_l_pn_le &
-  [ STEM < "墨西哥" >,
-    SYNSEM.LOCAL.CAT.HEAD.CHAR [ FCHAR "墨", LENGTH more-than-two ],
-    SYNSEM.LKEYS.KEYREL.CARG "墨西哥",
-    TRAITS native_token_list ].
-
 ; 性别 (gender/sex) is a general common noun. Used as a modifier in noun compounds (性别资格测试).
 性别_n_1 := n_-_le &
   [ STEM < "性别" >,
@@ -930,13 +895,6 @@
   [ STEM < "接管" >,
     SYNSEM.LOCAL.CAT.HEAD.CHAR [ FCHAR "接", LENGTH two ],
     SYNSEM [ LKEYS.KEYREL.PRED "_接管_v_1_rel" ],
-    TRAITS native_token_list ].
-
-; 火灾 means 'fire (disaster)', a general common noun.
-火灾_n_1 := n_-_le &
-  [ STEM < "火灾" >,
-    SYNSEM.LOCAL.CAT.HEAD.CHAR [ FCHAR "火", LENGTH two ],
-    SYNSEM.LKEYS.KEYREL.PRED "_火灾_n_1_rel",
     TRAITS native_token_list ].
 
 ; 炸弹 means 'bomb', a general common noun.
@@ -1105,13 +1063,6 @@
   [ STEM < "各国" >,
     SYNSEM.LOCAL.CAT.HEAD.CHAR [ FCHAR "各", LENGTH two ],
     SYNSEM.LKEYS.KEYREL.PRED "_各国_n_1_rel",
-    TRAITS native_token_list ].
-
-; 复杂 (complex/complicated) is a predicative adjective. It can be modified by degree adverbs (更复杂) and used attributively with 的 (复杂的手术). This is a standard predicative adjective.
-复杂_j_1 := a_-_pred_le &
-  [ STEM < "复杂" >,
-    SYNSEM.LOCAL.CAT.HEAD.CHAR [ FCHAR "复", LENGTH two ],
-    SYNSEM.LKEYS.KEYREL.PRED "_复杂_a_1_rel",
     TRAITS native_token_list ].
 
 ; 提名 (nominate) is a transitive verb that takes an NP complement. Examples show '提名最多的作品' and '党提名竞赛'. It can also be used as a noun (提名竞赛) but primary use is transitive verb.
@@ -1352,20 +1303,6 @@
     SYNSEM.LKEYS.KEYREL.CARG "漫威",
     TRAITS native_token_list ].
 
-; Rome is a city name, clearly a location proper noun. Used as a place in examples like '在罗马的...'.
-罗马_n_1 := n_-_l_pn_le &
-  [ STEM < "罗马" >,
-    SYNSEM.LOCAL.CAT.HEAD.CHAR [ FCHAR "罗", LENGTH two ],
-    SYNSEM.LKEYS.KEYREL.CARG "罗马",
-    TRAITS native_token_list ].
-
-; Software is a general common noun. Used as modifier (软件工程师) and as head noun (约会软件). Standard common noun.
-软件_n_1 := n_-_le &
-  [ STEM < "软件" >,
-    SYNSEM.LOCAL.CAT.HEAD.CHAR [ FCHAR "软", LENGTH two ],
-    SYNSEM.LKEYS.KEYREL.PRED "_软件_n_1_rel",
-    TRAITS native_token_list ].
-
 ; Supply chain is a general common noun. Used as object (破坏供应链) and in modifier constructions (供应链领域).
 供应链_n_1 := n_-_le &
   [ STEM < "供应链" >,
@@ -1581,13 +1518,6 @@
   [ STEM < "弹劾" >,
     SYNSEM.LOCAL.CAT.HEAD.CHAR [ FCHAR "弹", LENGTH two ],
     SYNSEM [ LKEYS.KEYREL.PRED "_弹劾_v_1_rel" ],
-    TRAITS native_token_list ].
-
-; Location proper noun - the country Italy. Used as '于意大利南部', '在意大利七国集团峰会上'.
-意大利_n_1 := n_-_l_pn_le &
-  [ STEM < "意大利" >,
-    SYNSEM.LOCAL.CAT.HEAD.CHAR [ FCHAR "意", LENGTH more-than-two ],
-    SYNSEM.LKEYS.KEYREL.CARG "意大利",
     TRAITS native_token_list ].
 
 ; Human noun meaning 'protester'. Refers to people: '抗议者游行', '抗议者聚集', '与抗议者发生冲突'.
@@ -1807,13 +1737,6 @@
     SYNSEM.LKEYS.KEYREL.PRED "_机上_n_1_rel",
     TRAITS native_token_list ].
 
-; 气温 (air temperature) is a common noun. Used as subject in 气温普遍超过, 气温可能达到.
-气温_n_1 := n_-_le &
-  [ STEM < "气温" >,
-    SYNSEM.LOCAL.CAT.HEAD.CHAR [ FCHAR "气", LENGTH two ],
-    SYNSEM.LKEYS.KEYREL.PRED "_气温_n_1_rel",
-    TRAITS native_token_list ].
-
 ; 海外 (overseas) is a locative noun that can function as a location adjunct: 在海外, 在海外火爆. Similar to 校外, 网上.
 海外_n_1 := n_-_loc_le &
   [ STEM < "海外" >,
@@ -1868,13 +1791,6 @@
   [ STEM < "席位" >,
     SYNSEM.LOCAL.CAT.HEAD.CHAR [ FCHAR "席", LENGTH two ],
     SYNSEM.LKEYS.KEYREL.PRED "_席位_n_1_rel",
-    TRAITS native_token_list ].
-
-; General common noun meaning 'malfunction/breakdown'. Used with classifier (一个故障) and as object (遭遇大规模故障).
-故障_n_1 := n_-_le &
-  [ STEM < "故障" >,
-    SYNSEM.LOCAL.CAT.HEAD.CHAR [ FCHAR "故", LENGTH two ],
-    SYNSEM.LKEYS.KEYREL.PRED "_故障_n_1_rel",
     TRAITS native_token_list ].
 
 ; Transitive verb meaning 'to shoot and kill'. Used in passive constructions (被枪杀) indicating it takes an NP complement.
@@ -2281,13 +2197,6 @@
   [ STEM < "住所" >,
     SYNSEM.LOCAL.CAT.HEAD.CHAR [ FCHAR "住", LENGTH two ],
     SYNSEM.LKEYS.KEYREL.PRED "_住所_n_1_rel",
-    TRAITS native_token_list ].
-
-; 凯特 (Kate) is a person's name, transliteration of an English name. Clearly a human proper noun.
-凯特_n_1 := n_-_h_pn_le &
-  [ STEM < "凯特" >,
-    SYNSEM.LOCAL.CAT.HEAD.CHAR [ FCHAR "凯", LENGTH two ],
-    SYNSEM.LKEYS.KEYREL.CARG "凯特",
     TRAITS native_token_list ].
 
 ; 利润 (profit) is a common noun. Used as object in 追求利润 and as a general noun.
@@ -2892,13 +2801,6 @@
     SYNSEM [ LKEYS.KEYREL.PRED "_激增_v_1_rel" ],
     TRAITS native_token_list ].
 
-; Human noun meaning 'boyfriend'. Refers to a person, used as '她的男友', '与男友庆祝'.
-男友_n_1 := n_-_h_le &
-  [ STEM < "男友" >,
-    SYNSEM.LOCAL.CAT.HEAD.CHAR [ FCHAR "男", LENGTH two ],
-    SYNSEM.LKEYS.KEYREL.PRED "_男友_n_1_rel",
-    TRAITS native_token_list ].
-
 ; General common noun meaning 'painting/artwork'. Used in NP positions like '年历史的画作', '画作艺术家'.
 画作_n_1 := n_-_le &
   [ STEM < "画作" >,
@@ -3492,13 +3394,6 @@
   [ STEM < "相撞" >,
     SYNSEM.LOCAL.CAT.HEAD.CHAR [ FCHAR "相", LENGTH two ],
     SYNSEM [ LKEYS.KEYREL.PRED "_相撞_v_1_rel" ],
-    TRAITS native_token_list ].
-
-; Intransitive verb meaning 'to commit suicide'. Used without an object (自杀身亡). Also used as a noun modifier (自杀倾向), but primarily intransitive verb.
-自杀_v_1 := v_-_le &
-  [ STEM < "自杀" >,
-    SYNSEM.LOCAL.CAT.HEAD.CHAR [ FCHAR "自", LENGTH two ],
-    SYNSEM [ LKEYS.KEYREL.PRED "_自杀_v_1_rel" ],
     TRAITS native_token_list ].
 
 ; Proper noun for the country 'Portugal'. Clearly a location proper noun.
@@ -5146,20 +5041,6 @@
     SYNSEM.LKEYS.KEYREL.PRED "_学家_n_1_rel",
     TRAITS native_token_list ].
 
-; 实际上 means 'actually/in fact'. It appears at the beginning of sentences or clauses, modifying the entire sentence. Pre-sentential adverb.
-实际上_r_1 := adv_-_s-pre-rel_le &
-  [ STEM < "实际上" >,
-    SYNSEM.LOCAL.CAT.HEAD.CHAR [ FCHAR "实", LENGTH more-than-two ],
-    SYNSEM.LKEYS.KEYREL.PRED "_实际上_a_1_rel",
-    TRAITS native_token_list ].
-
-; 对方 means 'the other party/counterpart', referring to a person. Used as subject (对方说) and object (看着对方, 给对方买礼物).
-对方_n_1 := n_-_h_le &
-  [ STEM < "对方" >,
-    SYNSEM.LOCAL.CAT.HEAD.CHAR [ FCHAR "对", LENGTH two ],
-    SYNSEM.LKEYS.KEYREL.PRED "_对方_n_1_rel",
-    TRAITS native_token_list ].
-
 ; 尼帕 is a proper noun (Nipah, as in Nipah virus). Used attributively (尼帕病毒). Proper noun, not clearly a person or place.
 尼帕_n_1 := n_-_pn_le &
   [ STEM < "尼帕" >,
@@ -5454,13 +5335,6 @@
     SYNSEM.LKEYS.KEYREL.PRED "_两周_n_1_rel",
     TRAITS native_token_list ].
 
-; 体重 means 'body weight', a general common noun used as subject in examples.
-体重_n_1 := n_-_le &
-  [ STEM < "体重" >,
-    SYNSEM.LOCAL.CAT.HEAD.CHAR [ FCHAR "体", LENGTH two ],
-    SYNSEM.LKEYS.KEYREL.PRED "_体重_n_1_rel",
-    TRAITS native_token_list ].
-
 ; 佛罗里达 (Florida) is a location proper noun referring to a US state.
 佛罗里达_n_1 := n_-_l_pn_le &
   [ STEM < "佛罗里达" >,
@@ -5578,13 +5452,6 @@
   [ STEM < "天主" >,
     SYNSEM.LOCAL.CAT.HEAD.CHAR [ FCHAR "天", LENGTH two ],
     SYNSEM.LKEYS.KEYREL.PRED "_天主_n_1_rel",
-    TRAITS native_token_list ].
-
-; 好 means 'good', a predicative adjective. It is one of the most common adjectives, used both predicatively and attributively, but its primary type is predicative adjective.
-好_j_1 := a_-_pred_le &
-  [ STEM < "好" >,
-    SYNSEM.LOCAL.CAT.HEAD.CHAR [ FCHAR "好", LENGTH one ],
-    SYNSEM.LKEYS.KEYREL.PRED "_好_a_1_rel",
     TRAITS native_token_list ].
 
 ; 实弹 means 'live ammunition', a common noun used as object (使用了实弹).
@@ -6483,13 +6350,6 @@
     SYNSEM.LKEYS.KEYREL.PRED "_英国首相_n_1_rel",
     TRAITS native_token_list ].
 
-; 英格兰 (England) is a place/region name. Location proper noun.
-英格兰_n_1 := n_-_l_pn_le &
-  [ STEM < "英格兰" >,
-    SYNSEM.LOCAL.CAT.HEAD.CHAR [ FCHAR "英", LENGTH more-than-two ],
-    SYNSEM.LKEYS.KEYREL.CARG "英格兰",
-    TRAITS native_token_list ].
-
 ; 言论自由 (freedom of speech) is an abstract common noun. Used as object/topic in discussions. General common noun.
 言论自由_n_1 := n_-_le &
   [ STEM < "言论自由" >,
@@ -6845,13 +6705,6 @@
   [ STEM < "真空" >,
     SYNSEM.LOCAL.CAT.HEAD.CHAR [ FCHAR "真", LENGTH two ],
     SYNSEM.LKEYS.KEYREL.PRED "_真空_n_1_rel",
-    TRAITS native_token_list ].
-
-; Common noun meaning 'coin'. Used as object (生产硬币, 取消硬币, 出土的硬币). General common noun.
-硬币_n_1 := n_-_le &
-  [ STEM < "硬币" >,
-    SYNSEM.LOCAL.CAT.HEAD.CHAR [ FCHAR "硬", LENGTH two ],
-    SYNSEM.LKEYS.KEYREL.PRED "_硬币_n_1_rel",
     TRAITS native_token_list ].
 
 ; Common noun meaning 'red hat/hood'. Used as part of the name 小红帽 (Little Red Riding Hood). As a standalone token, it's a general common noun.
@@ -7307,13 +7160,6 @@
   [ STEM < "头盔" >,
     SYNSEM.LOCAL.CAT.HEAD.CHAR [ FCHAR "头", LENGTH two ],
     SYNSEM.LKEYS.KEYREL.PRED "_头盔_n_1_rel",
-    TRAITS native_token_list ].
-
-; 奶酪 (cheese) is a common noun. Could be mass noun but n_-_le is the safe default for most nouns.
-奶酪_n_1 := n_-_le &
-  [ STEM < "奶酪" >,
-    SYNSEM.LOCAL.CAT.HEAD.CHAR [ FCHAR "奶", LENGTH two ],
-    SYNSEM.LKEYS.KEYREL.PRED "_奶酪_n_1_rel",
     TRAITS native_token_list ].
 
 ; 安抚 (to appease/comfort) is a transitive verb taking NP complements: '安抚公众'.

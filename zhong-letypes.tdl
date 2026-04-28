@@ -1495,8 +1495,7 @@ Not sure what is special with it.
 ;============================================================================
 ; CONJUCTION TYPES
 ;============================================================================
-conj_-_le := conj-lex & nonque-item.
-conj_-_le :+ [ CFORM "1" ].
+conj_-_le := conj-lex & nonque-item & [ CFORM "1" ].
 
 conj_-_e_le := conj-e-lex & nonque-item.
 

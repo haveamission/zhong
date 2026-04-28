@@ -1529,7 +1529,7 @@ Department Store
     SYNSEM.LKEYS.KEYREL.PRED "_单词_n_1_rel",
     TRAITS native_token_list ].
 
-对方_n_1 := n_-_le &
+对方_n_1 := n_-_h_le &
 """
 [] counterpart; opposition; opposite side; 
 """
@@ -2270,9 +2270,9 @@ side of a 的 phrase).
 """
 [nán yǒu] boyfriend
 """
-  [ STEM < "女友" >,
-    SYNSEM.LOCAL.CAT.HEAD.CHAR [ FCHAR "女", LENGTH two ],
-    SYNSEM.LKEYS.KEYREL.PRED "_女友_n_1_rel",
+  [ STEM < "男友" >,
+    SYNSEM.LOCAL.CAT.HEAD.CHAR [ FCHAR "男", LENGTH two ],
+    SYNSEM.LKEYS.KEYREL.PRED "_男友_n_1_rel",
     TRAITS native_token_list ].
 
 前男友_n_1 := n_-_h_le &
