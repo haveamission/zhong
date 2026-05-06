@@ -109,6 +109,15 @@ jobs:
           path: ${{ env.GRAMMAR_DIR }}/${{ env.GRAMMAR_NAME }}.dat
           retention-days: 7
 
+      - name: Upload MaxEnt model
+        if: success()
+        uses: actions/upload-artifact@v4
+        with:
+          name: maxent-model
+          path: ${{ env.GRAMMAR_DIR }}/zhong.mem
+          if-no-files-found: ignore
+          retention-days: 7
+
       - name: Upload test results
         if: always()
         uses: actions/upload-artifact@v4
@@ -127,6 +136,12 @@ jobs:
         with:
           name: ${{ env.GRAMMAR_NAME }}-dat
 
+      - name: Download MaxEnt model
+        uses: actions/download-artifact@v4
+        with:
+          name: maxent-model
+        continue-on-error: true
+
       - name: Backup current grammar
         uses: appleboy/ssh-action@v1
         with:
@@ -144,6 +159,20 @@ jobs:
           ssh-keyscan -H ${{ secrets.DROPLET_HOST }} >> ~/.ssh/known_hosts 2>/dev/null
           scp -i ~/.ssh/deploy_key ${{ env.GRAMMAR_NAME }}.dat root@${{ secrets.DROPLET_HOST }}:/mnt/volume_nyc3_01/grammars/
           rm ~/.ssh/deploy_key
+
+      - name: Copy MaxEnt model to droplet
+        run: |
+          if [ -f zhong.mem ]; then
+            mkdir -p ~/.ssh
+            echo "${{ secrets.DROPLET_SSH_KEY }}" > ~/.ssh/deploy_key
+            chmod 600 ~/.ssh/deploy_key
+            ssh-keyscan -H ${{ secrets.DROPLET_HOST }} >> ~/.ssh/known_hosts 2>/dev/null
+            scp -i ~/.ssh/deploy_key zhong.mem root@${{ secrets.DROPLET_HOST }}:/mnt/volume_nyc3_01/grammars/
+            rm ~/.ssh/deploy_key
+            echo "MaxEnt model deployed"
+          else
+            echo "No MaxEnt model found, skipping"
+          fi
 
       - name: Restart grammar engine
         uses: appleboy/ssh-action@v1
@@ -165,6 +194,9 @@ jobs:
           script: |
             echo "Deployed grammar:"
             ls -lh /mnt/volume_nyc3_01/grammars/${{ env.GRAMMAR_NAME }}.dat
+            echo ""
+            echo "MaxEnt model:"
+            ls -lh /mnt/volume_nyc3_01/grammars/zhong.mem 2>/dev/null || echo "No MaxEnt model deployed"
             echo ""
             echo "Parse verification:"
             docker exec grammarengine bash -c "echo '他 说 了' | ace -g /runpod-volume/grammars/${{ env.GRAMMAR_NAME }}.dat -n 1 2>/dev/null | head -1"
