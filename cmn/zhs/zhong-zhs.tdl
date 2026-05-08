@@ -1078,3 +1078,4 @@ _国_x_rel := cl_x_rel.
 ; _捻_x_rel := cl_x_rel.
 ; _肤_x_rel := cl_x_rel.
 ; _乡_x_rel := cl_x_rel.
+学_n_selected_rel := selected_comp_rel.
