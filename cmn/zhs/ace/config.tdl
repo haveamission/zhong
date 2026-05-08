@@ -11,3 +11,7 @@ orth-path                 := STEM.
  :include "config.common".
 :end :config.
 
+
+übertag-emission-path := "../ut/model.ex.gz".
+übertag-transition-path := "../ut/model.tx.gz".
+übertag-generic-map-path := "../ut/generics.cfg".

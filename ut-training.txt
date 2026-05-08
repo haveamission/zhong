@@ -1,0 +1,5308 @@
+力波	力波_n_1
+，	comma-marker
+你好	你好_ij
+。	period-marker
+
+你好	你好_ij
+，	comma-marker
+陆雨平	陆雨平_n_1
+。	period-marker
+
+也	也_r_1
+很	很_r
+好	好_j_1
+。	period-marker
+
+我	我_n
+很	很_r
+好	好_j_1
+。	period-marker
+
+他们	他们_n
+都	都_r_1
+很	很_r
+好	好_j_1
+。	period-marker
+
+我	我_n
+就	就_r_1
+是	是_v
+。	period-marker
+
+你	你_n
+男朋友	男朋友_n_1
+呢	呢_qp
+？	question-marker
+
+对不起	对不起_v_1
+，	，_c_1
+他	他_n
+不	不_r
+在	在_v_1
+。	period-marker
+
+他	他_n
+很	很_r
+忙	忙_j_1
+。	period-marker
+
+你	你_n
+在	在_r_1
+做	做_v_1
+什么	什么_n_q
+？	question-marker
+
+哥哥	哥哥_n_1
+，	comma-marker
+你	你_n
+要	要_v_2
+咖啡	咖啡_n_1
+吗	吗_qp
+？	question-marker
+
+我	我_n
+要	要_v_2
+咖啡	咖啡_n_1
+。	period-marker
+
+我	我_n
+也	也_r_1
+要	要_v_2
+咖啡	咖啡_n_1
+。	period-marker
+
+你	你_n
+看	看_v_1
+，	，_c_1
+他	他_n
+是不々	是_v
+我们	我们_n
+学院	学院_n_1
+的	的_assoc_n
+老师	老师_n_1
+？	question-marker
+
+好	好_ij
+，	comma-marker
+我们	我们_n
+都	都_r_1
+喝	喝_v_1
+咖啡	咖啡_n_1
+。	period-marker
+
+我	我_n
+是	是_v
+爱	爱_n_2
+文	文_n_1
+。	period-marker
+
+在	在_v_1
+，	，_c_1
+他	他_n
+在	在_v_1
+他	他_n
+的	的_assoc_n
+房间	房间_n_1
+。	period-marker
+
+请	请_v_2
+等	等_v_1
+一会儿	一会儿_n_1
+。	period-marker
+
+友朋	友朋_n_1
+，	，_c_2
+你	你_n
+的	的_assoc_n
+电话	电话_n_1
+。	period-marker
+
+知道	知道_v_1
+了	了_crs
+。	period-marker
+
+我	我_n
+是	是_v
+友朋	友朋_n_1
+，	，_c_1
+你	你_n
+是	是_v
+爱	爱_n_2
+文	文_n_1
+吧	吧_crs
+。	period-marker
+
+没有	没有_v_1
+。	period-marker
+
+我	我_n
+正在	正在_r_1
+看	看_v_1
+电视	电视_n_1
+呢	呢_crs
+。	period-marker
+
+好	好_ij
+，	comma-marker
+我们	我们_n
+点	点_v_1
+一	一_j
+盘	盘_cl
+炒饭	炒饭_n_1
+、	、_c_1
+一	一_j
+盘	盘_cl
+炒面	炒面_n_1
+和	和_c
+二十	generic_num_ne
+个	个_cl
+饺子	饺子_n_1
+吧	吧_crs
+。	period-marker
+
+力波	力波_n_1
+，	comma-marker
+那	那_d
+是	是_v
+谁	谁_n_q
+？	question-marker
+
+那	那_d
+是	是_v
+我们	我们_n
+老师	老师_n_1
+。	period-marker
+
+她	她_n
+是	是_v
+哪	哪_d_q
+国	国_n_2
+人	人_n_1
+？	question-marker
+
+她	她_n
+是	是_v
+中国人	中国人_n_1
+。	period-marker
+
+我们	我们_n
+老师	老师_n_1
+都	都_r_1
+是	是_v
+中国人	中国人_n_1
+。	period-marker
+
+我们	我们_n
+还	还_r_2
+要	要_v_2
+三	三_j
+碗	碗_cl
+汤	汤_n_1
+。	period-marker
+
+陈	陈_n_1
+老师	老师_n_1
+，	comma-marker
+您好	您好_ij
+！	bang-marker
+
+这	这_d
+是	是_v
+我	我_n
+哥哥	哥哥_n_1
+，	，_c_1
+他	他_n
+是	是_v
+外语	外语_n_1
+老师	老师_n_1
+。	period-marker
+
+他	他_n
+在	在_r_1
+上课	上课_v_1
+。	period-marker
+
+这	这_d
+是	是_v
+我	我_n
+朋友	朋友_n_1
+。	period-marker
+
+请问	请问_ij
+他	他_n
+什么	什么_d_q
+时候	时候_n_1
+回来	回来_v_1
+？	question-marker
+
+今天	今天_n_1
+晚上	晚上_n_1
+。	period-marker
+
+你	你_n
+要不々	要_v_aux
+留言	留言_v_1
+？	question-marker
+
+我	我_n
+不	不_r
+是	是_v
+老师	老师_n_1
+，	，_c_1
+我	我_n
+是	是_v
+医生	医生_n_1
+。	period-marker
+
+力波	力波_n_1
+，	comma-marker
+这	这_d
+是	是_v
+你	你_n
+奶奶	奶奶_n_1
+吗	吗_qp
+？	question-marker
+
+请	请_v_1
+他	他_n
+回来	回来_v_1
+以后	以后_sc
+给	给_p
+我	我_n
+打	打_v_1
+电话	电话_n_1
+。	period-marker
+
+外婆	外婆_n_1
+，	comma-marker
+您好	您好_ij
+！	bang-marker
+
+今天	今天_n_1
+我	我_n
+给	给_p
+小谢	小谢_n_1
+打	打_v_1
+电话	电话_n_1
+的	的_assoc_v
+时候	时候_n_1
+，	comma-marker
+他	他_n
+不	不_r
+在	在_v_1
+，	，_c_1
+他	他_n
+室友	室友_n_1
+接	接_v_1
+了	了_pfv
+电话	电话_n_1
+。	period-marker
+
+晚上	晚上_n_1
+小谢	小谢_n_1
+回来	回来_v_1
+了	了_pfv
+，	，_c_1
+他	他_n
+给	给_p
+我	我_n
+回电	回电_v_1
+的	的_assoc_v
+时候	时候_n_1
+，	comma-marker
+我	我_n
+正在	正在_r_1
+看	看_v_1
+电视	电视_n_1
+呢	呢_crs
+。	period-marker
+
+我	我_n
+问	问_v_4
+他	他_n
+你	你_n
+在	在_r_1
+忙	忙_j_1
+吗	吗_qp
+？	question-marker
+
+你	你_n
+正在	正在_r_1
+做	做_v_1
+什么	什么_n_q
+呢	呢_crs
+？	question-marker
+
+他	他_n
+说	说_v_1
+他	他_n
+正在	正在_r_1
+上网	上网_v_1
+呢	呢_crs
+。	period-marker
+
+啊	啊_ij
+，	comma-marker
+您	您_n
+是	是_v
+张	张_n_1
+教授	教授_n_1
+。	period-marker
+
+我们	我们_n
+常	常_r_1
+先	先_r_1
+看	看_v_1
+菜单	菜单_n_1
+，	comma-marker
+然后	然后_sc
+点菜	点菜_v_1
+。	period-marker
+
+可以	可以_v_aux
+进来	进来_v_1
+吗	吗_qp
+？	question-marker
+
+请	请_v_2
+进	进_v_2
+！	bang-marker
+
+杨	杨_n_1
+老师	老师_n_1
+，	comma-marker
+您好	您好_ij
+。	period-marker
+
+这	这_d
+是	是_v
+我	我_n
+朋友	朋友_n_1
+，	，_c_1
+他	他_n
+是	是_v
+记者	记者_n_1
+。	period-marker
+
+请问	请问_ij
+，	comma-marker
+您	您_n
+贵姓	贵姓_v_1
+？	question-marker
+
+我	我_n
+姓	姓_v_1
+陆	陆_n_1
+，	，_c_1
+叫	叫_v_3
+陆雨平	陆雨平_n_1
+。	period-marker
+
+你好	你好_ij
+，	comma-marker
+陆	陆_n_1
+先生	先生_n_1
+，	comma-marker
+认识	认识_v_1
+你	你_n
+很	很_r
+高兴	高兴_j_1
+。	period-marker
+
+杨	杨_n_1
+老师	老师_n_1
+，	comma-marker
+认识	认识_v_1
+您	您_n
+，	，_c_1
+我	我_n
+也	也_r_1
+很	很_r
+高兴	高兴_j_1
+。	period-marker
+
+我	我_n
+是	是_v
+语言	语言_n_1
+学院	学院_n_1
+的	的_assoc_n
+学生	学生_n_1
+。	period-marker
+
+我	我_n
+姓	姓_v_1
+林	林_n_1
+，	，_c_1
+叫	叫_v_3
+林娜	林娜_n_1
+。	period-marker
+
+我	我_n
+是	是_v
+英国人	英国人_n_1
+。	period-marker
+
+你	你_n
+姓	姓_v_1
+什么	什么_n_q
+？	question-marker
+
+我	我_n
+姓	姓_v_1
+马	马_n_2
+，	，_c_1
+叫	叫_v_3
+马大为	马大为_n_1
+。	period-marker
+
+你	你_n
+是	是_v
+加拿大	加拿大_n_1
+人	人_n_1
+吗	吗_qp
+？	question-marker
+
+我	我_n
+不	不_r
+是	是_v
+加拿大	加拿大_n_1
+人	人_n_1
+，	，_c_1
+我	我_n
+是	是_v
+美国人	美国人_n_1
+，	，_c_1
+也	也_r_1
+是	是_v
+语言	语言_n_1
+学院	学院_n_1
+的	的_assoc_n
+学生	学生_n_1
+。	period-marker
+
+我	我_n
+学习	学习_v_1
+汉语	汉语_n_1
+。	period-marker
+
+十点五分	generic_time_noun_ne
+。	period-marker
+
+你	你_n
+每	每_d
+天	天_n_1
+几	几_j
+点	点_n_1
+起床	起床_v_1
+，	，_c_1
+几	几_j
+点	点_n_1
+睡觉	睡觉_v_1
+？	question-marker
+
+我	我_n
+每	每_d
+天	天_n_1
+七点半	generic_time_noun_ne
+起床	起床_v_1
+，	，_c_1
+十二点半	generic_time_noun_ne
+睡觉	睡觉_v_1
+。	period-marker
+
+今天	今天_n_1
+是	是_v
+几	几_d_q
+月	月_cl
+几	几_j
+号	号_cl
+？	question-marker
+
+下课	下课_v_1
+以后	以后_sc
+，	comma-marker
+你	你_n
+有	有_v_2
+事儿	事儿_n_1
+吗	吗_qp
+？	question-marker
+
+有	有_v_2
+，	，_c_1
+我	我_n
+有	有_v_2
+事儿	事儿_n_1
+，	，_c_1
+我	我_n
+去	去_v_3
+看书	看书_v_1
+，	comma-marker
+然后	然后_sc
+去	去_v_3
+打球	打球_v_1
+。	period-marker
+
+这	这_d
+个	个_cl
+学期	学期_n_1
+我	我_n
+很	很_r
+忙	忙_j_1
+，	，_c_1
+有	有_v_2
+五	五_j
+门	门_cl
+课	课_n_1
+。	period-marker
+
+你	你_n
+知道	知道_v_2
+我	我_n
+每	每_d
+天	天_n_1
+几	几_j
+点	点_n_1
+起床	起床_v_1
+、	、_c_2
+几	几_j
+点	点_n_1
+睡觉	睡觉_v_1
+吗	吗_qp
+？	question-marker
+
+我	我_n
+七点半	generic_time_noun_ne
+就	就_r_1
+起床	起床_v_1
+，	，_c_1
+晚上	晚上_n_1
+十二点半	generic_time_noun_ne
+以后	以后_n_1
+才	才_r_1
+睡觉	睡觉_v_1
+。	period-marker
+
+每	每_d
+天	天_n_1
+都	都_r_1
+很	很_r
+忙	忙_j_1
+。	period-marker
+
+九点一刻	generic_time_noun_ne
+去	去_v_3
+上课	上课_v_1
+，	，_c_1
+十点二十分	generic_time_noun_ne
+下课	下课_v_1
+。	period-marker
+
+给	给_p
+我	我_n
+写信	写信_v_1
+吧	吧_crs
+。	period-marker
+
+请问	请问_ij
+，	comma-marker
+这	这_d
+是	是_v
+王小云	王小云_n_1
+的	的_assoc_n
+宿舍	宿舍_n_1
+吗	吗_qp
+？	question-marker
+
+请问	请问_ij
+欢欢	欢欢_n_1
+在	在_v_1
+吗	吗_qp
+？	question-marker
+
+请	请_v_2
+进	进_v_2
+，	，_c_1
+请	请_v_2
+坐	坐_v_3
+。	period-marker
+
+王小云	王小云_n_1
+在	在_v_1
+吗	吗_qp
+？	question-marker
+
+她	她_n
+不	不_r
+在	在_v_1
+。	period-marker
+
+她	她_n
+在	在_v_1
+哪儿	哪儿_n_q
+？	question-marker
+
+对不起	对不起_v_1
+，	，_c_1
+我	我_n
+不	不_r
+知道	知道_v_1
+。	period-marker
+
+没关系	没关系_v_1
+。	period-marker
+
+好	好_ij
+，	comma-marker
+再见	再见_v_1
+。	period-marker
+
+再见	再见_v_1
+。	period-marker
+
+你	你_n
+常	常_r_1
+看	看_v_1
+你	你_n
+的	的_assoc_n
+电子	电子_n_1
+邮件	邮件_n_1
+吗	吗_qp
+？	question-marker
+
+在	在_v_1
+二	二_j
+层	层_cl
+二〇四	generic_num_ne
+号	号_cl
+。	period-marker
+
+常	常_r_1
+看	看_v_1
+，	，_c_1
+我	我_n
+每	每_d
+天	天_n_1
+都	都_r_1
+看	看_v_1
+我	我_n
+的	的_assoc_n
+电子	电子_n_1
+邮件	邮件_n_1
+。	period-marker
+
+大为	大为_n_1
+，	comma-marker
+我们	我们_n
+在	在_v_1
+这儿	这儿_n
+。	period-marker
+
+请问	请问_ij
+友朋	友朋_n_1
+在	在_v_1
+吗	吗_qp
+？	question-marker
+
+在	在_v_1
+，	，_c_1
+请	请_v_2
+等	等_v_1
+一会儿	一会儿_n_1
+。	period-marker
+
+很	很_r
+有意思	有意思_j_1
+。	period-marker
+
+太	太_r_1
+好	好_j_1
+了	了_crs
+！	bang-marker
+
+什么	什么_d_q
+时候	时候_n_1
+去	去_v_1
+？	question-marker
+
+杨	杨_n_1
+老师	老师_n_1
+，	comma-marker
+明天	明天_n_1
+您	您_n
+有	有_v_2
+时间	时间_n_1
+吗	吗_qp
+？	question-marker
+
+对不起	对不起_v_1
+，	，_c_1
+请	请_v_2
+再	再_r_1
+说	说_v_2
+一	一_j
+遍	遍_cl
+。	period-marker
+
+明天	明天_n_1
+您	您_n
+有	有_v_2
+时间	时间_n_1
+吗	吗_qp
+？	question-marker
+
+很	很_r
+抱歉	抱歉_v_1
+，	，_c_1
+明天	明天_n_1
+我	我_n
+很	很_r
+忙	忙_j_1
+，	，_c_1
+恐怕	恐怕_r_1
+不	不_r
+行	行_j_1
+。	period-marker
+
+谢谢	谢谢_v_1
+你们	你们_n
+。	period-marker
+
+你	你_n
+要	要_v_2
+红茶	红茶_n_1
+还是	还是_c
+绿茶	绿茶_n_1
+？	question-marker
+
+我	我_n
+要	要_v_2
+红茶	红茶_n_1
+。	period-marker
+
+你	你_n
+想	想_v_2
+点	点_v_1
+什么	什么_n_q
+？	question-marker
+
+请问	请问_ij
+，	comma-marker
+几	几_j
+位	位_n_1
+？	question-marker
+
+我	我_n
+在	在_r_1
+上网	上网_v_1
+。	period-marker
+
+请	请_v_2
+坐	坐_v_3
+。	period-marker
+
+你	你_n
+在	在_r_1
+忙	忙_v_2
+吗	吗_qp
+？	question-marker
+
+我	我_n
+要	要_v_2
+一	一_j
+杯	杯_cl
+冰	冰_n_1
+红茶	红茶_n_1
+。	period-marker
+
+我	我_n
+要	要_v_2
+一	一_j
+杯	杯_cl
+水	水_n_1
+。	period-marker
+
+吃	吃_v_1
+了	了_pfv
+。	period-marker
+
+我	我_n
+要	要_v_2
+一	一_j
+瓶	瓶_cl
+可乐	可乐_n_1
+。	period-marker
+
+好	好_ij
+，	comma-marker
+一	一_j
+杯	杯_cl
+冰	冰_n_1
+红茶	红茶_n_1
+、	、_c_1
+一	一_j
+杯	杯_cl
+水	水_n_1
+、	、_c_1
+一	一_j
+瓶	瓶_cl
+可乐	可乐_n_1
+。	period-marker
+
+我	我_n
+问一下	问_v_2
+。	period-marker
+
+请问	请问_ij
+，	comma-marker
+您	您_n
+是	是_v
+我们	我们_n
+学院	学院_n_1
+的	的_assoc_n
+老师	老师_n_1
+吗	吗_qp
+？	question-marker
+
+是	是_ij
+，	comma-marker
+我	我_n
+是	是_v
+语言	语言_n_1
+学院	学院_n_1
+的	的_assoc_n
+老师	老师_n_1
+。	period-marker
+
+您	您_n
+贵姓	贵姓_v_1
+？	question-marker
+
+对了	对了_ij
+，	comma-marker
+我们	我们_n
+也	也_r_1
+要	要_v_2
+三	三_j
+双	双_cl
+筷子	筷子_n_1
+，	comma-marker
+谢谢	谢谢_ij
+！	bang-marker
+
+我	我_n
+姓	姓_v_1
+张	张_n_1
+，	，_c_1
+我们	我们_n
+认识一下	认识_v_1
+，	，_c_1
+这	这_d
+是	是_v
+我	我_n
+的	的_assoc_n
+名片	名片_n_1
+。	period-marker
+
+每	每_d
+个	个_cl
+星期五	星期五_n_1
+，	comma-marker
+我	我_n
+跟	跟_p
+朋友	朋友_n_1
+一起	一起_r_1
+去	去_v_3
+吃饭	吃饭_v_1
+。	period-marker
+
+我们	我们_n
+去	去_v_4
+中国	中国_n_2
+饭馆	饭馆_n_1
+吃	吃_v_1
+晚饭	晚饭_n_1
+。	period-marker
+
+我	我_n
+叫	叫_v_3
+丁力波	丁力波_n_1
+，	，_c_1
+她	她_n
+叫	叫_v_3
+林娜	林娜_n_1
+。	period-marker
+
+我们	我们_n
+都	都_r_1
+是	是_v
+语言	语言_n_1
+学院	学院_n_1
+的	的_assoc_n
+学生	学生_n_1
+。	period-marker
+
+我们	我们_n
+也	也_r_1
+常	常_r_1
+点	点_v_1
+青菜	青菜_n_1
+和	和_c
+甜点	甜点_n_1
+。	period-marker
+
+认识	认识_v_1
+你们	你们_n
+，	，_c_1
+我	我_n
+也	也_r_1
+很	很_r
+高兴	高兴_j_1
+。	period-marker
+
+谢谢	谢谢_ij
+，	comma-marker
+我们	我们_n
+都	都_r_1
+很	很_r
+好	好_j_1
+。	period-marker
+
+我	我_n
+很	很_r
+忙	忙_j_1
+。	period-marker
+
+好	好_ij
+，	comma-marker
+你们	你们_n
+请	请_v_2
+坐	坐_v_3
+，	，_c_1
+再见	再见_v_1
+！	bang-marker
+
+再见	再见_v_1
+！	bang-marker
+
+林娜	林娜_n_1
+，	comma-marker
+那	那_d
+是	是_v
+谁	谁_n_q
+？	question-marker
+
+那	那_d
+是	是_v
+马大为	马大为_n_1
+。	period-marker
+
+你	你_n
+认识不々	认识_v_1
+他	他_n
+？	question-marker
+
+我	我_n
+不	不_r
+认识	认识_v_1
+他	他_n
+。	period-marker
+
+我	我_n
+来	来_v_3
+介绍一下	介绍_v_1
+。	period-marker
+
+你好	你好_ij
+，	comma-marker
+大为	大为_n_1
+，	comma-marker
+这	这_d
+是	是_v
+我	我_n
+朋友	朋友_n_1
+。	period-marker
+
+我	我_n
+姓	姓_v_1
+丁	丁_n_1
+，	，_c_1
+叫	叫_v_3
+丁力波	丁力波_n_1
+。	period-marker
+
+请问	请问_ij
+，	comma-marker
+你	你_n
+叫	叫_v_3
+什么	什么_d_q
+名字	名字_n_1
+？	question-marker
+
+我	我_n
+的	的_assoc_n
+中文	中文_n_1
+名字	名字_n_1
+叫	叫_v_3
+马大为	马大为_n_1
+。	period-marker
+
+你	你_n
+是不々	是_v
+中国人	中国人_n_1
+？	question-marker
+
+我	我_n
+是	是_v
+加拿大	加拿大_n_1
+人	人_n_1
+。	period-marker
+
+我	我_n
+妈妈	妈妈_n_1
+是	是_v
+中国人	中国人_n_1
+，	，_c_1
+我	我_n
+爸爸	爸爸_n_1
+是	是_v
+加拿大	加拿大_n_1
+人	人_n_1
+。	period-marker
+
+你	你_n
+也	也_r_1
+是	是_v
+加拿大	加拿大_n_1
+人	人_n_1
+吗	吗_qp
+？	question-marker
+
+你	你_n
+学习	学习_v_1
+什么	什么_d_q
+专业	专业_n_1
+？	question-marker
+
+我	我_n
+学习	学习_v_1
+美术	美术_n_1
+专业	专业_n_1
+。	period-marker
+
+你	你_n
+呢	呢_qp
+？	question-marker
+
+我	我_n
+学习	学习_v_1
+文学	文学_n_1
+专业	专业_n_1
+。	period-marker
+
+现在	现在_r_1
+我	我_n
+学习	学习_v_1
+汉语	汉语_n_1
+。	period-marker
+
+现在	现在_r_1
+我们	我们_n
+都	都_r_1
+学习	学习_v_1
+汉语	汉语_n_1
+，	，_c_1
+也	也_r_1
+都	都_r_1
+是	是_v
+汉语系	汉语系_n_1
+的	的_assoc_n
+学生	学生_n_1
+。	period-marker
+
+我	我_n
+可以	可以_v_aux
+借	借_v_1
+你	你_n
+的	的_assoc_n
+车	车_n_1
+吗	吗_qp
+？	question-marker
+
+你	你_n
+要	要_v_aux
+去	去_v_3
+接	接_v_1
+谁	谁_n_q
+？	question-marker
+
+我	我_n
+要	要_v_aux
+去	去_v_3
+接	接_v_1
+我	我_n
+妹妹	妹妹_n_1
+。	period-marker
+
+你	你_n
+会不々	会_v_3
+开车	开车_v_1
+？	question-marker
+
+我	我_n
+不	不_r
+会	会_v_3
+开车	开车_v_1
+。	period-marker
+
+本乐	本乐_n_1
+，	comma-marker
+明天	明天_n_1
+下午	下午_n_1
+你	你_n
+用不々	用_v_1
+车	车_n_1
+？	question-marker
+
+我	我_n
+不	不_r
+用	用_v_1
+。	period-marker
+
+我	我_n
+得	得_r_1
+去	去_v_4
+机场	机场_n_1
+接	接_v_1
+人	人_n_1
+，	，_c_1
+可以	可以_v_aux
+借	借_v_1
+你	你_n
+的	的_assoc_n
+车	车_n_1
+吗	吗_qp
+？	question-marker
+
+我	我_n
+妹妹	妹妹_n_1
+和	和_c
+她	她_n
+男朋友	男朋友_n_1
+。	period-marker
+
+我	我_n
+的	的_assoc_n
+车	车_n_1
+是	是_v
+手	手_n_1
+排挡	排挡_n_1
+的	的_assoc_n
+，	，_c_1
+你	你_n
+会不々	会_v_3
+开	开_v_1
+？	question-marker
+
+应该	应该_r_1
+没	没_v_2
+问题	问题_n_1
+。	period-marker
+
+我	我_n
+爸爸	爸爸_n_1
+的	的_assoc_n
+车	车_n_1
+也	也_r_1
+是	是_v
+手	手_n_1
+排挡	排挡_n_1
+的	的_assoc_n
+，	，_c_1
+我	我_n
+常	常_r_1
+开	开_v_1
+他	他_n
+的	的_assoc_n
+车	车_n_1
+。	period-marker
+
+你	你_n
+妹妹	妹妹_n_1
+他们	他们_n
+会	会_v_3
+说	说_v_2
+英文	英文_n_1
+吗	吗_qp
+？	question-marker
+
+本乐	本乐_n_1
+的	的_assoc_n
+车	车_n_1
+是	是_v
+手	手_n_1
+排挡	排挡_n_1
+的	的_assoc_n
+，	，_c_1
+他	他_n
+问	问_v_3
+我	我_n
+会不々	会_v_3
+开	开_v_1
+。	period-marker
+
+你们	你们_n
+要	要_v_aux
+点菜	点菜_v_1
+吗	吗_qp
+？	question-marker
+
+这	这_d
+是不々	是_v
+你们	你们_n
+家	家_n_2
+的	的_assoc_n
+照片	照片_n_1
+？	question-marker
+
+我	我_n
+看一下	看_v_1
+。	period-marker
+
+你们	你们_n
+家	家_n_1
+有	有_v_2
+几	几_d_q
+口	口_cl
+人	人_n_1
+？	question-marker
+
+我们	我们_n
+家	家_n_1
+有	有_v_2
+四	四_j
+口	口_cl
+人	人_n_1
+。	period-marker
+
+你们	你们_n
+家	家_n_1
+呢	呢_qp
+？	question-marker
+
+我	我_n
+有	有_v_2
+妈妈	妈妈_n_1
+，	，_c_1
+有	有_v_2
+一	一_j
+个	个_cl
+姐姐	姐姐_n_1
+和	和_c
+两	两_j
+个	个_cl
+弟弟	弟弟_n_1
+。	period-marker
+
+我们	我们_n
+家	家_n_1
+一共	一共_r_1
+有	有_v_2
+六	六_j
+口	口_cl
+人	人_n_1
+。	period-marker
+
+这	这_d
+是	是_v
+五	五_j
+口	口_cl
+人	人_n_1
+，	，_c_1
+还	还_r_2
+有	有_v_2
+谁	谁_n_q
+？	question-marker
+
+还	还_r_2
+有	有_v_2
+贝贝	贝贝_n_1
+。	period-marker
+
+贝贝	贝贝_n_1
+是	是_v
+你	你_n
+妹妹	妹妹_n_1
+吗	吗_qp
+？	question-marker
+
+不	不_ij
+，	comma-marker
+贝贝	贝贝_n_1
+是	是_v
+我	我_n
+的	的_assoc_n
+小狗	小狗_n_1
+。	period-marker
+
+贝贝	贝贝_n_1
+是	是_v
+我们	我们_n
+的	的_assoc_n
+好	好_j_2
+朋友	朋友_n_1
+，	，_c_1
+当然	当然_r_1
+是	是_v
+我们	我们_n
+家	家_n_1
+的	的_assoc_n
+人	人_n_1
+。	period-marker
+
+我	我_n
+有	有_v_2
+一	一_j
+张	张_cl
+贝贝	贝贝_n_1
+的	的_assoc_n
+照片	照片_n_1
+，	，_c_1
+你	你_n
+看	看_v_1
+。	period-marker
+
+你们	你们_n
+家	家_n_1
+有	有_v_2
+小狗	小狗_n_1
+吗	吗_qp
+？	question-marker
+
+我们	我们_n
+家	家_n_1
+没有	没有_v_1
+小狗	小狗_n_1
+。	period-marker
+
+林娜	林娜_n_1
+，	comma-marker
+你	你_n
+有没々	有_v_2
+男朋友	男朋友_n_1
+？	question-marker
+
+我	我_n
+有	有_v_2
+男朋友	男朋友_n_1
+。	period-marker
+
+他	他_n
+做	做_v_1
+什么	什么_d_q
+工作	工作_n_1
+？	question-marker
+
+他	他_n
+是	是_v
+医生	医生_n_1
+。	period-marker
+
+不	不_r
+太	太_r_1
+大	大_j_2
+。	period-marker
+
+我	我_n
+很	很_r
+喜欢	喜欢_v_1
+外语系	外语系_n_1
+。	period-marker
+
+你们	你们_n
+外语系	外语系_n_1
+有	有_v_2
+多少	多少_d_q
+老师	老师_n_1
+？	question-marker
+
+外语系	外语系_n_1
+有	有_v_2
+二十八	generic_num_ne
+个	个_cl
+中国	中国_n_2
+老师	老师_n_1
+，	，_c_2
+十一	generic_num_ne
+个	个_cl
+外国	外国_n_1
+老师	老师_n_1
+。	period-marker
+
+你们	你们_n
+系	系_n_1
+呢	呢_qp
+？	question-marker
+
+我们	我们_n
+汉语系	汉语系_n_1
+很	很_r
+大	大_j_2
+。	period-marker
+
+我们	我们_n
+系	系_n_1
+的	的_assoc_n
+老师	老师_n_1
+也	也_r_1
+很	很_r
+多	多_j_1
+，	，_c_1
+有	有_v_2
+一百	generic_num_ne
+个	个_cl
+。	period-marker
+
+他们	他们_n
+都	都_r_1
+是	是_v
+中国人	中国人_n_1
+。	period-marker
+
+我们	我们_n
+系	系_n_1
+没有	没有_v_1
+外国	外国_n_1
+老师	老师_n_1
+。	period-marker
+
+你	你_n
+想	想_v_2
+买	买_v_1
+什么	什么_n_q
+？	question-marker
+
+你	你_n
+是	是_v
+什么	什么_d_q
+学院	学院_n_1
+的	的_assoc_n
+学生	学生_n_1
+？	question-marker
+
+还	还_r_1
+不错	不错_j_1
+。	period-marker
+
+可是	可是_sc
+我	我_n
+比较	比较_r_1
+喜欢	喜欢_v_2
+穿	穿_v_1
+黑色	黑色_n_1
+的	的_assoc_n
+，	comma-marker
+有没々	有_v_2
+黑色	黑色_n_1
+的	的_assoc_n
+？	question-marker
+
+有	有_v_2
+，	，_c_1
+在	在_v_1
+这儿	这儿_n
+，	，_c_1
+你	你_n
+试々	试_v_1
+。	period-marker
+
+你	你_n
+穿々	穿_v_1
+，	，_c_1
+让	让_v_1
+我	我_n
+看々	看_v_1
+。	period-marker
+
+那	那_d
+是	是_v
+老师	老师_n_1
+的	的_assoc_n
+电脑	电脑_n_1
+。	period-marker
+
+好	好_ij
+，	comma-marker
+我	我_n
+买	买_v_1
+了	了_crs
+。	period-marker
+
+我	我_n
+要	要_v_aux
+买	买_v_1
+这	这_d
+件	件_cl
+黑	黑_j_2
+衬衫	衬衫_n_1
+。	period-marker
+
+对了	对了_ij
+，	comma-marker
+小姐	小姐_n_1
+，	comma-marker
+这	这_d
+张	张_cl
+电影票	电影票_n_1
+是	是_v
+你	你_n
+的	的_assoc_n
+吗	吗_qp
+？	question-marker
+
+是的	是的_ij
+，	comma-marker
+这	这_d
+张	张_cl
+电影票	电影票_n_1
+是	是_v
+我	我_n
+的	的_assoc_n
+。	period-marker
+
+请问	请问_ij
+您	您_n
+是	是_v
+哪	哪_d_q
+位	位_cl
+？	question-marker
+
+我们	我们_n
+等一下	等一下_r_1
+要	要_v_aux
+去	去_v_3
+看	看_v_1
+电影	电影_n_1
+。	period-marker
+
+昨天	昨天_n_1
+，	comma-marker
+我	我_n
+和	和_c
+子英	子英_n_1
+一起	一起_r_1
+去	去_v_3
+逛街	逛街_v_1
+，	，_c_1
+买	买_v_1
+衣服	衣服_n_1
+。	period-marker
+
+我	我_n
+今天	今天_n_1
+很	很_r
+忙	忙_j_1
+。	period-marker
+
+明天	明天_n_1
+上午	上午_n_1
+你	你_n
+有没々	有_v_2
+课	课_n_1
+？	question-marker
+
+明天	明天_n_1
+是	是_v
+星期几	星期几_n_q
+？	question-marker
+
+明天	明天_n_1
+是	是_v
+星期四	星期四_n_1
+。	period-marker
+
+我	我_n
+上午	上午_n_1
+、	、_c_1
+下午	下午_n_1
+都	都_r_1
+有	有_v_2
+课	课_n_1
+。	period-marker
+
+你	你_n
+星期日	星期日_n_1
+有	有_v_2
+时间	时间_n_1
+吗	吗_qp
+？	question-marker
+
+星期日	星期日_n_1
+是	是_v
+几	几_d_q
+号	号_cl
+？	question-marker
+
+他	他_n
+今年	今年_n_1
+多	多_r_1
+大	大_j_2
+？	question-marker
+
+他	他_n
+是	是_v
+北京	北京_n_1
+人	人_n_1
+。	period-marker
+
+他	他_n
+爸爸	爸爸_n_1
+、	、_c_1
+妈妈	妈妈_n_1
+都	都_r_1
+在	在_v_1
+北京	北京_n_1
+。	period-marker
+
+星期日	星期日_n_1
+下午	下午_n_1
+我们	我们_n
+有	有_v_2
+一	一_j
+个	个_cl
+聚会	聚会_n_1
+，	，_c_1
+祝贺	祝贺_v_1
+他	他_n
+的	的_assoc_n
+生日	生日_n_1
+。	period-marker
+
+力波	力波_n_1
+、	、_c_1
+大为	大为_n_1
+都	都_r_1
+去	去_v_1
+，	，_c_1
+你	你_n
+参加不々	参加_v_1
+？	question-marker
+
+我	我_n
+当然	当然_r_1
+参加	参加_v_1
+。	period-marker
+
+吃	吃_v_1
+蛋糕	蛋糕_n_1
+。	period-marker
+
+我	我_n
+买	买_v_1
+两	两_j
+瓶	瓶_cl
+红	红_n_1
+葡萄酒	葡萄酒_n_1
+。	period-marker
+
+今天	今天_n_1
+是	是_v
+星期几	星期几_n_q
+？	question-marker
+
+宋华	宋华_n_1
+，	comma-marker
+这	这_d
+是	是_v
+生日	生日_n_1
+蛋糕	蛋糕_n_1
+。	period-marker
+
+你们	你们_n
+来	来_v_1
+，	，_c_1
+我	我_n
+很	很_r
+高兴	高兴_j_1
+。	period-marker
+
+今天	今天_n_1
+我们	我们_n
+吃	吃_v_1
+北京	北京_n_1
+烤鸭	烤鸭_n_1
+。	period-marker
+
+我	我_n
+很	很_r
+喜欢	喜欢_v_2
+吃	吃_v_1
+烤鸭	烤鸭_n_1
+。	period-marker
+
+当然	当然_r_1
+喝	喝_v_1
+红	红_n_1
+葡萄酒	葡萄酒_n_1
+，	，_c_1
+我们	我们_n
+还	还_r_2
+吃	吃_v_1
+寿面	寿面_n_1
+。	period-marker
+
+吃	吃_v_1
+寿面	寿面_n_1
+？	question-marker
+
+我	我_n
+会	会_v_3
+做	做_v_1
+蛋糕	蛋糕_n_1
+。	period-marker
+
+太	太_r_1
+棒	棒_j_1
+了	了_crs
+！	bang-marker
+
+谢谢	谢谢_v_1
+你	你_n
+！	bang-marker
+
+不客气	不客气_v_1
+。	period-marker
+
+在	在_v_1
+我	我_n
+男朋友	男朋友_n_1
+的	的_assoc_n
+家	家_n_2
+，	，_c_1
+这	这_d
+是	是_v
+他	他_n
+的	的_assoc_n
+地址	地址_n_1
+。	period-marker
+
+你	你_n
+知道	知道_v_2
+怎么	怎么_r_1
+去	去_v_2
+吗	吗_qp
+？	question-marker
+
+没	没_v_2
+问题	问题_n_1
+！	bang-marker
+
+我	我_n
+有	有_v_2
+地图	地图_n_1
+。	period-marker
+
+星期六	星期六_n_1
+下午	下午_n_1
+五点	五点_n_1
+见	见_v_1
+！	bang-marker
+
+吃	吃_v_1
+了	了_pfv
+吗	吗_qp
+？	question-marker
+
+我	我_n
+的	的_assoc_n
+电话	电话_n_1
+是	是_v
+（一四二）二六八九七五三	generic_proper_ne
+。	period-marker
+
+去	去_v_2
+哪儿	哪儿_n_q
+？	question-marker
+
+去	去_v_3
+上课	上课_v_1
+。	period-marker
+
+去	去_v_3
+吃饭	吃饭_v_1
+。	period-marker
+
+吃饭	吃饭_v_1
+啊	啊_crs
+？	question-marker
+
+去	去_v_3
+上课	上课_v_1
+啊	啊_crs
+？	question-marker
+
+大为	大为_n_1
+，	comma-marker
+你	你_n
+在	在_p_2
+这儿	这儿_n
+买	买_v_1
+什么	什么_n_q
+？	question-marker
+
+我	我_n
+买	买_v_1
+音乐	音乐_n_1
+光盘	光盘_n_1
+。	period-marker
+
+你	你_n
+常常	常常_r_1
+来	来_v_2
+这儿	这儿_n
+吗	吗_qp
+？	question-marker
+
+我	我_n
+不	不_r
+常	常_r_1
+来	来_v_2
+这儿	这儿_n
+。	period-marker
+
+星期天	星期天_n_1
+我	我_n
+常常	常常_r_1
+跟	跟_p
+林娜	林娜_n_1
+去	去_v_2
+小	小_j_1
+商场	商场_n_1
+。	period-marker
+
+这	这_d
+个	个_cl
+商场	商场_n_1
+很	很_r
+大	大_j_2
+。	period-marker
+
+我们	我们_n
+中文	中文_n_1
+班	班_n_1
+有	有_v_2
+新加坡	新加坡_n_1
+人	人_n_1
+吗	吗_qp
+？	question-marker
+
+这	这_d
+张	张_cl
+很	很_r
+好	好_j_1
+，	，_c_1
+是	是_v
+《	ldangle-marker
+梁祝	梁祝_n_1
+》	rdangle-marker
+，	，_c_1
+很	很_r
+有名	有名_j_1
+。	period-marker
+
+好	好_ij
+，	comma-marker
+我	我_n
+买	买_v_1
+这	这_d
+张	张_cl
+。	period-marker
+
+这儿	这儿_n
+有没々	有_v_2
+书	书_n_1
+和	和_c
+报	报_n_1
+？	question-marker
+
+这儿	这儿_n
+没有	没有_v_1
+书	书_n_1
+，	，_c_1
+也	也_r_1
+没有	没有_v_1
+报	报_n_1
+。	period-marker
+
+本子	本子_n_1
+呢	呢_qp
+？	question-marker
+
+有	有_v_2
+，	，_c_1
+在	在_p_2
+那儿	那儿_p
+买	买_v_1
+。	period-marker
+
+跟	跟_p
+我	我_n
+来	来_v_1
+，	，_c_1
+我	我_n
+也	也_r_1
+买	买_v_1
+本子	本子_n_1
+。	period-marker
+
+先生	先生_n_1
+，	comma-marker
+你	你_n
+要	要_v_2
+什么	什么_n_q
+？	question-marker
+
+你好	你好_ij
+，	comma-marker
+师傅	师傅_n_1
+。	period-marker
+
+请问	请问_ij
+，	comma-marker
+这	这_d
+是	是_v
+什么	什么_n_q
+？	question-marker
+
+您	您_n
+不	不_r
+认识	认识_v_1
+吗	吗_qp
+？	question-marker
+
+这	这_d
+是	是_v
+香蕉	香蕉_n_1
+苹果	苹果_n_1
+。	period-marker
+
+阿	阿_ij
+，	comma-marker
+您	您_n
+是	是_v
+外国人	外国人_n_1
+。	period-marker
+
+您	您_n
+在	在_p_2
+哪儿	哪儿_n_q
+工作	工作_v_1
+？	question-marker
+
+我	我_n
+在	在_p_2
+语言	语言_n_1
+学院	学院_n_1
+学习	学习_v_1
+。	period-marker
+
+您	您_n
+学习	学习_v_1
+汉语	汉语_n_1
+，	comma-marker
+是不々	是不是_r_1
+？	question-marker
+
+你	你_n
+是	是_v
+什么	什么_d_q
+大学	大学_n_1
+的	的_assoc_n
+学生	学生_n_1
+？	question-marker
+
+您	您_n
+的	的_assoc_n
+苹果	苹果_n_1
+真	真_r_1
+贵	贵_j_1
+。	period-marker
+
+这	这_d
+是	是_v
+谁	谁_n_q
+的	的_assoc_n
+电脑	电脑_n_1
+？	question-marker
+
+我	我_n
+买	买_v_1
+三	三_j
+斤	斤_cl
+香蕉	香蕉_n_1
+和	和_c
+两	两_j
+斤	斤_cl
+香蕉	香蕉_n_1
+苹果	苹果_n_1
+。	period-marker
+
+再	再_r_1
+送	送_v_1
+您	您_n
+一	一_j
+个	个_cl
+苹果	苹果_n_1
+。	period-marker
+
+您	您_n
+还	还_r_2
+有	有_v_2
+什么	什么_n_q
+？	question-marker
+
+不	不_r
+要	要_v_2
+了	了_crs
+，	，_c_1
+谢谢	谢谢_v_1
+。	period-marker
+
+给	给_v_1
+你	你_n
+钱	钱_n_1
+。	period-marker
+
+您	您_n
+是	是_v
+语言	语言_n_1
+学院	学院_n_1
+的	的_assoc_n
+教授	教授_n_1
+，	，_c_1
+认识	认识_v_1
+您	您_n
+，	，_c_1
+我们	我们_n
+很	很_r
+高兴	高兴_j_1
+。	period-marker
+
+你	你_n
+的	的_assoc_n
+中文书	中文书_n_1
+在	在_v_1
+哪儿	哪儿_n_q
+？	question-marker
+
+在	在_v_1
+这儿	这儿_n
+！	bang-marker
+
+在	在_v_1
+那儿	那儿_p
+！	bang-marker
+
+他	他_n
+在	在_v_1
+哪儿	哪儿_n_q
+？	question-marker
+
+他	他_n
+在	在_v_1
+那儿	那儿_p
+！	bang-marker
+
+这	这_d
+是	是_v
+我	我_n
+的	的_assoc_n
+电脑	电脑_n_1
+。	period-marker
+
+他	他_n
+在	在_v_1
+餐厅	餐厅_n_1
+。	period-marker
+
+他	他_n
+在	在_v_1
+宿舍	宿舍_n_1
+。	period-marker
+
+在	在_v_1
+那儿	那儿_p
+。	period-marker
+
+在	在_v_1
+前边	前边_n
+！	bang-marker
+
+你	你_n
+住	住_v_1
+几	几_j
+号	号_cl
+宿舍	宿舍_n_1
+？	question-marker
+
+你	你_n
+的	的_assoc_n
+宿舍	宿舍_n_1
+有	有_v_2
+空调	空调_n_1
+吗	吗_qp
+？	question-marker
+
+你	你_n
+的	的_assoc_n
+宿舍	宿舍_n_1
+有	有_v_2
+浴室	浴室_n_1
+吗	吗_qp
+？	question-marker
+
+有	有_v_2
+！	bang-marker
+
+没有	没有_v_1
+！	bang-marker
+
+小姐	小姐_n_1
+，	comma-marker
+您	您_n
+去	去_v_2
+哪儿	哪儿_n_q
+？	question-marker
+
+我	我_n
+去	去_v_2
+语言	语言_n_1
+学院	学院_n_1
+。	period-marker
+
+您	您_n
+会	会_v_3
+说	说_v_2
+汉语	汉语_n_1
+啊	啊_crs
+！	bang-marker
+
+我	我_n
+会	会_v_3
+说	说_v_2
+一点儿	一点儿_n_1
+汉语	汉语_n_1
+。	period-marker
+
+八点	八点_n_1
+上课	上课_v_1
+。	period-marker
+
+师傅	师傅_n_1
+，	comma-marker
+我们	我们_n
+八点	八点_n_1
+能	能_v_aux
+到	到_v_1
+吗	吗_qp
+？	question-marker
+
+能	能_v_aux
+到	到_v_1
+。	period-marker
+
+您	您_n
+的	的_assoc_n
+汉语	汉语_n_1
+很	很_r
+好	好_j_1
+。	period-marker
+
+哪里	哪里_ij
+，	comma-marker
+我	我_n
+的	的_assoc_n
+汉语	汉语_n_1
+不	不_r
+太	太_r_1
+好	好_j_1
+。	period-marker
+
+您	您_n
+会不々	会_v_3
+说	说_v_2
+英语	英语_n_1
+？	question-marker
+
+我	我_n
+不	不_r
+会	会_v_3
+说	说_v_2
+英语	英语_n_1
+。	period-marker
+
+我	我_n
+常	常_r_1
+跟	跟_p
+我	我_n
+的	的_assoc_n
+室友	室友_n_1
+去	去_v_3
+旅行	旅行_v_1
+。	period-marker
+
+谁	谁_n_q
+教	教_v_4
+您	您_n
+英语	英语_n_1
+？	question-marker
+
+我	我_n
+孙女儿	孙女儿_n_1
+。	period-marker
+
+我	我_n
+也	也_r_1
+会	会_v_2
+一点儿	一点儿_n_1
+。	period-marker
+
+拜拜	拜拜_v_1
+！	bang-marker
+
+陈	陈_n_1
+老师	老师_n_1
+，	comma-marker
+马大为	马大为_n_1
+今天	今天_n_1
+不	不_r
+能	能_v_aux
+来	来_v_3
+上课	上课_v_1
+。	period-marker
+
+他	他_n
+为什么	为什么_r_q
+不	不_r
+能	能_v_aux
+来	来_v_3
+上课	上课_v_1
+？	question-marker
+
+昨天	昨天_n_1
+是	是_v
+星期日	星期日_n_1
+，	，_c_1
+他	他_n
+上午	上午_n_1
+去	去_v_4
+商场	商场_n_1
+买	买_v_1
+东西	东西_n_1
+，	，_c_1
+下午	下午_n_1
+去	去_v_4
+朋友	朋友_n_1
+家	家_n_2
+玩儿	玩儿_v_1
+。	period-marker
+
+他	他_n
+晚上	晚上_n_1
+十一点半	generic_time_noun_ne
+回	回_v_1
+学院	学院_n_1
+，	，_c_1
+十二	generic_num_ne
+点	点_n_1
+写	写_v_1
+汉字	汉字_n_1
+，	，_c_1
+两点钟	generic_time_noun_ne
+睡觉	睡觉_v_1
+。	period-marker
+
+现在	现在_r_1
+他	他_n
+还	还_r_2
+没有	没有_r_1
+起床	起床_v_1
+。	period-marker
+
+他	他_n
+应该	应该_r_1
+来	来_v_3
+上课	上课_v_1
+。	period-marker
+
+老师	老师_n_1
+，	comma-marker
+我	我_n
+能不々	能_v_aux
+问	问_v_2
+您	您_n
+一	一_j
+个	个_cl
+问题	问题_n_1
+？	question-marker
+
+我们	我们_n
+为什么	为什么_r_q
+八点	八点_n_1
+上课	上课_v_1
+？	question-marker
+
+星期六	星期六_n_1
+。	period-marker
+
+我	我_n
+身体	身体_n_1
+没	没_v_2
+问题	问题_n_1
+，	，_c_1
+不用	不用_r_1
+去	去_v_3
+看病	看病_v_1
+。	period-marker
+
+你	你_n
+不	不_r
+去	去_v_3
+看病	看病_v_1
+，	，_c_1
+明天	明天_n_1
+你	你_n
+还	还_r_2
+不	不_r
+能	能_v_aux
+上课	上课_v_1
+。	period-marker
+
+我	我_n
+去	去_v_2
+医院	医院_n_1
+。	period-marker
+
+当然	当然_r_1
+现在	现在_r_1
+去	去_v_1
+，	，_c_1
+我	我_n
+跟	跟_p
+你	你_n
+一起	一起_r_1
+去	去_v_1
+。	period-marker
+
+今天	今天_n_1
+天气	天气_n_1
+很	很_r
+冷	冷_j_1
+，	，_c_1
+你	你_n
+要	要_v_aux
+多	多_r_2
+穿	穿_v_1
+点儿	点儿_n_1
+衣服	衣服_n_1
+。	period-marker
+
+你	你_n
+在	在_p_2
+这儿	这儿_n
+休息一下	休息_v_1
+，	，_c_1
+我	我_n
+去	去_v_3
+给	给_p
+你	你_n
+挂号	挂号_v_1
+。	period-marker
+
+8号	generic_proper_ne
+，	comma-marker
+8	generic_num_ne
+号	号_cl
+是	是_v
+谁	谁_n_q
+？	question-marker
+
+我	我_n
+是	是_v
+8	generic_num_ne
+号	号_cl
+。	period-marker
+
+你	你_n
+看病	看病_v_1
+还是	还是_c
+他	他_n
+看病	看病_v_1
+？	question-marker
+
+他	他_n
+看病	看病_v_1
+。	period-marker
+
+请	请_v_2
+坐	坐_v_3
+吧	吧_crs
+。	period-marker
+
+你	你_n
+叫	叫_v_3
+马大为	马大为_n_1
+，	comma-marker
+是不々	是不是_r_1
+？	question-marker
+
+是	是_ij
+，	comma-marker
+我	我_n
+叫	叫_v_3
+马大为	马大为_n_1
+。	period-marker
+
+你	你_n
+今年	今年_n_1
+多	多_r_1
+大	大_j_2
+？	question-marker
+
+不用	不用_r_1
+。	period-marker
+
+你	你_n
+要	要_v_aux
+多	多_r_2
+喝水	喝水_v_1
+，	，_c_1
+还	还_r_2
+要	要_v_aux
+吃	吃_v_1
+点儿	点儿_n_1
+药	药_n_1
+。	period-marker
+
+我们	我们_n
+常常	常常_r_1
+一起	一起_r_1
+散步	散步_v_1
+，	，_c_1
+一起	一起_r_1
+看	看_v_1
+电影	电影_n_1
+、	、_c_2
+喝	喝_v_1
+咖啡	咖啡_n_1
+，	，_c_1
+一起	一起_r_1
+听	听_v_1
+音乐	音乐_n_1
+。	period-marker
+
+祝贺	祝贺_v_1
+你	你_n
+！	bang-marker
+
+这	这_d
+是	是_v
+好	好_j_2
+事	事_n_1
+啊	啊_crs
+。	period-marker
+
+当然	当然_r_1
+想	想_v_2
+租	租_v_1
+。	period-marker
+
+他	他_n
+会	会_v_aux
+来	来_v_1
+。	period-marker
+
+你们	你们_n
+怎么	怎么_r_1
+在	在_v_1
+那儿	那儿_p
+？	question-marker
+
+大为	大为_n_1
+要	要_v_aux
+租	租_v_1
+房子	房子_n_1
+。	period-marker
+
+你们	你们_n
+看没々	看_v_1
+房子	房子_n_1
+？	question-marker
+
+我们	我们_n
+看	看_v_1
+了	了_pfv
+一	一_j
+间	间_cl
+房子	房子_n_1
+。	period-marker
+
+你们	你们_n
+找	找_v_2
+了	了_pfv
+经理	经理_n_1
+没有	没有_r_q
+？	question-marker
+
+我们	我们_n
+没有	没有_r_1
+找	找_v_1
+经理	经理_n_1
+。	period-marker
+
+晚上	晚上_n_1
+我们	我们_n
+请	请_v_1
+你	你_n
+和	和_c
+你	你_n
+朋友	朋友_n_1
+吃饭	吃饭_v_1
+。	period-marker
+
+好	好_ij
+，	comma-marker
+你们	你们_n
+在	在_p_2
+公司	公司_n_1
+等	等_v_1
+我	我_n
+，	，_c_1
+再见	再见_v_1
+。	period-marker
+
+李	李_n_1
+先生	先生_n_1
+，	comma-marker
+很	很_r
+高兴	高兴_v_2
+认识	认识_v_1
+你	你_n
+！	bang-marker
+
+王	王_n_2
+小姐	小姐_n_1
+，	comma-marker
+我	我_n
+也	也_r_1
+很	很_r
+高兴	高兴_v_2
+认识	认识_v_1
+你	你_n
+！	bang-marker
+
+我	我_n
+常	常_r_1
+跟	跟_p
+我	我_n
+的	的_assoc_n
+朋友	朋友_n_1
+去	去_v_3
+看	看_v_1
+电影	电影_n_1
+。	period-marker
+
+对不起	对不起_v_1
+。	period-marker
+
+力波	力波_n_1
+，	comma-marker
+上午	上午_n_1
+十点半	generic_time_noun_ne
+，	comma-marker
+你	你_n
+妈妈	妈妈_n_1
+给	给_p
+你	你_n
+打	打_v_1
+了	了_pfv
+一	一_j
+个	个_cl
+电话	电话_n_1
+。	period-marker
+
+我	我_n
+让	让_v_1
+她	她_n
+中午	中午_n_1
+再	再_r_1
+给	给_p
+你	你_n
+打	打_v_1
+。	period-marker
+
+我	我_n
+刚才	刚才_n_1
+去	去_v_4
+邮局	邮局_n_1
+给	给_p
+我	我_n
+妈妈	妈妈_n_1
+寄	寄_v_1
+了	了_pfv
+点儿	点儿_n_1
+东西	东西_n_1
+。	period-marker
+
+大为	大为_n_1
+，	comma-marker
+我	我_n
+今天	今天_n_1
+打扫	打扫_v_1
+了	了_pfv
+宿舍	宿舍_n_1
+，	，_c_1
+你	你_n
+的	的_assoc_n
+脏	脏_j_2
+衣服	衣服_n_1
+太	太_r_1
+多	多_j_1
+了	了_crs
+。	period-marker
+
+啊	啊_ij
+，	comma-marker
+丁力波	丁力波_n_1
+在	在_v_1
+，	，_c_1
+请	请_v_2
+等一下	等_v_1
+。	period-marker
+
+力波	力波_n_1
+，	，_c_2
+你	你_n
+妈妈	妈妈_n_1
+的	的_assoc_n
+电话	电话_n_1
+。	period-marker
+
+妈妈	妈妈_n_1
+，	comma-marker
+你好	你好_ij
+！	bang-marker
+
+我	我_n
+身体	身体_n_1
+很	很_r
+好	好_j_1
+，	，_c_1
+你	你_n
+爸爸	爸爸_n_1
+也	也_r_1
+很	很_r
+好	好_j_1
+。	period-marker
+
+我们	我们_n
+工作	工作_n_1
+都	都_r_1
+很	很_r
+忙	忙_j_1
+。	period-marker
+
+她	她_n
+身体	身体_n_1
+很	很_r
+好	好_j_1
+。	period-marker
+
+我们	我们_n
+也	也_r_1
+问	问_v_1
+她	她_n
+好	好_j_1
+。	period-marker
+
+哥哥	哥哥_n_1
+现在	现在_r_1
+在	在_p_2
+一	一_j
+个	个_cl
+中学	中学_n_1
+打工	打工_v_1
+，	，_c_1
+弟弟	弟弟_n_1
+在	在_p_2
+南方	南方_p
+旅行	旅行_v_1
+。	period-marker
+
+我们	我们_n
+都	都_r_1
+很	很_r
+想	想_v_1
+你们	你们_n
+。	period-marker
+
+你	你_n
+现在	现在_r_1
+怎么样	怎么样_j_1
+？	question-marker
+
+住	住_v_1
+几	几_d_q
+个	个_cl
+人	人_n_1
+？	question-marker
+
+我	我_n
+还	还_r_2
+有	有_v_2
+很多	很多_n_1
+中国	中国_n_2
+朋友	朋友_n_1
+，	，_c_1
+他们	他们_n
+常常	常常_r_1
+帮助	帮助_v_2
+我	我_n
+念	念_v_1
+生词	生词_n_1
+、	、_c_2
+复习	复习_v_2
+课文	课文_n_1
+、	、_c_2
+练习	练习_v_1
+口语	口语_n_1
+。	period-marker
+
+我	我_n
+还	还_r_2
+常常	常常_r_1
+问	问_v_2
+他们	他们_n
+语法	语法_n_1
+问题	问题_n_1
+，	，_c_1
+他们	他们_n
+都	都_r_1
+是	是_v
+我	我_n
+的	的_assoc_n
+好	好_j_2
+朋友	朋友_n_1
+。	period-marker
+
+这	这_d
+很	很_r
+好	好_j_1
+。	period-marker
+
+我	我_n
+要	要_v_aux
+去	去_v_4
+上海	上海_n_1
+旅行	旅行_v_1
+。	period-marker
+
+上海	上海_n_1
+很	很_r
+漂亮	漂亮_j_1
+。	period-marker
+
+我	我_n
+是	是_v
+正生	正生_n_1
+，	，_c_1
+好久	好久_r_1
+没	没_r
+跟	跟_p
+你	你_n
+联络	联络_v_1
+。	period-marker
+
+你	你_n
+最近	最近_n_1
+都	都_r_1
+在	在_r_1
+忙	忙_v_2
+什么	什么_n_q
+呢	呢_crs
+？	question-marker
+
+我	我_n
+这	这_d
+个	个_cl
+学期	学期_n_1
+很	很_r
+忙	忙_j_1
+，	，_c_1
+我	我_n
+上	上_v_2
+五	五_j
+门	门_cl
+课	课_n_1
+，	，_c_1
+每	每_d
+天	天_n_1
+都	都_r_1
+有	有_v_2
+很多	很多_n_1
+功课	功课_n_1
+。	period-marker
+
+你	你_n
+是	是_v
+学生	学生_n_1
+吗	吗_qp
+？	question-marker
+
+我	我_n
+是	是_v
+学生	学生_n_1
+。	period-marker
+
+他	他_n
+也	也_r_1
+是	是_v
+学生	学生_n_1
+吗	吗_qp
+？	question-marker
+
+不	不_ij
+，	comma-marker
+他	他_n
+不	不_r
+是	是_v
+学生	学生_n_1
+。	period-marker
+
+我	我_n
+每	每_d
+天	天_cl
+七点半	generic_time_noun_ne
+就	就_r_1
+起床	起床_v_1
+，	，_c_1
+晚上	晚上_n_1
+十二点半	generic_time_noun_ne
+以后	以后_n_1
+才	才_r_1
+睡觉	睡觉_v_1
+。	period-marker
+
+我	我_n
+也	也_r_1
+是	是_v
+学生	学生_n_1
+。	period-marker
+
+他	他_n
+呢	呢_qp
+？	question-marker
+
+他	他_n
+是	是_v
+学生	学生_n_1
+吗	吗_qp
+？	question-marker
+
+他	他_n
+不	不_r
+是	是_v
+学生	学生_n_1
+。	period-marker
+
+他	他_n
+是	是_v
+老师	老师_n_1
+。	period-marker
+
+我	我_n
+不	不_r
+是	是_v
+学生	学生_n_1
+，	，_c_1
+我	我_n
+是	是_v
+老师	老师_n_1
+。	period-marker
+
+他	他_n
+也	也_r_1
+不	不_r
+是	是_v
+学生	学生_n_1
+，	，_c_1
+他	他_n
+是	是_v
+教授	教授_n_1
+。	period-marker
+
+你	你_n
+是	是_v
+教授	教授_n_1
+吗	吗_qp
+？	question-marker
+
+请问	请问_ij
+您	您_n
+贵姓	贵姓_v_1
+？	question-marker
+
+我	我_n
+姓	姓_v_1
+李	李_n_1
+。	period-marker
+
+你	你_n
+叫	叫_v_3
+什么	什么_d_q
+名字	名字_n_1
+？	question-marker
+
+我们	我们_n
+买	买_v_1
+了	了_pfv
+衣服	衣服_n_1
+以后	以后_sc
+，	comma-marker
+就	就_r_1
+去	去_v_3
+看	看_v_1
+电影	电影_n_1
+了	了_crs
+。	period-marker
+
+我	我_n
+叫	叫_v_3
+吴小美	吴小美_n_1
+。	period-marker
+
+她	她_n
+是	是_v
+谁	谁_n_q
+？	question-marker
+
+她	她_n
+是	是_v
+于英	于英_n_1
+。	period-marker
+
+有空	有空_v_2
+常	常_r_1
+给	给_p
+我	我_n
+写	写_v_1
+电子	电子_n_1
+邮件	邮件_n_1
+吧	吧_crs
+！	bang-marker
+
+我	我_n
+姓	姓_v_1
+李	李_n_1
+，	，_c_1
+我	我_n
+的	的_assoc_n
+英文	英文_n_1
+名字	名字_n_1
+是	是_v
+John	John_n_1
+Lee	Lee_n_1
+，	，_c_1
+中文	中文_n_1
+名字	名字_n_1
+是	是_v
+李文中	李文中_n_1
+。	period-marker
+
+请问	请问_ij
+你	你_n
+叫	叫_v_3
+什么	什么_d_q
+名字	名字_n_1
+？	question-marker
+
+我	我_n
+叫	叫_v_3
+Mary	Mary_n_1
+。	period-marker
+
+我	我_n
+的	的_assoc_n
+英文	英文_n_1
+名字	名字_n_1
+是	是_v
+Mary	Mary_n_1
+Wood	Wood_n_1
+，	，_c_1
+中文	中文_n_1
+名字	名字_n_1
+是	是_v
+吴小美	吴小美_n_1
+。	period-marker
+
+她	她_n
+呢	呢_qp
+？	question-marker
+
+好	好_ij
+，	comma-marker
+就	就_r_1
+这样	这样_j_1
+，	，_c_1
+再见	再见_v_1
+！	bang-marker
+
+她	她_n
+是	是_v
+我	我_n
+的	的_assoc_n
+同学	同学_n_1
+于英	于英_n_1
+。	period-marker
+
+大家	大家_n_1
+好	好_j_1
+！	bang-marker
+
+我	我_n
+来	来_v_3
+自我	自我_r_1
+介绍一下	介绍_v_1
+。	period-marker
+
+我	我_n
+姓	姓_v_1
+吴	吴_n_1
+，	，_c_1
+我	我_n
+叫	叫_v_3
+吴小美	吴小美_n_1
+，	，_c_1
+我	我_n
+的	的_assoc_n
+英文	英文_n_1
+名字	名字_n_1
+是	是_v
+Mary	Mary_n_1
+Wood	Wood_n_1
+。	period-marker
+
+她	她_n
+是	是_v
+我	我_n
+的	的_assoc_n
+同学	同学_n_1
+，	，_c_1
+她	她_n
+叫	叫_v_3
+于英	于英_n_1
+。	period-marker
+
+我	我_n
+是	是_v
+法国人	法国人_n_1
+。	period-marker
+
+你	你_n
+会	会_v_3
+说	说_v_2
+中文	中文_n_1
+吗	吗_qp
+？	question-marker
+
+我	我_n
+会	会_v_3
+说	说_v_2
+中文	中文_n_1
+。	period-marker
+
+老师	老师_n_1
+呢	呢_qp
+？	question-marker
+
+他	他_n
+是	是_v
+中国人	中国人_n_1
+。	period-marker
+
+他	他_n
+说	说_v_2
+中文	中文_n_1
+。	period-marker
+
+我	我_n
+会	会_v_3
+说	说_v_2
+一点儿	一点儿_n_1
+中文	中文_n_1
+，	，_c_1
+我	我_n
+也	也_r_1
+会	会_v_3
+说	说_v_2
+法文	法文_n_1
+和	和_c
+英文	英文_n_1
+。	period-marker
+
+我	我_n
+是	是_v
+美国人	美国人_n_1
+，	，_c_1
+我	我_n
+会	会_v_3
+说	说_v_2
+英文	英文_n_1
+和	和_c
+法文	法文_n_1
+，	，_c_1
+我	我_n
+也	也_r_1
+会	会_v_3
+说	说_v_2
+一点儿	一点儿_n_1
+中文	中文_n_1
+。	period-marker
+
+他	他_n
+是	是_v
+我	我_n
+的	的_assoc_n
+中文	中文_n_1
+老师	老师_n_1
+，	，_c_1
+我	我_n
+的	的_assoc_n
+老师	老师_n_1
+很	很_r
+好	好_j_1
+。	period-marker
+
+他	他_n
+是	是_v
+中国人	中国人_n_1
+，	，_c_1
+他	他_n
+说	说_v_2
+中文	中文_n_1
+，	，_c_1
+他	他_n
+也	也_r_1
+说	说_v_2
+一点儿	一点儿_n_1
+英文	英文_n_1
+。	period-marker
+
+对了	对了_ij
+，	comma-marker
+你	你_n
+呢	呢_qp
+？	question-marker
+
+你	你_n
+会	会_v_3
+说	说_v_2
+什么	什么_d_q
+语言	语言_n_1
+？	question-marker
+
+你	你_n
+学	学_v_1
+什么	什么_n_q
+？	question-marker
+
+不	不_r
+太	太_r_1
+难	难_j_1
+。	period-marker
+
+文中	文中_n_1
+，	comma-marker
+那	那_d
+是	是_v
+你	你_n
+的	的_assoc_n
+书	书_n_1
+吗	吗_qp
+？	question-marker
+
+那	那_d
+是	是_v
+我	我_n
+的	的_assoc_n
+书	书_n_1
+。	period-marker
+
+那	那_d
+是	是_v
+一	一_j
+本	本_cl
+英文	英文_n_1
+书	书_n_1
+？	question-marker
+
+这	这_d
+是	是_v
+一	一_j
+本	本_cl
+中文	中文_n_1
+书	书_n_1
+。	period-marker
+
+对了	对了_ij
+，	comma-marker
+你	你_n
+学	学_v_1
+什么	什么_n_q
+？	question-marker
+
+我	我_n
+学	学_v_1
+工程	工程_n_1
+。	period-marker
+
+可是	可是_r_1
+功课	功课_n_1
+很多	很多_j_1
+。	period-marker
+
+我	我_n
+叫	叫_v_3
+美英	美英_n_1
+，	，_c_1
+是	是_v
+大学生	大学生_n_1
+。	period-marker
+
+我	我_n
+是	是_v
+二年级	二年级_n_1
+的	的_assoc_n
+学生	学生_n_1
+，	，_c_1
+我	我_n
+学	学_v_1
+中国	中国_n_2
+文学	文学_n_1
+。	period-marker
+
+这	这_d
+是	是_v
+我	我_n
+的	的_assoc_n
+书	书_n_1
+，	，_c_1
+这	这_d
+是	是_v
+一	一_j
+本	本_cl
+中国	中国_n_2
+文学	文学_n_1
+书	书_n_1
+。	period-marker
+
+中国	中国_n_2
+文学	文学_n_1
+不	不_r
+太	太_r_1
+难	难_j_1
+，	，_c_1
+可是	可是_r_1
+功课	功课_n_1
+不少	不少_j_1
+。	period-marker
+
+你们	你们_n
+呢	呢_qp
+？	question-marker
+
+你们	你们_n
+学	学_v_1
+什么	什么_n_q
+？	question-marker
+
+是	是_v
+工程	工程_n_1
+吗	吗_qp
+？	question-marker
+
+那	那_d
+是	是_v
+你们	你们_n
+的	的_assoc_n
+工程	工程_n_1
+书	书_n_1
+吗	吗_qp
+？	question-marker
+
+我们	我们_n
+班	班_n_1
+有	有_v_2
+几	几_d_q
+个	个_cl
+新加坡	新加坡_n_1
+人	人_n_1
+？	question-marker
+
+这	这_d
+是	是_v
+我	我_n
+室友	室友_n_1
+，	comma-marker
+王红	王红_n_1
+。	period-marker
+
+这	这_d
+是	是_v
+我	我_n
+朋友	朋友_n_1
+，	comma-marker
+文中	文中_n_1
+。	period-marker
+
+你	你_n
+有	有_v_2
+室友	室友_n_1
+吗	吗_qp
+？	question-marker
+
+有	有_v_2
+，	，_c_1
+我	我_n
+有	有_v_2
+室友	室友_n_1
+。	period-marker
+
+你	你_n
+有	有_v_2
+几	几_j
+个	个_cl
+室友	室友_n_1
+。	period-marker
+
+我	我_n
+有	有_v_2
+两	两_j
+个	个_cl
+室友	室友_n_1
+。	period-marker
+
+文中	文中_n_1
+，	comma-marker
+来	来_v_1
+！	bang-marker
+
+他们	他们_n
+都	都_r_1
+是	是_v
+谁	谁_n_q
+？	question-marker
+
+他们	他们_n
+是	是_v
+丁明	丁明_n_1
+和	和_c
+方小文	方小文_n_1
+。	period-marker
+
+我	我_n
+常	常_r_1
+跟	跟_p
+他们	他们_n
+说	说_v_2
+中文	中文_n_1
+。	period-marker
+
+我	我_n
+来	来_v_3
+介绍一下	介绍_v_1
+我	我_n
+的	的_assoc_n
+室友	室友_n_1
+。	period-marker
+
+我们	我们_n
+有	有_v_2
+很多	很多_n_1
+中国	中国_n_2
+朋友	朋友_n_1
+，	，_c_1
+他们	他们_n
+都	都_r_1
+是	是_v
+留学生	留学生_n_1
+，	，_c_1
+我们	我们_n
+常	常_r_1
+跟	跟_p
+他们	他们_n
+说	说_v_2
+中文	中文_n_1
+，	，_c_1
+他们	他们_n
+都	都_r_1
+很	很_r
+好	好_j_1
+，	，_c_1
+常常	常常_r_1
+帮助	帮助_v_2
+我们	我们_n
+练习	练习_v_1
+中文	中文_n_1
+。	period-marker
+
+你们	你们_n
+有	有_v_2
+室友	室友_n_1
+吗	吗_qp
+？	question-marker
+
+有	有_v_2
+几	几_d_q
+个	个_cl
+？	question-marker
+
+今天	今天_n_1
+是	是_v
+星期六	星期六_n_1
+。	period-marker
+
+你	你_n
+的	的_assoc_n
+生日	生日_n_1
+是	是_v
+几	几_d_q
+月	月_cl
+几	几_j
+号	号_cl
+？	question-marker
+
+你	你_n
+家	家_n_1
+在	在_v_1
+哪儿	哪儿_n_q
+？	question-marker
+
+我	我_n
+家	家_n_1
+在	在_v_1
+纽约	纽约_n_1
+。	period-marker
+
+你	你_n
+是	shide_adp
+从	从_p_2
+纽约	纽约_n_1
+来	来_v_1
+的	的_comp
+吗	吗_qp
+？	question-marker
+
+你	你_n
+家	家_n_1
+有	有_v_2
+几	几_d_q
+个	个_cl
+人	人_n_1
+？	question-marker
+
+你	你_n
+爸爸	爸爸_n_1
+是	是_v
+做	做_v_1
+什么	什么_n_q
+的	的_comp
+？	question-marker
+
+我	我_n
+爸爸	爸爸_n_1
+是	是_v
+工程师	工程师_n_1
+。	period-marker
+
+很	很_r
+好喝	好喝_j_1
+！	bang-marker
+
+我	我_n
+叫	叫_v_3
+吴小美	吴小美_n_1
+，	，_c_1
+我	我_n
+是	shide_adp
+从	从_p_2
+纽约	纽约_n_1
+来	来_v_1
+的	的_comp
+，	，_c_1
+我	我_n
+学	学_v_1
+工程	工程_n_1
+。	period-marker
+
+我	我_n
+来	来_v_3
+介绍一下	介绍_v_1
+我	我_n
+的	的_assoc_n
+家	家_n_1
+。	period-marker
+
+爸爸	爸爸_n_1
+是	是_v
+英国人	英国人_n_1
+，	，_c_1
+妈妈	妈妈_n_1
+是	是_v
+美国人	美国人_n_1
+。	period-marker
+
+他们	他们_n
+都	都_r_1
+在	在_p_2
+纽约	纽约_n_1
+工作	工作_v_1
+。	period-marker
+
+爸爸	爸爸_n_1
+是	是_v
+工程师	工程师_n_1
+，	，_c_1
+妈妈	妈妈_n_1
+是	是_v
+老师	老师_n_1
+，	，_c_1
+我	我_n
+和	和_c
+姐姐	姐姐_n_1
+都	都_r_1
+是	是_v
+学生	学生_n_1
+。	period-marker
+
+姐姐	姐姐_n_1
+有	有_v_2
+男朋友	男朋友_n_1
+，	，_c_1
+我	我_n
+没有	没有_v_1
+。	period-marker
+
+我们	我们_n
+有	有_v_2
+两	两_j
+辆	辆_cl
+车	车_n_1
+，	，_c_2
+一	一_j
+只	只_cl
+狗	狗_n_1
+。	period-marker
+
+我	我_n
+的	的_assoc_n
+家	家_n_1
+很	很_r
+好	好_j_1
+。	period-marker
+
+我	我_n
+很	很_r
+爱	爱_v_1
+我	我_n
+的	的_assoc_n
+家	家_n_1
+。	period-marker
+
+学文	学文_n_1
+，	comma-marker
+来	来_v_1
+，	，_c_1
+我	我_n
+来	来_v_3
+介绍一下	介绍_v_2
+，	，_c_2
+这	这_d
+是	是_v
+我	我_n
+爸爸	爸爸_n_1
+、	、_c_1
+妈妈	妈妈_n_1
+和	和_c
+妹妹	妹妹_n_1
+。	period-marker
+
+爸爸	爸爸_n_1
+、	、_c_1
+妈妈	妈妈_n_1
+、	、_c_1
+妹妹	妹妹_n_1
+，	comma-marker
+这	这_d
+是	是_v
+我	我_n
+室友	室友_n_1
+学文	学文_n_1
+。	period-marker
+
+请问	请问_ij
+，	comma-marker
+你	你_n
+是	shide_adp
+从	从_p_2
+哪儿	哪儿_n_q
+来	来_v_1
+的	的_comp
+？	question-marker
+
+我	我_n
+是	shide_adp
+从	从_p_2
+中国	中国_n_1
+来	来_v_1
+的	的_comp
+，	，_c_1
+我	我_n
+家	家_n_1
+在	在_v_1
+北京	北京_n_1
+。	period-marker
+
+没有	没有_v_1
+，	，_c_1
+我	我_n
+正在	正在_r_1
+看	看_v_1
+电视	电视_n_1
+呢	呢_crs
+。	period-marker
+
+你	你_n
+家	家_n_1
+都	都_r_1
+有	有_v_2
+哪些	哪些_d_q
+人	人_n_1
+？	question-marker
+
+我	我_n
+家	家_n_1
+有	有_v_2
+爸爸	爸爸_n_1
+，	，_c_2
+妈妈	妈妈_n_1
+和	和_c
+我	我_n
+。	period-marker
+
+你	你_n
+家	家_n_1
+有	有_v_2
+狗	狗_n_1
+吗	吗_qp
+？	question-marker
+
+我们	我们_n
+家	家_n_1
+没有	没有_v_1
+狗	狗_n_1
+，	comma-marker
+可是	可是_sc
+我们	我们_n
+有	有_v_2
+猫	猫_n_1
+。	period-marker
+
+你们	你们_n
+有	有_v_2
+几	几_d_q
+只	只_cl
+猫	猫_n_1
+？	question-marker
+
+我	我_n
+妈妈	妈妈_n_1
+很	很_r
+爱	爱_v_1
+猫	猫_n_1
+，	，_c_1
+我们	我们_n
+家	家_n_1
+有	有_v_2
+三	三_j
+只	只_cl
+猫	猫_n_1
+。	period-marker
+
+你	你_n
+爸爸	爸爸_n_1
+、	、_c_1
+妈妈	妈妈_n_1
+工作	工作_v_1
+吗	吗_qp
+？	question-marker
+
+他们	他们_n
+都	都_r_1
+做	做_v_1
+什么	什么_n_q
+？	question-marker
+
+我	我_n
+爸爸	爸爸_n_1
+工作	工作_v_1
+，	，_c_1
+妈妈	妈妈_n_1
+不	不_r
+工作	工作_v_1
+。	period-marker
+
+我	我_n
+爸爸	爸爸_n_1
+是	是_v
+老师	老师_n_1
+，	，_c_1
+妈妈	妈妈_n_1
+是	是_v
+家庭	家庭_n_1
+主妇	主妇_n_1
+。	period-marker
+
+对了	对了_ij
+，	comma-marker
+你	你_n
+有	有_v_2
+女朋友	女朋友_n_1
+吗	吗_qp
+？	question-marker
+
+没有	没有_v_1
+，	，_c_1
+我	我_n
+没有	没有_v_1
+女朋友	女朋友_n_1
+。	period-marker
+
+你	你_n
+呢	呢_qp
+，	comma-marker
+你	你_n
+有	有_v_2
+男朋友	男朋友_n_1
+吗	吗_qp
+？	question-marker
+
+有	有_v_2
+，	，_c_1
+我	我_n
+有	有_v_2
+男朋友	男朋友_n_1
+。	period-marker
+
+我	我_n
+妹妹	妹妹_n_1
+的	的_assoc_n
+男朋友	男朋友_n_1
+叫	叫_v_3
+明明	明明_n_1
+。	period-marker
+
+他	他_n
+很	很_r
+爱	爱_v_1
+车	车_n_1
+，	，_c_1
+他	他_n
+有	有_v_2
+四	四_j
+辆	辆_cl
+车	车_n_1
+。	period-marker
+
+你	你_n
+男朋友	男朋友_n_1
+好像	好像_r_2
+很	很_r
+有钱	有钱_j_1
+！	bang-marker
+
+你	你_n
+住在	住在_v_1
+哪儿	哪儿_n_q
+？	question-marker
+
+我	我_n
+住	住_v_1
+宿舍	宿舍_n_1
+。	period-marker
+
+三一四	generic_num_ne
+号	号_n_1
+。	period-marker
+
+房间	房间_n_1
+很	很_r
+小	小_j_2
+。	period-marker
+
+你	你_n
+的	的_assoc_n
+电话	电话_n_1
+号码	号码_n_1
+是	是_v
+多少	多少_n_q
+？	question-marker
+
+（一四二）二六八九三七五	generic_proper_ne
+。	period-marker
+
+你	你_n
+住	住_v_1
+哪儿	哪儿_n_q
+？	question-marker
+
+友朋	友朋_n_1
+，	comma-marker
+你	你_n
+住在	住在_v_1
+哪儿	哪儿_n_q
+？	question-marker
+
+有没々	有_v_2
+电话	电话_n_1
+？	question-marker
+
+有	有_v_2
+电话	电话_n_1
+。	period-marker
+
+你	你_n
+有	有_v_2
+手机	手机_n_1
+吗	吗_qp
+？	question-marker
+
+有	有_v_2
+。	period-marker
+
+号码	号码_n_1
+是	是_v
+（一四二）五一二六八三七	generic_proper_ne
+。	period-marker
+
+你	你_n
+也	也_r_1
+住	住_v_1
+宿舍	宿舍_n_1
+吗	吗_qp
+？	question-marker
+
+不	不_ij
+，	comma-marker
+我	我_n
+不	不_r
+住	住_v_1
+宿舍	宿舍_n_1
+，	，_c_1
+我	我_n
+住	住_v_1
+校	校_n_1
+外	外_p
+。	period-marker
+
+这	这_d
+是	是_v
+我	我_n
+的	的_assoc_n
+宿舍	宿舍_n_1
+。	period-marker
+
+我	我_n
+的	的_assoc_n
+宿舍	宿舍_n_1
+是	是_v
+四一三	generic_num_ne
+号	号_n_1
+，	，_c_1
+房间	房间_n_1
+很	很_r
+小	小_j_2
+，	，_c_1
+有	有_v_2
+一	一_j
+个	个_cl
+电话	电话_n_1
+，	，_c_1
+我	我_n
+的	的_assoc_n
+电话	电话_n_1
+号码	号码_n_1
+是	是_v
+（一四二）九三二六五八七	generic_proper_ne
+。	period-marker
+
+我	我_n
+有	有_v_2
+三	三_j
+个	个_cl
+室友	室友_n_1
+，	，_c_1
+他们	他们_n
+都	都_r_1
+有	有_v_2
+手机	手机_n_1
+。	period-marker
+
+我们	我们_n
+都	都_r_1
+很	很_r
+喜欢	喜欢_v_1
+我们	我们_n
+的	的_assoc_n
+宿舍	宿舍_n_1
+。	period-marker
+
+你	你_n
+也	也_r_1
+住在	住在_v_1
+宿舍	宿舍_n_1
+吗	吗_qp
+？	question-marker
+
+你	你_n
+有没々	有_v_2
+手机	手机_n_1
+？	question-marker
+
+号码	号码_n_1
+是	是_v
+多少	多少_n_q
+？	question-marker
+
+他	他_n
+是	是_v
+我们	我们_n
+的	的_assoc_n
+新	新_j_2
+同学	同学_n_1
+吗	吗_qp
+？	question-marker
+
+他	他_n
+住	住_v_1
+宿舍	宿舍_n_1
+还是	还是_c
+校	校_n_1
+外	外_p
+？	question-marker
+
+三	三_j
+位	位_n_1
+。	period-marker
+
+你	你_n
+去	去_v_2
+哪儿	哪儿_n_q
+？	question-marker
+
+我	我_n
+去	去_v_3
+上课	上课_v_1
+。	period-marker
+
+你	你_n
+有	有_v_2
+事儿	事儿_n_1
+吗	吗_qp
+？	question-marker
+
+我	我_n
+没有	没有_v_1
+事儿	事儿_n_1
+。	period-marker
+
+行	行_v_1
+。	period-marker
+
+爱文	爱文_n_1
+，	comma-marker
+你	你_n
+去	去_v_2
+哪儿	哪儿_n_q
+？	question-marker
+
+是	是_v
+你	你_n
+，	，_c_1
+友朋	友朋_n_1
+，	comma-marker
+我	我_n
+去	去_v_3
+上课	上课_v_1
+。	period-marker
+
+我	我_n
+也	也_r_1
+去	去_v_3
+上课	上课_v_1
+。	period-marker
+
+下课	下课_v_1
+以后	以后_sc
+你	你_n
+有	有_v_2
+事儿	事儿_n_1
+吗	吗_qp
+？	question-marker
+
+我	我_n
+想	想_v_2
+回	回_v_1
+宿舍	宿舍_n_1
+。	period-marker
+
+我	我_n
+认识	认识_v_1
+他	他_n
+。	period-marker
+
+我们	我们_n
+一起	一起_r_1
+上	上_v_2
+英国	英国_n_1
+文学	文学_n_1
+课	课_n_1
+。	period-marker
+
+下课	下课_v_1
+以后	以后_sc
+我	我_n
+跟	跟_p
+他	他_n
+一起	一起_r_1
+去	去_v_3
+吃饭	吃饭_v_1
+。	period-marker
+
+你	你_n
+去不々	去_v_1
+？	question-marker
+
+去	去_v_4
+哪儿	哪儿_n_q
+吃饭	吃饭_v_1
+？	question-marker
+
+你	你_n
+想不々	想_v_2
+吃	吃_v_1
+韩国	韩国_n_1
+菜	菜_n_1
+？	question-marker
+
+可是	可是_r_1
+我	我_n
+也	也_r_1
+想	想_v_2
+吃	吃_v_1
+日本	日本_n_1
+菜	菜_n_1
+。	period-marker
+
+下课	下课_v_1
+以后	以后_sc
+再见	再见_v_1
+。	period-marker
+
+请问	请问_ij
+，	comma-marker
+你们	你们_n
+认识不々	认识_v_1
+他	他_n
+？	question-marker
+
+如果	如果_sc
+你们	你们_n
+不	不_r
+认识	认识_v_1
+他	他_n
+，	comma-marker
+也	也_r_1
+没关系	没关系_v_1
+，	，_c_1
+我	我_n
+来	来_v_3
+给	给_v_1
+你们	你们_n
+介绍一下	介绍_v_1
+，	，_c_1
+他	他_n
+是	是_v
+我	我_n
+的	的_assoc_n
+室友	室友_n_1
+。	period-marker
+
+他	他_n
+叫	叫_v_3
+学友	学友_n_1
+，	，_c_1
+他	他_n
+是	是_v
+韩国	韩国_n_1
+人	人_n_1
+，	，_c_1
+他	他_n
+学	学_v_1
+英国	英国_n_1
+文学	文学_n_1
+。	period-marker
+
+他	他_n
+会	会_v_3
+说	说_v_2
+韩语	韩语_n_1
+，	，_c_2
+英文	英文_n_1
+和	和_c
+一点儿	一点儿_n_1
+中文	中文_n_1
+。	period-marker
+
+我们	我们_n
+常常	常常_r_1
+一起	一起_r_1
+上课	上课_v_1
+，	，_c_1
+下课	下课_v_1
+。	period-marker
+
+下课	下课_v_1
+以后	以后_sc
+我们	我们_n
+常	常_r_1
+一起	一起_r_1
+回	回_v_1
+宿舍	宿舍_n_1
+。	period-marker
+
+我们	我们_n
+是	是_v
+好	好_j_2
+室友	室友_n_1
+，	，_c_2
+好	好_j_2
+同学	同学_n_1
+，	，_c_1
+也	也_r_1
+是	是_v
+好	好_j_2
+朋友	朋友_n_1
+。	period-marker
+
+我们	我们_n
+也	也_r_1
+常常	常常_r_1
+一起	一起_r_1
+去	去_v_3
+吃饭	吃饭_v_1
+。	period-marker
+
+下课	下课_v_1
+以后	以后_sc
+你们	你们_n
+有	有_v_2
+事儿	事儿_n_1
+吗	吗_qp
+？	question-marker
+
+你们	你们_n
+想不々	想_v_2
+吃	吃_v_1
+日本	日本_n_1
+菜	菜_n_1
+？	question-marker
+
+好	好_ij
+，	comma-marker
+再见	再见_v_1
+！	bang-marker
+
+林娜	林娜_n_1
+，	comma-marker
+你	你_n
+好	好_j_1
+吗	吗_qp
+？	question-marker
+
+陆雨平	陆雨平_n_1
+，	comma-marker
+你	你_n
+好	好_j_1
+吗	吗_qp
+？	question-marker
+
+你	你_n
+爸爸	爸爸_n_1
+、	、_c_1
+妈妈	妈妈_n_1
+好	好_j_1
+吗	吗_qp
+？	question-marker
+
+你	你_n
+忙	忙_j_1
+吗	吗_qp
+？	question-marker
+
+我	我_n
+不	不_r
+忙	忙_j_1
+。	period-marker
+
+喂	喂_ij
+！	bang-marker
+
+谢谢	谢谢_ij
+！	bang-marker
+
+对	对_j_1
+，	，_c_1
+是	是_v
+我	我_n
+。	period-marker
+
+你好	你好_ij
+。	period-marker
+
+你好	你好_ij
+！	bang-marker
+
+您好	您好_ij
+！	bang-marker
+
+下午	下午_n_1
+下课	下课_v_1
+以后	以后_sc
+，	comma-marker
+我	我_n
+喜欢	喜欢_v_2
+去	去_v_3
+打球	打球_v_1
+。	period-marker
+
+每	每_d
+天	天_n_1
+都	都_r_1
+有	有_v_2
+很多	很多_n_1
+功课	功课_n_1
+。	period-marker
+
+是	是_ij
+。	period-marker
+
+我	我_n
+就	就_r_1
+是	是_v
+，	，_c_1
+请问	请问_ij
+你	你_n
+是	是_v
+哪	哪_d_q
+位	位_cl
+？	question-marker
+
+谢谢	谢谢_ij
+。	period-marker
+
+怎么样	怎么样_j_1
+？	question-marker
+
+忙	忙_j_1
+死	死_j_1
+了	了_crs
+！	bang-marker
+
+不用谢	不用谢_ij
+。	period-marker
+
+对不起	对不起_v_1
+，	，_c_1
+我	我_n
+来	来_v_1
+晚	晚_j_1
+了	了_crs
+。	period-marker
+
+林娜	林娜_n_1
+，	comma-marker
+昨天	昨天_n_1
+的	的_assoc_n
+京剧	京剧_n_1
+怎么样	怎么样_j_1
+？	question-marker
+
+今天	今天_n_1
+天气	天气_n_1
+很	很_r
+好	好_j_1
+，	，_c_1
+我们	我们_n
+去	去_v_3
+游泳	游泳_v_1
+，	，_c_1
+好	好_j_1
+吗	吗_qp
+？	question-marker
+
+现在	现在_n_1
+去	去_v_1
+，	，_c_1
+可以	可以_j_1
+吗	吗_qp
+？	question-marker
+
+可以	可以_j_1
+。	period-marker
+
+我们	我们_n
+去	去_v_3
+打球	打球_v_1
+，	，_c_1
+好	好_j_1
+吗	吗_qp
+？	question-marker
+
+好	好_j_1
+，	，_c_1
+请	请_v_2
+跟	跟_p
+我	我_n
+来	来_v_1
+。	period-marker
+
+我	我_n
+喜欢	喜欢_v_2
+喝	喝_v_1
+茶	茶_n_1
+。	period-marker
+
+请	请_v_2
+等一下	等_v_1
+。	period-marker
+
+对了	对了_ij
+，	comma-marker
+你们	你们_n
+喜欢	喜欢_v_2
+吃饭	吃饭_v_1
+还是	还是_c
+吃	吃_v_1
+面	面_n_1
+？	question-marker
+
+我	我_n
+都	都_r_1
+喜欢	喜欢_v_1
+。	period-marker
+
+力波	力波_n_1
+，	comma-marker
+明天	明天_n_1
+开学	开学_j_1
+，	，_c_1
+我	我_n
+很	很_r
+高兴	高兴_j_1
+。	period-marker
+
+我	我_n
+想	想_v_2
+吃	吃_v_1
+饺子	饺子_n_1
+。	period-marker
+
+你们	你们_n
+都	都_r_1
+好	好_j_1
+吗	吗_qp
+？	question-marker
+
+张	张_n_1
+教授	教授_n_1
+，	comma-marker
+您	您_n
+忙不々	忙_j_1
+？	question-marker
+
+太	太_r_1
+好	好_j_1
+了	了_crs
+，	，_c_1
+我	我_n
+得	得_r_1
+跟	跟_p
+他们	他们_n
+多	多_r_2
+练习	练习_v_1
+一点儿	一点儿_n_1
+中文	中文_n_1
+。	period-marker
+
+忙不々	忙_j_1
+？	question-marker
+
+蛋糕	蛋糕_n_1
+真	真_r_1
+漂亮	漂亮_j_1
+。	period-marker
+
+我们	我们_n
+喝	喝_v_1
+什么	什么_d_q
+酒	酒_n_1
+？	question-marker
+
+不好意思	不好意思_j_1
+。	period-marker
+
+这	这_d
+两	两_cl
+天	天_n_1
+我	我_n
+太	太_r_1
+忙	忙_j_1
+了	了_crs
+，	，_c_1
+我	我_n
+想	想_v_2
+星期六	星期六_n_1
+一起	一起_r_1
+洗	洗_v_1
+。	period-marker
+
+我	我_n
+得	得_r_1
+去	去_v_4
+机场	机场_n_1
+接	接_v_1
+他们	他们_n
+，	，_c_1
+可是	可是_sc
+我	我_n
+没有	没有_v_1
+车	车_n_1
+，	comma-marker
+我	我_n
+就	就_r_1
+跟	跟_p
+我	我_n
+朋友	朋友_n_1
+本乐	本乐_n_1
+借	借_v_1
+车	车_n_1
+。	period-marker
+
+本乐	本乐_n_1
+说	说_v_1
+他	他_n
+也	也_r_1
+想	想_v_2
+多	多_r_2
+练习	练习_v_1
+一点儿	一点儿_n_1
+中文	中文_n_1
+。	period-marker
+
+我	我_n
+说	说_v_1
+当然	当然_r_1
+可以	可以_j_1
+。	period-marker
+
+这	这_d
+是	是_v
+我	我_n
+爸爸	爸爸_n_1
+、	、_c_1
+我	我_n
+妈妈	妈妈_n_1
+，	，_c_1
+这	这_d
+是	是_v
+我	我_n
+哥哥	哥哥_n_1
+和	和_c
+我	我_n
+。	period-marker
+
+真	真_r_1
+可爱	可爱_j_1
+。	period-marker
+
+语言	语言_n_1
+学院	学院_n_1
+大不々	大_j_2
+？	question-marker
+
+我	我_n
+想	想_v_2
+买	买_v_1
+一	一_j
+件	件_cl
+衬衫	衬衫_n_1
+。	period-marker
+
+你	你_n
+帮	帮_v_2
+我	我_n
+看々	看_v_1
+，	，_c_1
+我	我_n
+穿	穿_v_1
+裙子	裙子_n_1
+好看	好看_j_1
+还是	还是_c
+穿	穿_v_1
+裤子	裤子_n_1
+好看	好看_j_1
+？	question-marker
+
+我	我_n
+觉得	觉得_v_1
+你	你_n
+穿	穿_v_1
+裙子	裙子_n_1
+好看	好看_j_1
+。	period-marker
+
+两	两_j
+位	位_cl
+小姐	小姐_n_1
+想	想_v_2
+买	买_v_1
+什么	什么_n_q
+？	question-marker
+
+我	我_n
+想	想_v_2
+买	买_v_1
+一	一_j
+条	条_cl
+裙子	裙子_n_1
+或者	或者_c
+裤子	裤子_n_1
+。	period-marker
+
+这	这_d
+件	件_cl
+黄	黄_n_1
+衬衫	衬衫_n_1
+怎么样	怎么样_j_1
+？	question-marker
+
+爱红	爱红_n_1
+，	comma-marker
+来	来_v_1
+，	，_c_1
+你	你_n
+帮	帮_v_2
+我	我_n
+看々	看_v_1
+，	，_c_1
+我	我_n
+穿	穿_v_1
+裙子	裙子_n_1
+好看	好看_j_1
+还是	还是_c
+穿	穿_v_1
+裤子	裤子_n_1
+好看	好看_j_1
+？	question-marker
+
+我	我_n
+觉得	觉得_v_1
+你	你_n
+穿	穿_v_1
+这	这_d
+条	条_cl
+裙子	裙子_n_1
+好看	好看_j_1
+。	period-marker
+
+多少	多少_n_1
+钱	钱_n_1
+？	question-marker
+
+我	我_n
+想	想_v_2
+买	买_v_1
+一	一_j
+件	件_cl
+衬衫	衬衫_n_1
+，	，_c_1
+子英	子英_n_1
+想	想_v_2
+买	买_v_1
+一	一_j
+条	条_cl
+裙子	裙子_n_1
+或者	或者_c
+裤子	裤子_n_1
+。	period-marker
+
+林娜	林娜_n_1
+，	comma-marker
+你	你_n
+怎么样	怎么样_j_1
+？	question-marker
+
+你	你_n
+的	的_assoc_n
+啤酒	啤酒_n_1
+怎么样	怎么样_j_1
+？	question-marker
+
+我	我_n
+买	买_v_1
+一	一_j
+个	个_cl
+大	大_j_1
+蛋糕	蛋糕_n_1
+，	，_c_1
+好	好_j_1
+吗	吗_qp
+？	question-marker
+
+祝	祝_v_1
+你	你_n
+生日快乐	生日快乐_j_1
+。	period-marker
+
+好啊	好啊_ij
+。	period-marker
+
+祝	祝_v_1
+你	你_n
+生日快乐	生日快乐_j_1
+！	bang-marker
+
+真	真_r_1
+有意思	有意思_j_1
+。	period-marker
+
+谢谢	谢谢_v_1
+你	你_n
+，	，_c_1
+我	我_n
+一定	一定_r_1
+去	去_v_1
+。	period-marker
+
+我们	我们_n
+想	想_v_2
+请	请_v_1
+我们	我们_n
+的	的_assoc_n
+同学	同学_n_1
+和	和_c
+朋友	朋友_n_1
+都	都_r_1
+参加	参加_v_1
+。	period-marker
+
+我	我_n
+送	送_v_1
+你	你_n
+一	一_j
+个	个_cl
+生日	生日_n_1
+蛋糕	蛋糕_n_1
+，	comma-marker
+怎么样	怎么样_j_1
+？	question-marker
+
+你	你_n
+的	的_assoc_n
+舞会	舞会_n_1
+在	在_p_2
+哪儿	哪儿_n_q
+开	开_v_1
+？	question-marker
+
+好的	好的_ij
+。	period-marker
+
+还	还_r_2
+没	没_v_2
+。	period-marker
+
+对	对_j_1
+，	，_c_1
+吃饭	吃饭_v_1
+。	period-marker
+
+对	对_j_1
+，	，_c_1
+去	去_v_3
+上课	上课_v_1
+。	period-marker
+
+不谢	不谢_ij
+。	period-marker
+
+他	他_n
+问	问_v_4
+我	我_n
+可以不々	可以_v_aux
+跟	跟_p
+他们	他们_n
+一起	一起_r_1
+去	去_v_3
+玩儿	玩儿_v_1
+。	period-marker
+
+你	你_n
+喜欢	喜欢_v_1
+什么	什么_d_q
+音乐	音乐_n_1
+？	question-marker
+
+我	我_n
+喜欢	喜欢_v_1
+中国	中国_n_2
+音乐	音乐_n_1
+。	period-marker
+
+这	这_d
+张	张_cl
+光盘	光盘_n_1
+怎么样	怎么样_j_1
+？	question-marker
+
+您	您_n
+看	看_v_1
+，	，_c_1
+我	我_n
+的	的_assoc_n
+苹果	苹果_n_1
+大	大_j_2
+。	period-marker
+
+你	你_n
+的	的_assoc_n
+专业	专业_n_1
+怎么样	怎么样_j_1
+？	question-marker
+
+新加坡	新加坡_n_1
+怎么样	怎么样_j_1
+？	question-marker
+
+你们	你们_n
+几	几_j
+点	点_n_1
+上课	上课_v_1
+？	question-marker
+
+我	我_n
+也	也_r_1
+喜欢	喜欢_v_1
+外语	外语_n_1
+，	，_c_1
+常常	常常_r_1
+在	在_p_2
+家	家_n_2
+学	学_v_1
+点儿	点儿_n_1
+英语	英语_n_1
+。	period-marker
+
+2	generic_num_ne
+号	号_cl
+餐厅	餐厅_n_1
+的	的_assoc_n
+奶茶	奶茶_n_1
+很	很_r
+好喝	好喝_j_1
+，	，_c_1
+我们	我们_n
+去	去_v_4
+那儿	那儿_p
+喝	喝_v_1
+茶	茶_n_1
+，	，_c_1
+好	好_j_1
+吗	吗_qp
+？	question-marker
+
+现在	现在_r_1
+去	去_v_1
+，	，_c_1
+好	好_j_1
+吗	吗_qp
+？	question-marker
+
+我	我_n
+的	的_assoc_n
+岁数	岁数_n_1
+太	太_r_1
+大	大_j_2
+了	了_crs
+，	，_c_1
+学	学_v_1
+英语	英语_n_1
+不	不_r
+容易	容易_j_1
+。	period-marker
+
+语言	语言_n_1
+学院	学院_n_1
+到	到_v_1
+了	了_crs
+。	period-marker
+
+谢谢	谢谢_ij
+，	comma-marker
+给	给_v_1
+您	您_n
+钱	钱_n_1
+。	period-marker
+
+您	您_n
+会	会_v_3
+说	说_v_2
+英语	英语_n_1
+！	bang-marker
+
+他	他_n
+在	在_v_1
+学校	学校_n_1
+。	period-marker
+
+我	我_n
+头疼	头疼_v_1
+。	period-marker
+
+你	你_n
+嗓子	嗓子_n_1
+怎么样	怎么样_j_1
+？	question-marker
+
+我	我_n
+嗓子	嗓子_n_1
+也	也_r_1
+疼	疼_j_1
+。	period-marker
+
+我	我_n
+想	想_v_3
+，	，_c_1
+你	你_n
+应该	应该_r_1
+去	去_v_4
+医院	医院_n_1
+看病	看病_v_1
+。	period-marker
+
+我	我_n
+要	要_v_aux
+睡觉	睡觉_v_1
+，	，_c_1
+不	不_r
+想	想_v_2
+去	去_v_2
+医院	医院_n_1
+。	period-marker
+
+你	你_n
+的	的_assoc_n
+大学	大学_n_1
+生活	生活_n_1
+怎么样	怎么样_j_1
+？	question-marker
+
+好	好_j_1
+。	period-marker
+
+我	我_n
+头疼	头疼_v_1
+，	，_c_1
+全身	全身_n_1
+都	都_r_1
+不	不_r
+舒服	舒服_j_1
+。	period-marker
+
+他	他_n
+要不々	要_v_aux
+住院	住院_v_1
+？	question-marker
+
+你	你_n
+愿意	愿意_v_2
+吃	吃_v_1
+中药	中药_n_1
+还是	还是_c
+愿意	愿意_v_2
+吃	吃_v_1
+西药	西药_n_1
+？	question-marker
+
+我	我_n
+愿意	愿意_v_1
+吃	吃_v_1
+中药	中药_n_1
+。	period-marker
+
+我	我_n
+有空	有空_v_1
+。	period-marker
+
+你	你_n
+的	的_assoc_n
+电脑	电脑_n_1
+怎么样	怎么样_j_1
+？	question-marker
+
+我	我_n
+去	去_v_2
+了	了_pfv
+医院	医院_n_1
+，	，_c_1
+吃	吃_v_1
+了	了_pfv
+很多	很多_n_1
+中药	中药_n_1
+。	period-marker
+
+你	你_n
+还	还_r_2
+应该	应该_r_1
+多	多_r_2
+休息	休息_v_1
+。	period-marker
+
+宋华	宋华_n_1
+，	comma-marker
+我	我_n
+想	想_v_2
+告诉	告诉_v_2
+你	你_n
+一	一_j
+件	件_cl
+事儿	事儿_n_1
+。	period-marker
+
+我	我_n
+认识	认识_v_1
+了	了_pfv
+一	一_j
+个	个_cl
+漂亮	漂亮_j_1
+的	的_comp
+姑娘	姑娘_n_1
+，	，_c_1
+她	她_n
+愿意	愿意_v_1
+做	做_v_1
+我	我_n
+女朋友	女朋友_n_1
+。	period-marker
+
+我	我_n
+想	想_v_2
+找	找_v_1
+一	一_j
+间	间_cl
+房子	房子_n_1
+。	period-marker
+
+你	你_n
+想	想_v_2
+租	租_v_1
+房子	房子_n_1
+？	question-marker
+
+太	太_r_1
+好	好_j_1
+了	了_crs
+。	period-marker
+
+那	那_d
+间	间_cl
+房子	房子_n_1
+房租	房租_n_1
+太	太_r_1
+贵	贵_j_1
+，	，_c_1
+你	你_n
+说	说_v_2
+，	，_c_1
+我	我_n
+应该	应该_r_1
+怎么办	怎么办_j_1
+？	question-marker
+
+你	你_n
+想	想_v_2
+租	租_v_1
+还是	还是_r_1
+不	不_r
+想	想_v_2
+租	租_v_1
+？	question-marker
+
+他	他_n
+很	很_r
+忙	忙_j_1
+，	，_c_1
+会	会_v_aux
+来	来_v_1
+吗	吗_qp
+？	question-marker
+
+力波	力波_n_1
+，	comma-marker
+你	你_n
+好	好_j_1
+吗	吗_qp
+？	question-marker
+
+你	你_n
+和	和_c
+爸爸	爸爸_n_1
+身体	身体_n_1
+怎么样	怎么样_j_1
+？	question-marker
+
+你	你_n
+外婆	外婆_n_1
+身体	身体_n_1
+好	好_j_1
+吗	吗_qp
+？	question-marker
+
+他们	他们_n
+也	也_r_1
+都	都_r_1
+很	很_r
+好	好_j_1
+。	period-marker
+
+我们	我们_n
+也	也_r_1
+想	想_v_1
+你们	你们_n
+。	period-marker
+
+你	你_n
+住	住_v_1
+的	的_comp
+宿舍	宿舍_n_1
+大不々	大_j_2
+？	question-marker
+
+我	我_n
+跟	跟_p
+一	一_j
+个	个_cl
+美国	美国_n_1
+人	人_n_1
+住	住_v_1
+，	，_c_1
+他	他_n
+的	的_assoc_n
+中文	中文_n_1
+名字	名字_n_1
+叫	叫_v_3
+马大为	马大为_n_1
+。	period-marker
+
+对	对_j_1
+，	，_c_1
+他	他_n
+也	也_r_1
+学习	学习_v_1
+汉语	汉语_n_1
+。	period-marker
+
+我	我_n
+也	也_r_1
+给	给_p
+你们	你们_n
+寄	寄_v_1
+了	了_pfv
+圣诞	圣诞_n_1
+礼物	礼物_n_1
+。	period-marker
+
+圣诞节	圣诞节_n_1
+我	我_n
+和	和_c
+你	你_n
+爸爸	爸爸_n_1
+想	想_v_2
+去	去_v_4
+欧洲	欧洲_n_1
+旅行	旅行_v_1
+。	period-marker
+
+祝	祝_v_1
+你	你_n
+旅行	旅行_v_1
+快乐	快乐_j_1
+！	bang-marker
+
+我	我_n
+也	也_r_1
+祝	祝_v_1
+你	你_n
+和	和_c
+爸爸	爸爸_n_1
+圣诞	圣诞_n_1
+快乐	快乐_j_1
+！	bang-marker
+
+小美	小美_n_1
+，	comma-marker
+你	你_n
+好	好_j_1
+吗	吗_qp
+？	question-marker
+
+你	你_n
+是	是_v
+美国人	美国人_n_1
+吗	吗_qp
+？	question-marker
+
+那	那_d
+是	是_v
+一	一_j
+本	本_cl
+英文	英文_n_1
+书	书_n_1
+。	period-marker
+
+工程	工程_n_1
+难	难_j_1
+吗	吗_qp
+？	question-marker
+
+我们	我们_n
+的	的_assoc_n
+功课	功课_n_1
+也	也_r_1
+不少	不少_j_1
+。	period-marker
+
+你们好	你们好_ij
+！	bang-marker
+
+功课	功课_n_1
+多	多_j_1
+吗	吗_qp
+？	question-marker
+
+美美	美美_n_1
+是	是_v
+英国人	英国人_n_1
+，	，_c_1
+文英	文英_n_1
+是	是_v
+法国人	法国人_n_1
+，	，_c_1
+我	我_n
+是	是_v
+美国人	美国人_n_1
+。	period-marker
+
+是	是_ij
+，	comma-marker
+我	我_n
+是	shide_adp
+从	从_p_2
+纽约	纽约_n_1
+来	来_v_1
+的	的_comp
+。	period-marker
+
+想	想_v_2
+。	period-marker
+
+我们	我们_n
+今天	今天_n_1
+吃	吃_v_1
+韩国	韩国_n_1
+菜	菜_n_1
+，	，_c_1
+下次	下次_r_1
+吃	吃_v_1
+日本	日本_n_1
+菜	菜_n_1
+，	comma-marker
+怎么样	怎么样_j_1
+？	question-marker
+
+今天	今天_n_1
+我们	我们_n
+想	想_v_2
+去	去_v_3
+吃	吃_v_1
+日本	日本_n_1
+菜	菜_n_1
+，	，_c_1
+下次	下次_r_1
+吃	吃_v_1
+中国	中国_n_2
+菜	菜_n_1
+。	period-marker
+
+跟	跟_p
+我们	我们_n
+一起	一起_r_1
+去	去_v_3
+吃	吃_v_1
+日本	日本_n_1
+菜	菜_n_1
+，	，_c_1
+怎么样	怎么样_j_1
+？	question-marker
+
+你	你_n
+的	的_assoc_n
+房间	房间_n_1
+大	大_j_2
+吗	吗_qp
+？	question-marker
+
+宿舍	宿舍_n_1
+大	大_j_2
+吗	吗_qp
+？	question-marker
+
+好吧	好吧_ij
+。	period-marker
+
+我们	我们_n
+吃	吃_v_1
+韩国	韩国_n_1
+菜	菜_n_1
+，	comma-marker
+怎么样	怎么样_j_1
+？	question-marker
+
+你	你_n
+认识不々	认识_v_1
+我	我_n
+的	的_assoc_n
+朋友	朋友_n_1
+小文	小文_n_1
+？	question-marker
+
