@@ -6179,13 +6179,6 @@
     SYNSEM.LKEYS.KEYREL.PRED "_咖啡店_n_1_rel",
     TRAITS native_token_list ].
 
-; Sentence-initial interjection: oh
-哦_r_1 := adv_-_ij-prehd_le &
-  [ STEM < "哦" >,
-    SYNSEM.LOCAL.CAT.HEAD.CHAR [ FCHAR "哦", LENGTH one ],
-    SYNSEM.LKEYS.KEYREL.PRED "_哦_a_1_rel",
-    TRAITS native_token_list ].
-
 ; Common noun: business community/world
 商界_n_1 := n_-_le &
   [ STEM < "商界" >,
@@ -14521,13 +14514,6 @@
   [ STEM < "害死" >,
     SYNSEM.LOCAL.CAT.HEAD.CHAR [ FCHAR "害", LENGTH two ],
     SYNSEM [ LKEYS.KEYREL.PRED "_害死_v_1_rel" ],
-    TRAITS native_token_list ].
-
-; 密码 = password, common noun
-密码_n_1 := n_-_le &
-  [ STEM < "密码" >,
-    SYNSEM.LOCAL.CAT.HEAD.CHAR [ FCHAR "密", LENGTH two ],
-    SYNSEM.LKEYS.KEYREL.PRED "_密码_n_1_rel",
     TRAITS native_token_list ].
 
 ; 富人 = rich people, human noun
@@ -38841,13 +38827,6 @@
     SYNSEM.LKEYS.KEYREL.PRED "_一厢情愿_a_1_rel",
     TRAITS native_token_list ].
 
-; Classifier/measure word meaning "a pile of"; used with 树叶
-堆_cl := c_-_le &
-  [ STEM < "堆" >,
-    SYNSEM.LOCAL.CAT.HEAD.CHAR [ FCHAR "堆", LENGTH one ],
-    SYNSEM.LKEYS.KEYREL.PRED "_堆_x_rel",
-    TRAITS native_token_list ].
-
 ; General common noun meaning "a small part"
 一小部分_n_1 := n_-_le &
   [ STEM < "一小部分" >,
@@ -44091,13 +44070,6 @@
     SYNSEM.LKEYS.KEYREL.PRED "_碎_a_1_rel",
     TRAITS native_token_list ].
 
-; Classifier/measure word for pounds (unit of weight)
-磅_cl := c_-_le &
-  [ STEM < "磅" >,
-    SYNSEM.LOCAL.CAT.HEAD.CHAR [ FCHAR "磅", LENGTH one ],
-    SYNSEM.LKEYS.KEYREL.PRED "_磅_x_rel",
-    TRAITS native_token_list ].
-
 ; Intransitive verb meaning "to kowtow/bow down"
 磕头_v_1 := v_-_le &
   [ STEM < "磕头" >,
@@ -48361,13 +48333,6 @@
     SYNSEM.LKEYS.KEYREL.CARG "解放军",
     TRAITS native_token_list ].
 
-; 订 - to order/subscribe, transitive verb taking NP object (第二季)
-订_v_1 := v_np_le &
-  [ STEM < "订" >,
-    SYNSEM.LOCAL.CAT.HEAD.CHAR [ FCHAR "订", LENGTH one ],
-    SYNSEM [ LKEYS.KEYREL.PRED "_订_v_1_rel" ],
-    TRAITS native_token_list ].
-
 ; 认知 - cognition, general common noun used attributively here
 认知_n_1 := n_-_le &
   [ STEM < "认知" >,
@@ -48989,13 +48954,6 @@
   [ STEM < "面对面" >,
     SYNSEM.LOCAL.CAT.HEAD.CHAR [ FCHAR "面", LENGTH more-than-two ],
     SYNSEM.LKEYS.KEYREL.PRED "_面对面_a_1_rel",
-    TRAITS native_token_list ].
-
-; 页 - "page", classifier/measure word (页边画)
-页_cl := c_-_le &
-  [ STEM < "页" >,
-    SYNSEM.LOCAL.CAT.HEAD.CHAR [ FCHAR "页", LENGTH one ],
-    SYNSEM.LKEYS.KEYREL.PRED "_页_x_rel",
     TRAITS native_token_list ].
 
 ; 顶上 - "on top of", locative noun with optional complement (蹲在顶上)
