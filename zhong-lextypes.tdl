@@ -3195,3 +3195,5 @@ bullet := symbol &
 						     VAL [ SUBJ <>, COMPS <> ] ] ] >,
 			   POSTHEAD - ] ] ] ].
 
+appositive-dash := comma-or-colon.
+

@@ -432,3 +432,14 @@ bullet-15 := bullet &
     SYNSEM.LKEYS.KEYREL.CARG "％",
     TRAITS native_token_list ].
 
+emdash-marker := appositive-dash &
+  [ STEM < "——" >,
+    SYNSEM.LOCAL.CAT.HEAD.CHAR [ FCHAR "——", LENGTH one ],
+    SYNSEM.LKEYS.KEYREL.CARG "——",
+    TRAITS native_token_list ].
+
+emdash-marker-single := appositive-dash &
+  [ STEM < "—" >,
+    SYNSEM.LOCAL.CAT.HEAD.CHAR [ FCHAR "—", LENGTH one ],
+    SYNSEM.LKEYS.KEYREL.CARG "—",
+    TRAITS native_token_list ].
