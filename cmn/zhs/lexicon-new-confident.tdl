@@ -49179,3 +49179,17 @@
     SYNSEM.LOCAL.CAT.HEAD.CHAR [ FCHAR "龙", LENGTH two ],
     SYNSEM.LKEYS.KEYREL.PRED "_龙凤_n_1_rel",
     TRAITS native_token_list ].
+
+; Xiaohongshu - Chinese social media platform (proper noun)
+小红书_n_1 := n_-_pn_le &
+  [ STEM < "小红书" >,
+    SYNSEM.LOCAL.CAT.HEAD.CHAR [ FCHAR "小", LENGTH more-than-two ],
+    SYNSEM.LKEYS.KEYREL.CARG "小红书",
+    TRAITS native_token_list ].
+
+; Colosseum - Roman amphitheatre (location proper noun)
+罗马斗兽场_n_1 := n_-_l_pn_le &
+  [ STEM < "罗马斗兽场" >,
+    SYNSEM.LOCAL.CAT.HEAD.CHAR [ FCHAR "罗", LENGTH more-than-two ],
+    SYNSEM.LKEYS.KEYREL.CARG "罗马斗兽场",
+    TRAITS native_token_list ].
