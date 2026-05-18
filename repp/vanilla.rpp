@@ -11,61 +11,36 @@
 
 
 ;===============================================================================
-; :[ \t　"'()<>\[\]{}\*\+-/#$%&=\^_`|]
-;
-; [REMOVED ABOVE] then it adds spaces padding.
-; FCB believes that somewhere in the lookup for things in the lexicon 
-; needs a word boundary in each side of every word, and so if the 
-; punctuation does not have a space before and after it wasn't being
-; processed. So we need the line that states  !^(.+)$    \1 
-;===============================================================================
-
-;===============================================================================
-; The goal of this patten is to split each sentence by normal spaces, tabs and
-; full width spaces. And substitute each token between there by itself but with
-; a space before and after it. This is necessary for a variety of preprocessing
-; steps that are unknown to the grammarian.
-;===============================================================================
 ; NOTE: if by any chance a token doesn't get a space afterwards, then it will
 ;       be ignored completely. This is why there must be a space before and
 ;       after ' \1 '.
 ;       Tabs are substituted by a space and, finally, more than one space will
 ;       be substituted by a single space. 
 ;===============================================================================
-; Not sure what  :[ \t　]   does.
-;
-; Put a space at the beginning of the sentence: 
-; !^(.+)$								 \1 
-;
-; Change all tabs to single spaces:
-; !\t								 
-;
-; Change any double (or larger) spaces into a single space:  
-; !  +								 
-;===============================================================================
 :[ \t　]
 !^(.+)$								 \1 
-!\t								 
+!\t							 
 !  +								 
 
 
 
 ;===============================================================================
-; SEGMENTATION FIXES
+; QUOTE SPLITTING
 ;===============================================================================
-; Zhong expects sentences to be properly segmented, but there are certain cases
-; where off-the-shelf tokenizers/segmenters don't produce Zhong's intended word
-; boundaries. These next few lines try to fix this.
+; Chinese curly quotes sometimes get joined to adjacent tokens by tokenizers.
+; Split them off so they are standalone tokens.
 ;===============================================================================
-; NOTE: words already come with a space before and after (see above), so only
-; must be careful and not add extra spaces at this stage).
-; Many classifier constructions often have problems. Also, separable verbs and 
-; prepositional verbs are also often incorrectly tokenized (as a single token) 
-; whenever aspect particles are not intervening. Locative nouns/prep are also
-; often left attached to normal nouns.
-; These are the kind of things that are being split here.
+! “([^ ]+) 							 “ \1 
+! ([^ ]+)” 							 \1 ” 
+! “([^ ]+) 							 “ \1 
+! ‘([^ ]+) 							 ‘ \1 
+! ([^ ]+)’ 							 \1 ’ 
 ;===============================================================================
 
+
+;===============================================================================
+; SEGMENTATION FIXES
+;===============================================================================
 
 ;===============================================================================
 ; DETERMINER & NUMBERS & CLASSIFIERS 
@@ -79,14 +54,10 @@
 ! (那|这|一|两|每|哪)种 						 \1 种 
 ! (那|这|一|两|每|哪)些 						 \1 些 
 
-
-! (一)点儿 							 \1 点儿 
 ! (一)点儿 							 \1 点儿 
 
 ! (几)岁 							 \1 岁 
 ! ([一二三四五六七八九十百千万]+)岁 							 \1 岁 
-
-
 
 ! (每)天 							 \1 天 
 ! (每)次 							 \1 次 
@@ -97,15 +68,6 @@
 ! (封)信 							 \1 信 
 ! (分)钟 							 \1 钟 
 ! (刻)钟 							 \1 钟 
-
-
-;===============================================================================
-; NOTES: There is still a bit problem concerning measure words (especially 
-;        temporal words like 年 月 周 天 etc.);
-;===============================================================================
-
-
-
 
 
 ;===============================================================================
@@ -134,37 +96,17 @@
 ! (班)上 							 \1 上 
 ! (树)上 							 \1 上 
 ! (街)上 							 \1 上 
-;===============================================================================
-; There are many bound morphemes that should not be split. We need to come up
-; with a better more consistent treament.
-;===============================================================================
-
-
-
-
 
 ! (很)晚 							 \1 晚 
 ! (很)大 							 \1 大 
 ! (火车)站 							 \1 站 
 ! (比)我 							 \1 我 
 ! (男)孩子 							 \1 孩子 
-
 ! (好)吗 							 \1 吗 
 
-
-
-
-;;; Negation and Other Adverbs (remember order matters!!):
+;;; Negation and Other Adverbs:
 ! (还)有 							 \1 有 
-
 ! (新)车 							 \1 车 
-
-
-! 不(知道) 							 不 \1 
-! 不(喜欢) 							 不 \1 
-! 不(是) 							 不 \1 
-
-
 
 ;;; Splitting Verb Aux/Resultatives/Verbal Complements:
 ! (读)完 							 \1 完 
@@ -175,10 +117,7 @@
 ! 想(做) 							 想 \1 
 ! 去(做) 							 去 \1 
 
-
-
-
-;;; Splitting Verbs + Nouns (many are separable verbs):
+;;; Splitting Verbs + Nouns (separable verbs):
 ! (出)门 							 \1 门 
 ! (吸)烟 							 \1 烟 
 ! (下)雪 							 \1 雪 
@@ -203,7 +142,6 @@
 ! (开)会 							 \1 会 
 ! (洗)手 							 \1 手 
 ! (照)相 							 \1 相 
-
 ! (加)油 							 \1 油 
 ! (做)饭 							 \1 饭 
 ! (吃)饭 							 \1 饭 
@@ -244,42 +182,34 @@
 
 
 ;===============================================================================
-; 在 (ZAI) -- Mostly split, but not always
+; 在 (ZAI) -- Split-all, then rejoin compounds
 ;===============================================================================
-; 在 has multiple usages but, for the most part, it should be seen as single
-; token: a preposition, an aspect particle, a single-character verb, etc.
-; These various usages also mean that sometimes 在 is attached before and other
-; time attached after words.
-;===============================================================================
-! 在(说) 							 在 \1 
-! 在(哪) 							 在 \1 
-! 在(哪儿) 							 在 \1 
-! 在(哪里) 							 在 \1 
-! 在(哪边) 							 在 \1 
+! 在([^ ]+) 							 在 \1 
 
-! 在(说) 							 在 \1 
-! 在(读) 							 在 \1 
-! 在(看) 							 在 \1 
-! 在(打) 							 在 \1 
-! 在(做) 							 在 \1 
-! 在(床) 							 在 \1 
-! 在(吗) 							 在 \1 
-! 在(等) 							 在 \1 
-;===============================================================================
-; NOTES: for now we only fix a few, since there are many prepositional verbs
-;        in the lexicon that need to be checked.
+! (在) 一起 							 \1一起 
+! (在) 乎 							 \1乎 
+! (在) 于 							 \1于 
+! (在) 位 							 \1位 
+! (在) 勤 							 \1勤 
+! (在) 场 							 \1场 
+! (在) 外 							 \1外 
+! (在) 学 							 \1学 
+! (在) 家 							 \1家 
+! (在) 意 							 \1意 
+! (在) 望 							 \1望 
+! (在) 来 							 \1来 
+! (在) 案 							 \1案 
+! (在) 此之前 							 \1此之前 
+! (在) 线 							 \1线 
+! (在) 职 							 \1职 
+! (在) 逃 							 \1逃 
+! (在) 野党 							 \1野党 
 ;===============================================================================
 
 
 ;===============================================================================
 ; 的 (DE) -- Mostly split, but not always
 ;===============================================================================
-; 的 should, almost always, be split. Many segmenters try to leave 的 attached
-; in multiple different places, including possessives, relative clauses and 
-; adjectives. LMC decided to split it as default, and put it back when needed. 
-;===============================================================================
-;! (.+)的 							 \1 的 
-; ! ([^. …]+)的 							 \1 的 
 ! ([^ ]+)的 							 \1 的 
 
 ! (中) 的 							 \1的 
@@ -288,45 +218,54 @@
 ! (标) 的 							 \1的 
 ! (目) 的 							 \1的 
 ;===============================================================================
-; ! (我|你|您|他|她|它)的 						 \1 的 
-; ! (妈|我妈|你妈|他妈|她妈)的 						 \1 的 
-; 真的    ; !!! this might be a problem [FIXME]
+
+
+;===============================================================================
+; 得 (DE) -- Split-all, then rejoin compounds
+;===============================================================================
+! ([^ ]+)得 							 \1 得 
+
+! (不) 得 							 \1得 
+! (不由) 得 							 \1得 
+! (习) 得 							 \1得 
+! (使) 得 							 \1得 
+! (值) 得 							 \1得 
+! (募) 得 							 \1得 
+! (博) 得 							 \1得 
+! (取) 得 							 \1得 
+! (变) 得 							 \1得 
+! (圣彼) 得 							 \1得 
+! (夺) 得 							 \1得 
+! (寻) 得 							 \1得 
+! (彼) 得 							 \1得 
+! (心) 得 							 \1得 
+! (恨不) 得 							 \1得 
+! (惹) 得 							 \1得 
+! (懂) 得 							 \1得 
+! (懒) 得 							 \1得 
+! (所) 得 							 \1得 
+! (拔) 得 							 \1得 
+! (显) 得 							 \1得 
+! (晓) 得 							 \1得 
+! (来) 得 							 \1得 
+! (求) 得 							 \1得 
+! (省) 得 							 \1得 
+! (舍不) 得 							 \1得 
+! (获) 得 							 \1得 
+! (落) 得 							 \1得 
+! (要不) 得 							 \1得 
+! (觉) 得 							 \1得 
+! (认) 得 							 \1得 
+! (讨) 得 							 \1得 
+! (记) 得 							 \1得 
+! (赢) 得 							 \1得 
+! (难) 得 							 \1得 
+! (非) 得 							 \1得 
 ;===============================================================================
 
 
 ;===============================================================================
-; 得 (DE)
-;===============================================================================
-; 得 also needs to be split, but it's not easy to deal with since it is part
-; of many vocabulary, including many some complements that are not being dealt
-; with quite yet in ZHONG. As such, we refrain from splitting it by default
-; for the time being. But it should be looked at later... We split some that 
-; happen frequently:
-;===============================================================================
-! (跑)得 							 \1 得 
-! (长)得 							 \1 得 
-! (睡)得 							 \1 得 
-! (看)得 							 \1 得 
-! (累)得 							 \1 得 
-! (学)得 							 \1 得 
-! (说)得 							 \1 得 
-! (考)得 							 \1 得 
-! (唱)得 							 \1 得 
-! (下)得 							 \1 得 
-! (走)得 							 \1 得 
-! (笑)得 							 \1 得 
-! (过)得 							 \1 得 
-! (变)得 							 \1 得 
-;===============================================================================
-
-
-
-
-;===============================================================================
-; 就 (JIU) -- Mostly split, but not always [?]
-;===============================================================================
-; 就 should be split 99% of the cases at the beginning of a word. 
-; [FIXME] Some of these need to be checked further.
+; 就 (JIU) -- Mostly split, but not always
 ;===============================================================================
 ! 就([^ ]+) 							 就 \1 
 ! 就 (业) 							 就\1 
@@ -338,11 +277,6 @@
 ;===============================================================================
 ; 们 (MEN) -- Mostly split, but not always
 ;===============================================================================
-; 们 should always be split except in the case of pronouns. There is a case
-; to be made to either allow this to be treated as a morpheme in pronouns, or
-; to hardcode this split in the lexical entries for pronoun (split STEM).
-; However, this is the treatment for now.
-;===============================================================================
 ! ([^ ]+)们 							 \1 们 
 ! (我) 们 							 \1们 
 ! (咱) 们 							 \1们 
@@ -353,19 +287,8 @@
 ;===============================================================================
 
 
-
-
 ;===============================================================================
 ; 了 (LE) -- Mostly split, but not always
-;===============================================================================
-; The aspect and sentence final particle 了 is ubiquitous in Mandarin and, for
-; the most part, it needs to be separated from the main verb it is attached to.
-; However, 了 (most often in it's 'LIAO' phonetic form, but not strictly) can
-; also be part of certain words/expression that we would like to treat as a 
-; single word.
-; As such, this section tries to split 了 as default when it happens at the end
-; of a word token (i.e. has a space after). And then put it back iff it is 
-; deemed necessary.
 ;===============================================================================
 ! ([^ ]+)了 							 \1 了 
 !(不) 了 							\1了 
@@ -375,77 +298,41 @@
 ! (不见) 了 							 \1了 
 ! (帅呆) 了 							 \1了 
 ;===============================================================================
-;>>> !(得) 了 							\1了 
-; [FIXME] the complement 得了 [déliǎo] (possible) needs to be dealt as an
-;         entry with split STEM. Same for the expression 
-;         得了 [déle] (All right!; That's enough!) 
-; [FIXME] 到了 [dàoliǎo] (at last; finally; in the end) need to be dealt as
-;         separate tokens.
-;===============================================================================
-
-
 
 
 ;===============================================================================
 ; 没 (MEI/MO) -- Mostly split, but not always
 ;===============================================================================
-; 没 as negation (méi reading) should be split from the following word.
-; 没 as 'sink/confiscate' (mò reading) is part of compounds and must not
-; be split. As with 了 and 的, we split by default and rejoin exceptions.
-;===============================================================================
-; Handle compound patterns where 没 is mid-token (must come BEFORE split-all)
 ! (还)(没)有 							 \1 \2 有 
 ! (还)没 							 \1 没 
 ! (从来)(没)有 							 \1 \2 有 
 ! (并)(没)有 							 \1 \2 有 
 
-; Split all tokens starting with 没 (negation méi)
 ! 没([^ ]+) 							 没 \1 
 
-; Rejoin: 没 as mò reading (sink/confiscate/decline)
 ! (没) 收 							 \1收 
 ! (没) 落 							 \1落 
 ;===============================================================================
 
 
-
-
 ;===============================================================================
 ; 过 (GUO) -- Mostly split, but not always
 ;===============================================================================
-; 过 as experiential aspect marker should be split from the preceding verb.
-; 过 as part of compound words (directional complement, preposition, etc.)
-; must not be split. As with 了 and 的, we split by default and rejoin
-; exceptions.
-;
-; NOTE: Some words ending in 过 (穿过, 飞过, 跨过, etc.) are ambiguous between
-; experiential aspect and directional complement. These are currently rejoined
-; to preserve the compound reading. Review with native speaker as needed.
-;===============================================================================
-; Split all tokens ending in 过
 ! ([^ ]+)过 							 \1 过 
 
-; Rejoin: conjunctions and adverbs
 ! (不) 过 							 \1过 
 ! (只不) 过 							 \1过 
 ! (太) 过 							 \1过 
-
-; Rejoin: prepositions and verbs where 过 means 'through/exceed'
 ! (经) 过 							 \1过 
 ! (通) 过 							 \1过 
 ! (超) 过 							 \1过 
 ! (远超) 过 							 \1过 
 ! (透) 过 							 \1过 
-
-; Rejoin: compounds where splitting changes meaning
 ! (难) 过 							 \1过 
 ! (错) 过 							 \1过 
 ! (度) 过 							 \1过 
 ! (渡) 过 							 \1过 
 ! (路) 过 							 \1过 
-
-; Rejoin: directional/resultative compounds (ambiguous with experiential)
-; REVIEW: these could potentially be split if experiential reading is preferred
 ! (穿) 过 							 \1过 
 ! (绕) 过 							 \1过 
 ! (越) 过 							 \1过 
@@ -454,113 +341,308 @@
 ! (闪) 过 							 \1过 
 ! (飞) 过 							 \1过 
 ! (驶) 过 							 \1过 
-
-; Rejoin: multi-character compounds
 ! (跑得) 过 							 \1过 
 ! (逃不) 过 							 \1过 
 ;===============================================================================
 
 
+;===============================================================================
+; 着 (ZHE) -- Split-all, then rejoin compounds
+;===============================================================================
+! ([^ ]+)着 							 \1 着 
+
+! (为) 着 							 \1着 
+! (借) 着 							 \1着 
+! (冒) 着 							 \1着 
+! (冲) 着 							 \1着 
+! (凭) 着 							 \1着 
+! (向) 着 							 \1着 
+! (因) 着 							 \1着 
+! (围) 着 							 \1着 
+! (土) 着 							 \1着 
+! (对) 着 							 \1着 
+! (寻) 着 							 \1着 
+! (带) 着 							 \1着 
+! (延) 着 							 \1着 
+! (当) 着 							 \1着 
+! (循) 着 							 \1着 
+! (忙) 着 							 \1着 
+! (意味) 着 							 \1着 
+! (打) 着 							 \1着 
+! (执) 着 							 \1着 
+! (指) 着 							 \1着 
+! (按) 着 							 \1着 
+! (挨) 着 							 \1着 
+! (接) 着 							 \1着 
+! (显) 着 							 \1着 
+! (有) 着 							 \1着 
+! (朝) 着 							 \1着 
+! (本) 着 							 \1着 
+! (沿) 着 							 \1着 
+! (活) 着 							 \1着 
+! (点) 着 							 \1着 
+! (照) 着 							 \1着 
+! (用不) 着 							 \1着 
+! (睡得) 着 							 \1着 
+! (睡) 着 							 \1着 
+! (穿) 着 							 \1着 
+! (藉) 着 							 \1着 
+! (试) 着 							 \1着 
+! (赶) 着 							 \1着 
+! (趁) 着 							 \1着 
+! (跟) 着 							 \1着 
+! (身) 着 							 \1着 
+! (附) 着 							 \1着 
+! (随) 着 							 \1着 
+! (靠) 着 							 \1着 
+! (顺) 着 							 \1着 
+;===============================================================================
 
 
 ;===============================================================================
-; 着 (ZHE)
+; 是 (SHI) -- Split-all, then rejoin compounds
 ;===============================================================================
-; 着 is a bit more complicated than 了, as it appears in many many other words.
-; It can also be a complement of sort (especially in its ZHAO reading).
-; For now we split some annoying missegmentations. But it really should end
-; up looking something like 了.
+; Fixes tokenizer mis-joins like 这是→这 是, 针是→针 是
 ;===============================================================================
-! (看)着 							 \1 着 
-! (等)着 							 \1 着 
-! (活)着 							 \1 着 
-! (听)着 							 \1 着 
-! (坐)着 							 \1 着 
-! (拿)着 							 \1 着 
-! (隔)着 							 \1 着 
-! (开)着 							 \1 着 
-! (站)着 							 \1 着 
-! (走)着 							 \1 着 
+! ([^ ]+)是 							 \1 是 
+
+! (不) 是 							 \1是 
+! (于) 是 							 \1是 
+! (但) 是 							 \1是 
+! (倒) 是 							 \1是 
+! (像) 是 							 \1是 
+! (凡) 是 							 \1是 
+! (只) 是 							 \1是 
+! (可) 是 							 \1是 
+! (国) 是 							 \1是 
+! (总) 是 							 \1是 
+! (或) 是 							 \1是 
+! (更) 是 							 \1是 
+! (真) 是 							 \1是 
+! (算) 是 							 \1是 
+! (老) 是 							 \1是 
+! (而) 是 							 \1是 
+! (自) 是 							 \1是 
+! (若) 是 							 \1是 
+! (要) 是 							 \1是 
+! (象) 是 							 \1是 
+! (还) 是 							 \1是 
+! (尤其) 是 							 \1是 
+! (并不) 是 							 \1是 
+! (要不) 是 							 \1是 
 ;===============================================================================
 
 
+;===============================================================================
+; 便 (BIAN) -- Split-all, then rejoin compounds
+;===============================================================================
+; Fixes tokenizer mis-joins like 便醒→便 醒
+;===============================================================================
+! 便([^ ]+) 							 便 \1 
+
+! (便) 利 							 \1利 
+! (便) 宜 							 \1宜 
+! (便) 宜货 							 \1宜货 
+! (便) 当 							 \1当 
+! (便) 捷 							 \1捷 
+! (便) 条 							 \1条 
+! (便) 车 							 \1车 
+! (便) 道 							 \1道 
+;===============================================================================
 
 
+;===============================================================================
+; 不 (BU) -- Split-all, then rejoin compounds
+;===============================================================================
+! 不([^ ]+) 							 不 \1 
 
-;;need to have one space before pattern, one space after pattern
+! (不) 一 							 \1一 
+! (不) 一会儿 							 \1一会儿 
+! (不) 一定 							 \1一定 
+! (不) 为所动 							 \1为所动 
+! (不) 久 							 \1久 
+! (不) 久前 							 \1久前 
+! (不) 义 							 \1义 
+! (不) 乏 							 \1乏 
+! (不) 予 							 \1予 
+! (不) 亚于 							 \1亚于 
+! (不) 仅 							 \1仅 
+! (不) 仅仅 							 \1仅仅 
+! (不) 会 							 \1会 
+! (不) 伦不类 							 \1伦不类 
+! (不) 但 							 \1但 
+! (不) 住 							 \1住 
+! (不) 佳 							 \1佳 
+! (不) 便 							 \1便 
+! (不) 停 							 \1停 
+! (不) 光 							 \1光 
+! (不) 再 							 \1再 
+! (不) 准 							 \1准 
+! (不) 分 							 \1分 
+! (不) 分青红皂白 							 \1分青红皂白 
+! (不) 切实际 							 \1切实际 
+! (不) 利 							 \1利 
+! (不) 到 							 \1到 
+! (不) 力 							 \1力 
+! (不) 加 							 \1加 
+! (不) 动产 							 \1动产 
+! (不) 厌其烦 							 \1厌其烦 
+! (不) 及 							 \1及 
+! (不) 变 							 \1变 
+! (不) 只 							 \1只 
+! (不) 可 							 \1可 
+! (不) 可以 							 \1可以 
+! (不) 可思议 							 \1可思议 
+! (不) 可或缺 							 \1可或缺 
+! (不) 可能 							 \1可能 
+! (不) 合 							 \1合 
+! (不) 合时宜 							 \1合时宜 
+! (不) 合理 							 \1合理 
+! (不) 同 							 \1同 
+! (不) 同于 							 \1同于 
+! (不) 听使唤 							 \1听使唤 
+! (不) 吭一气 							 \1吭一气 
+! (不) 和 							 \1和 
+! (不) 在意 							 \1在意 
+! (不) 均 							 \1均 
+! (不) 堪 							 \1堪 
+! (不) 复 							 \1复 
+! (不) 外 							 \1外 
+! (不) 够 							 \1够 
+! (不) 大 							 \1大 
+! (不) 太好 							 \1太好 
+! (不) 失 							 \1失 
+! (不) 奈 							 \1奈 
+! (不) 好 							 \1好 
+! (不) 好意思 							 \1好意思 
+! (不) 如 							 \1如 
+! (不) 妥 							 \1妥 
+! (不) 妨 							 \1妨 
+! (不) 孕症 							 \1孕症 
+! (不) 安 							 \1安 
+! (不) 定 							 \1定 
+! (不) 宜 							 \1宜 
+! (不) 实 							 \1实 
+! (不) 客气 							 \1客气 
+! (不) 对 							 \1对 
+! (不) 少 							 \1少 
+! (不) 尽 							 \1尽 
+! (不) 屑 							 \1屑 
+! (不) 屑一顾 							 \1屑一顾 
+! (不) 差 							 \1差 
+! (不) 幸 							 \1幸 
+! (不) 应该 							 \1应该 
+! (不) 当 							 \1当 
+! (不) 得 							 \1得 
+! (不) 得不 							 \1得不 
+! (不) 得了 							 \1得了 
+! (不) 必 							 \1必 
+! (不) 必要 							 \1必要 
+! (不) 忍 							 \1忍 
+! (不) 怎么 							 \1怎么 
+! (不) 惑 							 \1惑 
+! (不) 惜 							 \1惜 
+! (不) 意 							 \1意 
+! (不) 愧 							 \1愧 
+! (不) 愿 							 \1愿 
+! (不) 慎 							 \1慎 
+! (不) 懈 							 \1懈 
+! (不) 成 							 \1成 
+! (不) 振 							 \1振 
+! (不) 敌 							 \1敌 
+! (不) 敢 							 \1敢 
+! (不) 料 							 \1料 
+! (不) 断 							 \1断 
+! (不) 时 							 \1时 
+! (不) 明 							 \1明 
+! (不) 明飞行物 							 \1明飞行物 
+! (不) 易 							 \1易 
+! (不) 是 							 \1是 
+! (不) 是么 							 \1是么 
+! (不) 景气 							 \1景气 
+! (不) 止 							 \1止 
+! (不) 求甚解 							 \1求甚解 
+! (不) 治 							 \1治 
+! (不) 法 							 \1法 
+! (不) 法分子 							 \1法分子 
+! (不) 渝 							 \1渝 
+! (不) 满 							 \1满 
+! (不) 然 							 \1然 
+! (不) 理 							 \1理 
+! (不) 用 							 \1用 
+! (不) 用谢 							 \1用谢 
+! (不) 由得 							 \1由得 
+! (不) 知 							 \1知 
+! (不) 知不觉 							 \1知不觉 
+! (不) 知所措 							 \1知所措 
+! (不) 知所终 							 \1知所终 
+! (不) 祥 							 \1祥 
+! (不) 禁 							 \1禁 
+! (不) 符 							 \1符 
+! (不) 等 							 \1等 
+! (不) 管 							 \1管 
+! (不) 管怎样 							 \1管怎样 
+! (不) 肖 							 \1肖 
+! (不) 胜枚举 							 \1胜枚举 
+! (不) 能 							 \1能 
+! (不) 自在 							 \1自在 
+! (不) 舍 							 \1舍 
+! (不) 良 							 \1良 
+! (不) 行 							 \1行 
+! (不) 要 							 \1要 
+! (不) 见 							 \1见 
+! (不) 见了 							 \1见了 
+! (不) 规则 							 \1规则 
+! (不) 觉 							 \1觉 
+! (不) 解 							 \1解 
+! (不) 许 							 \1许 
+! (不) 论 							 \1论 
+! (不) 详 							 \1详 
+! (不) 谋而合 							 \1谋而合 
+! (不) 谢 							 \1谢 
+! (不) 败之地 							 \1败之地 
+! (不) 起 							 \1起 
+! (不) 足 							 \1足 
+! (不) 足为外人道 							 \1足为外人道 
+! (不) 过 							 \1过 
+! (不) 远千里 							 \1远千里 
+! (不) 适 							 \1适 
+! (不) 速客 							 \1速客 
+! (不) 道德 							 \1道德 
+! (不) 配 							 \1配 
+! (不) 错 							 \1错 
+! (不) 雅 							 \1雅 
+! (不) 须 							 \1须 
+! (不) 顾 							 \1顾 
+;===============================================================================
 
-;;;
-;;; A 不 A -> A不々 
-;;; 
-;;;;; FIXME: We need to filter 有不有 From this, to give it a mal-type
 
-; 她 健 不 健康 
-; 她 健不健康 
+;;; A 不 A -> A不々
 ! (.) ?不 ?\1(.) 						 \1\2不々 
 ! (.) ?没 ?\1(.) 						 \1\2没々 
 
-; 她 健康 不 健康
-; 她 健康不健康
-; 她 高 不 高
-; 她 高不高
 ! (\S{1,2}) ?不 ?\1 					 \1不々 
 ! (\S{1,2}) ?没 ?\1 					 \1没々 
 
-;;;
 ;;; A A 看-> A々看
-;;; 
-
-; 你 吃 吃 看
 ! ([^. …]+) ?\1 ?看 						 \1々看 
 
-
-;;;
-;;; A A -> A々
-;;; 
-
-; 她 高 高
-; 她 高高   *Not currently matched* (many existing lexicon entries -n/v/a)
-; FCB ! ([^. …]+) \1 						 \1々 
-
-;;;
 ;;; A 一 A -> A一々
-;;; 
-
-; 她 笑 一 笑
 ! ([^. …]) ?一 ?\1 						 \1一々 
 
-;;;
 ;;; A 了 一 A -> A了一々
-;;; 
-
-; 她 笑 了 一 笑
 ! ([^. …]) ?了 ?一 ?\1 						 \1了一々 
 
-
-;;;
 ;;; A 一下 -> A一下
-;;; 
-
-; 我 看 一下
 ! ([^. …]{1,2}) ?一下 							 \1一下 
 
-;;;
 ;;; A 了 一下 -> A了一下
-;;; 
-
-; 我 看 了 一下
 ! ([^. …]{1,2}) ?了 ?一下 							 \1了一下 
 
 
-
-;;;Combining multiple tokens to be one for NE regex
-;;; 两 点 钟 -> 两点钟
-;;; 
-;两 点 钟 起床
 ;===============================================================================
 ; GENERIC TIME EXPRESSIONS
 ;===============================================================================
-
 ! ([一两三四五六七八九十]|十[一二]) ?点 ?钟 			 \1点钟 
 
 ! (十?[一二三四五六七八九]|二十[一二三]|[十零〇]) ?点 ?(([一二三四五]十|[零〇])?[一二三四五六七八九]|[一二三四五]十) ?分 				 \1点\2分 
@@ -570,17 +652,8 @@
 ! (十[一壹二贰]|[一壹二贰三叁四五六七八九十]) ?月 ?([二三]?十|(([二三]?十)?[一二三四五六七八九])) ?[日号] 						 \1月\2日 
 
 
-
-
-
-;;to catch phone number pattern, not working
-;;（ 一四二 ） 二六八九三七五 
+;;; Phone number pattern
 ! （ ([一壹二贰三叁四五六七八九零〇]+) ） ([一壹二贰三叁四五六七八九零〇]+) 		 （\1）\2 
-
-
-
-
-
 
 
 ;===============================================================================
