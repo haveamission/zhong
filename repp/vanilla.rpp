@@ -397,14 +397,14 @@
 ! (还)(没)有 							 \1 \2 有 
 ! (还)没 							 \1 没 
 ! (从来)(没)有 							 \1 \2 有 
-! (并)(没)有 							 \1 \2 有
+! (并)(没)有 							 \1 \2 有 
 
 ; Split all tokens starting with 没 (negation méi)
-! 没([^ ]+) 							 没 \1
+! 没([^ ]+) 							 没 \1 
 
 ; Rejoin: 没 as mò reading (sink/confiscate/decline)
-! (没) 收 							 \1收
-! (没) 落 							 \1落
+! (没) 收 							 \1收 
+! (没) 落 							 \1落 
 ;===============================================================================
 
 
@@ -423,41 +423,41 @@
 ; to preserve the compound reading. Review with native speaker as needed.
 ;===============================================================================
 ; Split all tokens ending in 过
-! ([^ ]+)过 							 \1 过
+! ([^ ]+)过 							 \1 过 
 
 ; Rejoin: conjunctions and adverbs
-! (不) 过 							 \1过
-! (只不) 过 							 \1过
-! (太) 过 							 \1过
+! (不) 过 							 \1过 
+! (只不) 过 							 \1过 
+! (太) 过 							 \1过 
 
 ; Rejoin: prepositions and verbs where 过 means 'through/exceed'
-! (经) 过 							 \1过
-! (通) 过 							 \1过
-! (超) 过 							 \1过
-! (远超) 过 							 \1过
-! (透) 过 							 \1过
+! (经) 过 							 \1过 
+! (通) 过 							 \1过 
+! (超) 过 							 \1过 
+! (远超) 过 							 \1过 
+! (透) 过 							 \1过 
 
 ; Rejoin: compounds where splitting changes meaning
-! (难) 过 							 \1过
-! (错) 过 							 \1过
-! (度) 过 							 \1过
-! (渡) 过 							 \1过
-! (路) 过 							 \1过
+! (难) 过 							 \1过 
+! (错) 过 							 \1过 
+! (度) 过 							 \1过 
+! (渡) 过 							 \1过 
+! (路) 过 							 \1过 
 
 ; Rejoin: directional/resultative compounds (ambiguous with experiential)
 ; REVIEW: these could potentially be split if experiential reading is preferred
-! (穿) 过 							 \1过
-! (绕) 过 							 \1过
-! (越) 过 							 \1过
-! (跨) 过 							 \1过
-! (迈) 过 							 \1过
-! (闪) 过 							 \1过
-! (飞) 过 							 \1过
-! (驶) 过 							 \1过
+! (穿) 过 							 \1过 
+! (绕) 过 							 \1过 
+! (越) 过 							 \1过 
+! (跨) 过 							 \1过 
+! (迈) 过 							 \1过 
+! (闪) 过 							 \1过 
+! (飞) 过 							 \1过 
+! (驶) 过 							 \1过 
 
 ; Rejoin: multi-character compounds
-! (跑得) 过 							 \1过
-! (逃不) 过 							 \1过
+! (跑得) 过 							 \1过 
+! (逃不) 过 							 \1过 
 ;===============================================================================
 
 
