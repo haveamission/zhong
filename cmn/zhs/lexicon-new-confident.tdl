@@ -49193,3 +49193,165 @@
     SYNSEM.LOCAL.CAT.HEAD.CHAR [ FCHAR "罗", LENGTH more-than-two ],
     SYNSEM.LKEYS.KEYREL.CARG "罗马斗兽场",
     TRAITS native_token_list ].
+
+;===============================================================================
+; NEW TRANSITIVE VERB ENTRIES (added from coverage analysis 2026-05-19)
+; These verbs were typed only as v_s_le or v_vp_sequi_le but also take NP
+; complements in standard Chinese usage.
+;===============================================================================
+
+停止_v_2 := v_np_le &
+  [ STEM < "停止" >,
+    SYNSEM.LOCAL.CAT.HEAD.CHAR [ FCHAR "停", LENGTH two ],
+    SYNSEM [ LKEYS.KEYREL.PRED "_停止_v_2_rel" ],
+    TRAITS native_token_list ].
+
+公布_v_2 := v_np_le &
+  [ STEM < "公布" >,
+    SYNSEM.LOCAL.CAT.HEAD.CHAR [ FCHAR "公", LENGTH two ],
+    SYNSEM [ LKEYS.KEYREL.PRED "_公布_v_2_rel" ],
+    TRAITS native_token_list ].
+
+包括_v_2 := v_np_le &
+  [ STEM < "包括" >,
+    SYNSEM.LOCAL.CAT.HEAD.CHAR [ FCHAR "包", LENGTH two ],
+    SYNSEM [ LKEYS.KEYREL.PRED "_包括_v_2_rel" ],
+    TRAITS native_token_list ].
+
+发现_v_2 := v_np_le &
+  [ STEM < "发现" >,
+    SYNSEM.LOCAL.CAT.HEAD.CHAR [ FCHAR "发", LENGTH two ],
+    SYNSEM [ LKEYS.KEYREL.PRED "_发现_v_2_rel" ],
+    TRAITS native_token_list ].
+
+呼吁_v_2 := v_np_le &
+  [ STEM < "呼吁" >,
+    SYNSEM.LOCAL.CAT.HEAD.CHAR [ FCHAR "呼", LENGTH two ],
+    SYNSEM [ LKEYS.KEYREL.PRED "_呼吁_v_2_rel" ],
+    TRAITS native_token_list ].
+
+导致_v_2 := v_np_le &
+  [ STEM < "导致" >,
+    SYNSEM.LOCAL.CAT.HEAD.CHAR [ FCHAR "导", LENGTH two ],
+    SYNSEM [ LKEYS.KEYREL.PRED "_导致_v_2_rel" ],
+    TRAITS native_token_list ].
+
+庆祝_v_2 := v_np_le &
+  [ STEM < "庆祝" >,
+    SYNSEM.LOCAL.CAT.HEAD.CHAR [ FCHAR "庆", LENGTH two ],
+    SYNSEM [ LKEYS.KEYREL.PRED "_庆祝_v_2_rel" ],
+    TRAITS native_token_list ].
+
+强调_v_2 := v_np_le &
+  [ STEM < "强调" >,
+    SYNSEM.LOCAL.CAT.HEAD.CHAR [ FCHAR "强", LENGTH two ],
+    SYNSEM [ LKEYS.KEYREL.PRED "_强调_v_2_rel" ],
+    TRAITS native_token_list ].
+
+感谢_v_2 := v_np_le &
+  [ STEM < "感谢" >,
+    SYNSEM.LOCAL.CAT.HEAD.CHAR [ FCHAR "感", LENGTH two ],
+    SYNSEM [ LKEYS.KEYREL.PRED "_感谢_v_2_rel" ],
+    TRAITS native_token_list ].
+
+报告_v_2 := v_np_le &
+  [ STEM < "报告" >,
+    SYNSEM.LOCAL.CAT.HEAD.CHAR [ FCHAR "报", LENGTH two ],
+    SYNSEM [ LKEYS.KEYREL.PRED "_报告_v_2_rel" ],
+    TRAITS native_token_list ].
+
+看到_v_2 := v_np_le &
+  [ STEM < "看到" >,
+    SYNSEM.LOCAL.CAT.HEAD.CHAR [ FCHAR "看", LENGTH two ],
+    SYNSEM [ LKEYS.KEYREL.PRED "_看到_v_2_rel" ],
+    TRAITS native_token_list ].
+
+确认_v_2 := v_np_le &
+  [ STEM < "确认" >,
+    SYNSEM.LOCAL.CAT.HEAD.CHAR [ FCHAR "确", LENGTH two ],
+    SYNSEM [ LKEYS.KEYREL.PRED "_确认_v_2_rel" ],
+    TRAITS native_token_list ].
+
+表示_v_2 := v_np_le &
+  [ STEM < "表示" >,
+    SYNSEM.LOCAL.CAT.HEAD.CHAR [ FCHAR "表", LENGTH two ],
+    SYNSEM [ LKEYS.KEYREL.PRED "_表示_v_2_rel" ],
+    TRAITS native_token_list ].
+
+计划_v_2 := v_np_le &
+  [ STEM < "计划" >,
+    SYNSEM.LOCAL.CAT.HEAD.CHAR [ FCHAR "计", LENGTH two ],
+    SYNSEM [ LKEYS.KEYREL.PRED "_计划_v_2_rel" ],
+    TRAITS native_token_list ].
+
+调查_v_2 := v_np_le &
+  [ STEM < "调查" >,
+    SYNSEM.LOCAL.CAT.HEAD.CHAR [ FCHAR "调", LENGTH two ],
+    SYNSEM [ LKEYS.KEYREL.PRED "_调查_v_2_rel" ],
+    TRAITS native_token_list ].
+
+造成_v_2 := v_np_le &
+  [ STEM < "造成" >,
+    SYNSEM.LOCAL.CAT.HEAD.CHAR [ FCHAR "造", LENGTH two ],
+    SYNSEM [ LKEYS.KEYREL.PRED "_造成_v_2_rel" ],
+    TRAITS native_token_list ].
+
+需要_v_2 := v_np_le &
+  [ STEM < "需要" >,
+    SYNSEM.LOCAL.CAT.HEAD.CHAR [ FCHAR "需", LENGTH two ],
+    SYNSEM [ LKEYS.KEYREL.PRED "_需要_v_2_rel" ],
+    TRAITS native_token_list ].
+
+面临_v_2 := v_np_le &
+  [ STEM < "面临" >,
+    SYNSEM.LOCAL.CAT.HEAD.CHAR [ FCHAR "面", LENGTH two ],
+    SYNSEM [ LKEYS.KEYREL.PRED "_面临_v_2_rel" ],
+    TRAITS native_token_list ].
+
+惩罚_v_1 := v_np_le &
+  [ STEM < "惩罚" >,
+    SYNSEM.LOCAL.CAT.HEAD.CHAR [ FCHAR "惩", LENGTH two ],
+    SYNSEM [ LKEYS.KEYREL.PRED "_惩罚_v_1_rel" ],
+    TRAITS native_token_list ].
+
+热爱_v_2 := v_np-spr_le &
+  [ STEM < "热爱" >,
+    SYNSEM.LOCAL.CAT.HEAD.CHAR [ FCHAR "热", LENGTH two ],
+    SYNSEM [ LKEYS.KEYREL.PRED "_热爱_v_2_rel" ],
+    TRAITS native_token_list ].
+
+
+;===============================================================================
+; NEW NOUN ENTRIES (added from coverage analysis 2026-05-19)
+; These words are frequently used as nouns but only had verb entries.
+;===============================================================================
+
+增长_n_1 := n_-_le &
+  [ STEM < "增长" >,
+    SYNSEM.LOCAL.CAT.HEAD.CHAR [ FCHAR "增", LENGTH two ],
+    SYNSEM [ LKEYS.KEYREL.PRED "_增长_n_1_rel" ],
+    TRAITS native_token_list ].
+
+就业_n_1 := n_-_le &
+  [ STEM < "就业" >,
+    SYNSEM.LOCAL.CAT.HEAD.CHAR [ FCHAR "就", LENGTH two ],
+    SYNSEM [ LKEYS.KEYREL.PRED "_就业_n_1_rel" ],
+    TRAITS native_token_list ].
+
+担忧_n_1 := n_-_le &
+  [ STEM < "担忧" >,
+    SYNSEM.LOCAL.CAT.HEAD.CHAR [ FCHAR "担", LENGTH two ],
+    SYNSEM [ LKEYS.KEYREL.PRED "_担忧_n_1_rel" ],
+    TRAITS native_token_list ].
+
+罢工_n_1 := n_-_le &
+  [ STEM < "罢工" >,
+    SYNSEM.LOCAL.CAT.HEAD.CHAR [ FCHAR "罢", LENGTH two ],
+    SYNSEM [ LKEYS.KEYREL.PRED "_罢工_n_1_rel" ],
+    TRAITS native_token_list ].
+
+飞行_n_1 := n_-_le &
+  [ STEM < "飞行" >,
+    SYNSEM.LOCAL.CAT.HEAD.CHAR [ FCHAR "飞", LENGTH two ],
+    SYNSEM [ LKEYS.KEYREL.PRED "_飞行_n_1_rel" ],
+    TRAITS native_token_list ].
