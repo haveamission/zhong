@@ -3823,7 +3823,7 @@ This is an alternative tokenization, because 没有 will be split by default in 
 
 
 
-有_v_2 := v_np-spr_le &
+有_v_2 := v_np_le &
 """
 TEST
 
