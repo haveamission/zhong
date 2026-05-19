@@ -150,6 +150,8 @@ conj-coord := bottom-coord-rule & [ STYLE robust ].
 
 vp1-top-coord := vp1-top-coord-rule & [ STYLE robust ].
 
+j1-top-coord := j1-top-coord-rule & [ STYLE robust ].
+
 s1-top-coord := s1-top-coord-rule & [ STYLE robust ].
 
 vp1c-top-coord := vp1c-top-coord-rule & [ STYLE robust ].

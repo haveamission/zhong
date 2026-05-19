@@ -1190,6 +1190,9 @@ This rule joins a conjunction with a head 'non-conjunction' phrase (e.g. a comma
 vp1-top-coord-rule := basic-vp-top-coord-rule & apoly-top-coord-rule &
   [ SYNSEM.LOCAL.COORD-STRAT "1" ].
 
+j1-top-coord-rule := basic-adj-top-coord-rule & apoly-top-coord-rule &
+  [ SYNSEM.LOCAL.COORD-STRAT "1" ].
+
 ; #|
 ; vp1-bottom-coord-rule := conj-first-bottom-coord-rule & 
 ;              vp-bottom-coord-phrase &
