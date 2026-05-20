@@ -506,7 +506,8 @@ more-than-two := more-than-one.
 head :+
  [ EMPTY bool,
    CHAR char,
-   EXISTV bool, 
+   EXISTV bool,
+   SPR-OBLIG luk,
    MODIFIABLE bool,
    LOC luk,
    MEASURE luk ].
@@ -870,7 +871,7 @@ from picking up bound morphemes like 们.
     NON-HEAD-DTR.SYNSEM [ R-PERIPH na-or--,
                           CH na-or-+,
 			  BOUND na-or--,
-			  LOCAL.CAT.HEAD +nvjrp ] ].
+			  LOCAL.CAT.HEAD +nvjrp & [ SPR-OBLIG na-or-- ] ] ].
 
 
 non-local := non-local-min &

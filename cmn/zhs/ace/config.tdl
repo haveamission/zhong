@@ -2,7 +2,7 @@
 ;;; files to load
 
 grammar-top               := "../zhs-gram.tdl".
-parsing-roots             := root frag.
+parsing-roots             := root root-sprobl frag.
 preprocessor              := "../repp/vanilla.rpp".
 version                   := "../Version.lsp".
 orth-path                 := STEM.

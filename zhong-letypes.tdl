@@ -1083,6 +1083,18 @@ ZAI/ ZHENGZAI/ ZHENG all same (no).
 
 """.
 
+v_np-spr-oblig_le := transitive-verb-lex & nonque-item & norm-comps1-lex &
+"""
+Transitive verb with OBLIGATORY degree specifier.
+SPR-OBLIG + routes to root-sprobl which checks SPR < >.
+Without a degree modifier, SPR is non-empty, root-sprobl fails.
+Main root excludes SPR-OBLIG + via na-or--.
+No unary rule needed — just a root-level feature check.
+"""
+  [ SYNSEM.LOCAL.CAT [ HEAD [ SPR-OBLIG + ],
+                       VAL.SPR < [ LOCAL.CAT [ HEAD adv,
+                                               VAL.SPEC < [ LOCAL.CAT.HEAD +vj ] > ] ] > ] ].
+
 v_vp_sequi-spr_le := v_sequi-spr-lex & nonque-item
 """
 Subject-control transitive psychological verbs.

@@ -37,11 +37,28 @@ ZZF FB 6-4-2016 taking out 'rp' so PP and ADVP won't be S
 				 COMPS < > ],
 			   MC +,
 			   HEAD +vjpc &
-			       [ FORM finite ] ] ],
+				   [ FORM finite,
+				 SPR-OBLIG na-or-- ] ] ],
 	     NON-LOCAL [ SLASH 0-dlist & [ LIST < > ],
                          QUE 0-dlist & [ LIST < > ] ] ] ].
 
 
+root-sprobl := phrase &
+"""
+Root for verbs with obligatory degree specifier (SPR-OBLIG +).
+Requires SPR < > — the degree modifier must be present.
+Used for 有 in constructions like 很有力量.
+"""
+  [ SYNSEM [ LOCAL [ COORD -,
+		     CAT [ VAL [ SUBJ < >,
+				 COMPS < >,
+				 SPR < > ],
+			   MC +,
+			   HEAD +vjpc &
+			       [ FORM finite,
+				 SPR-OBLIG + ] ] ],
+	     NON-LOCAL [ SLASH 0-dlist & [ LIST < > ],
+                         QUE 0-dlist & [ LIST < > ] ] ] ].
 
 root-style-strict := phrase &
 """

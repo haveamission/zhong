@@ -1245,7 +1245,8 @@ int-adv-v-pre :=  intersective-mod-lex & basic-icons-lex-item &
 				[ MOD < lex-synsem & 
 					[ LOCAL.CONT.HOOK #hook ] > ],
 			   VAL [ COMPS < >,
-				 SPR < >],
+				 SPR < >,
+				 SPEC < > ],
 			   POSTHEAD - ],
 		     CONT [ HOOK #hook,
 			    RELS <! !> ] ],
@@ -1269,7 +1270,8 @@ int-adv-s-pre := intersective-mod-lex & basic-icons-lex-item &
 						  CONT.HOOK #hook ] ] > ],
 			   VAL [ COMPS < >,
 				 SUBJ < >,
-				 SPR < >],
+				 SPR < >,
+				 SPEC < >],
 			   POSTHEAD - ],
 		     CONT [ HOOK #hook ] ],
 	     NON-LOCAL.SLASH 0-dlist ] ].
