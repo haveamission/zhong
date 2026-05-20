@@ -33,3 +33,25 @@ generic_non_ne+native_lfr := lexical_filtering_rule &
    +INPUT <   [ TRAITS generic_token_list ] >,
    +OUTPUT < >,
    +POSITION "I1@C1" ].
+
+
+bare_cls+preceding_num_lfr := lexical_filtering_rule &
+  [ +CONTEXT < [ SYNSEM.LOCAL.CAT.HEAD num ] >,
+    +INPUT < [ SYNSEM.LOCAL.CAT [ HEAD classifier,
+                                  VAL.SPR < > ] ] >,
+    +OUTPUT < >,
+    +POSITION "C1<I1" ].
+
+bare_cls+preceding_det_lfr := lexical_filtering_rule &
+  [ +CONTEXT < [ SYNSEM.LOCAL.CAT.HEAD det ] >,
+    +INPUT < [ SYNSEM.LOCAL.CAT [ HEAD classifier,
+                                  VAL.SPR < > ] ] >,
+    +OUTPUT < >,
+    +POSITION "C1<I1" ].
+
+bare_cls+preceding_noun_lfr := lexical_filtering_rule &
+  [ +CONTEXT < [ SYNSEM.LOCAL.CAT.HEAD noun ] >,
+    +INPUT < [ SYNSEM.LOCAL.CAT [ HEAD classifier,
+                                  VAL.SPR < > ] ] >,
+    +OUTPUT < >,
+    +POSITION "C1<I1" ].

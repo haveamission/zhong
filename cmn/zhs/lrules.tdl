@@ -6,3 +6,5 @@
 ;;;
 
 v_aux_ell-lr := v_aux_ell-lex-rule.
+
+no-spr-classifier := no-spr-classifier-lex-rule.

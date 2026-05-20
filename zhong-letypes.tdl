@@ -752,11 +752,6 @@ The default CLs are currently able to be pumped into time adverbials if they are
 Some of them (e.g. 个 should most definitely be able to, but not all should). This would require a bit more in-depth study of classifiers in context. [FIXME] 
 """.
 
-c_bare_le := bare-classifier-lex & nonque-item
-"""
-Bare classifier (no numeral). 是 个 人 = 是 一个 人.
-""".
-
 tm_cl_le := time-classifier-lex & nonque-item
 """
 Currently used only for ambiguous cases, where a classifier can be both time words and normal classifiers (to reduce ambiguity)

@@ -2363,34 +2363,7 @@ use KEYS.ALTKEY instead for classifiers.
 classifier-lex := basic-classifier-lex &
   [ SYNSEM.LOCAL.CAT.HEAD.MOD < [ LOCAL.CONT.HOOK.INDEX [COG-ST activ-or-less ] ] > ]. 
 
-basic-bare-classifier-lex := norm-ltop-lex-item & single-rel-lex-item & 
-                        intersective-mod-lex & no-icons-lex-item &
-"""
-Bare classifier without numeral specifier (SPR < >).
-Identical to basic-classifier-lex except SPR is empty.
-Handles 是 个 人 (= 是 一个 人 with implicit 一).
-"""
-  [ SYNSEM [ PAREN -,
-             PUNCTUATED -,
-	     LOCAL [ CAT [ HEAD classifier & 
-			        [ KEYS.KEY #sense,
-				  MOD < [ LOCAL [ CONT.HOOK [ INDEX #index,
-							      LTOP #ltop ],
-						  CAT [ HEAD noun & [ CLASSIFIED +,
-								      KEYS.KEY #sense ],
-							VAL.SPR < [] > ] ] ] > ], 
-			   VAL [ SPR < >,
-				 SUBJ < >,
-				 COMPS < > ],
-			   POSTHEAD - ],
-		     CONT.HOOK [ INDEX #index & ref-ind,
-				 LTOP #ltop ] ],          
-	     NON-LOCAL.SLASH 0-dlist,
-	     LKEYS.KEYREL [ PRED #sense,
-			    ARG1 #index ] ] ].
 
-bare-classifier-lex := basic-bare-classifier-lex &
-  [ SYNSEM.LOCAL.CAT.HEAD.MOD < [ LOCAL.CONT.HOOK.INDEX [COG-ST activ-or-less ] ] > ].
 
 nontime-classifier-lex := classifier-lex &
 """

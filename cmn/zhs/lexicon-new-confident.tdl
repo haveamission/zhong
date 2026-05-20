@@ -49417,10 +49417,3 @@
     SYNSEM.LOCAL.CAT.HEAD.CHAR [ FCHAR "出", LENGTH two ],
     SYNSEM [ LKEYS.KEYREL.PRED "_出门_v_2_rel" ],
     TRAITS native_token_list ].
-
-; Bare classifier (no numeral: 是 个 人)
-个_cl_bare := c_bare_le &
-  [ STEM < "个" >,
-    SYNSEM.LOCAL.CAT.HEAD.CHAR [ FCHAR "个", LENGTH one ],
-    SYNSEM.LKEYS.KEYREL.PRED _个_x_rel,
-    TRAITS native_token_list ].
