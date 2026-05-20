@@ -25149,13 +25149,6 @@
     SYNSEM.LKEYS.KEYREL.PRED "_减排_n_1_rel",
     TRAITS native_token_list ].
 
-; 出门 "to go out" - intransitive verb
-出门_v_1 := v_-_le &
-  [ STEM < "出门" >,
-    SYNSEM.LOCAL.CAT.HEAD.CHAR [ FCHAR "出", LENGTH two ],
-    SYNSEM [ LKEYS.KEYREL.PRED "_出门_v_1_rel" ],
-    TRAITS native_token_list ].
-
 ; 分给 "to distribute to/give to" - ditransitive verb (分给哥哥和弟弟)
 分给_v_1 := v_np-np_le &
   [ STEM < "分给" >,
@@ -49386,4 +49379,48 @@
                               LZG le-zhe-guo-mei-zai-asp ],
                        VAL.COMPS < [ OPT - ] > ],
     SYNSEM.LKEYS.KEYREL.PRED "_有_v_3_rel",
+    TRAITS native_token_list ].
+
+; Serial verb V1 entries (subject equi-control VP complement)
+点头_v_2 := v_vp_sequi_le &
+  [ STEM < "点头" >,
+    SYNSEM.LOCAL.CAT.HEAD.CHAR [ FCHAR "点", LENGTH two ],
+    SYNSEM [ LKEYS.KEYREL.PRED "_点头_v_2_rel" ],
+    TRAITS native_token_list ].
+
+辞职_v_2 := v_vp_sequi_le &
+  [ STEM < "辞职" >,
+    SYNSEM.LOCAL.CAT.HEAD.CHAR [ FCHAR "辞", LENGTH two ],
+    SYNSEM [ LKEYS.KEYREL.PRED "_辞职_v_2_rel" ],
+    TRAITS native_token_list ].
+
+出面_v_2 := v_vp_sequi_le &
+  [ STEM < "出面" >,
+    SYNSEM.LOCAL.CAT.HEAD.CHAR [ FCHAR "出", LENGTH two ],
+    SYNSEM [ LKEYS.KEYREL.PRED "_出面_v_2_rel" ],
+    TRAITS native_token_list ].
+
+回家_v_2 := v_vp_sequi_le &
+  [ STEM < "回家" >,
+    SYNSEM.LOCAL.CAT.HEAD.CHAR [ FCHAR "回", LENGTH two ],
+    SYNSEM [ LKEYS.KEYREL.PRED "_回家_v_2_rel" ],
+    TRAITS native_token_list ].
+
+出门_v_1 := v_-_le &
+  [ STEM < "出门" >,
+    SYNSEM.LOCAL.CAT.HEAD.CHAR [ FCHAR "出", LENGTH two ],
+    SYNSEM [ LKEYS.KEYREL.PRED "_出门_v_1_rel" ],
+    TRAITS native_token_list ].
+
+出门_v_2 := v_vp_sequi_le &
+  [ STEM < "出门" >,
+    SYNSEM.LOCAL.CAT.HEAD.CHAR [ FCHAR "出", LENGTH two ],
+    SYNSEM [ LKEYS.KEYREL.PRED "_出门_v_2_rel" ],
+    TRAITS native_token_list ].
+
+; Bare classifier (no numeral: 是 个 人)
+个_cl_bare := c_bare_le &
+  [ STEM < "个" >,
+    SYNSEM.LOCAL.CAT.HEAD.CHAR [ FCHAR "个", LENGTH one ],
+    SYNSEM.LKEYS.KEYREL.PRED _个_x_rel,
     TRAITS native_token_list ].
