@@ -24,6 +24,12 @@ jobs:
       - name: Build ACE from fork
         run: |
           sudo apt-get update && sudo apt-get install -y libboost-regex-dev
+          git clone --depth 1 https://github.com/haveamission/REPP.git /tmp/repp-src
+          cd /tmp/repp-src
+          ./configure
+          make
+          sudo make install
+          sudo ldconfig
           git clone --depth 1 https://github.com/haveamission/ACE.git /tmp/ace-src
           cd /tmp/ace-src
           make DELPHIN_CFLAGS= DELPHIN_LIBS= ace
