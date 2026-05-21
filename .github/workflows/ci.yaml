@@ -9,7 +9,6 @@ on:
 env:
   GRAMMAR_NAME: zhs
   GRAMMAR_DIR: cmn/zhs
-  ACE_VERSION: "0.9.34"
 
 jobs:
   compile-and-test:
@@ -22,11 +21,14 @@ jobs:
         with:
           python-version: "3.11"
 
-      - name: Install ACE
+      - name: Build ACE from fork
         run: |
-          wget -q http://sweaglesw.org/linguistics/ace/download/ace-${ACE_VERSION}-x86-64.tar.gz
-          tar xzf ace-${ACE_VERSION}-x86-64.tar.gz
-          sudo mv ace-${ACE_VERSION} /opt/ace
+          sudo apt-get update && sudo apt-get install -y libboost-regex-dev
+          git clone --depth 1 https://github.com/haveamission/ACE.git /tmp/ace-src
+          cd /tmp/ace-src
+          make DELPHIN_CFLAGS= DELPHIN_LIBS= ace
+          sudo mkdir -p /opt/ace
+          sudo cp ace /opt/ace/
           echo "/opt/ace" >> $GITHUB_PATH
 
       - name: Install pyDelphin
