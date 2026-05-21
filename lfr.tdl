@@ -68,3 +68,40 @@ bare_cls+preceding_cls_lfr := lexical_filtering_rule &
                                   VAL.SPR < > ] ] >,
     +OUTPUT < >,
     +POSITION "C1<I1" ].
+
+
+;;; Verb nominalization LFRs: remove nominalized verb edges in non-compound
+
+;;; Verb nominalization LFRs: remove nominalized verb edges in non-compound
+;;; contexts. The v-nominalization-lex-rule creates noun edges from all
+;;; intransitive verbs. These two rules control overgeneration:
+;;;
+;;; 1. Remove when a native noun already exists at the same position
+;;;    (the native entry has correct nominal semantics; the nominalized
+;;;    version is redundant)
+;;; 2. Remove when NO noun follows at the next position (using negated
+;;;    position constraint !C1>I1). This covers all non-compound contexts
+;;;    including sentence-final position, pre-verb, pre-adverb, etc.
+;;;    in a single rule. The negation also correctly handles the
+;;;    ambiguous-following-word case: if the next position has BOTH a
+;;;    noun and a verb edge, the nominalization survives (because a noun
+;;;    DOES follow), preserving the compound analysis.
+;;;
+;;; Requires ACE with negation support (! prefix on position constraints).
+;;; See the NOMINALIZED feature documentation in cmn.tdl.
+
+nominalized_v+native_noun_lfr := lexical_filtering_rule &
+  [ +CONTEXT < [ SYNSEM.LOCAL [ CAT.HEAD noun,
+                                CONT.RELS.LIST.FIRST noun-relation ],
+                TRAITS native_token_list ] >,
+    +INPUT < [ NOMINALIZED +,
+              SYNSEM.LOCAL.CAT.HEAD noun ] >,
+    +OUTPUT < >,
+    +POSITION "C1@I1" ].
+
+nominalized_v+no_following_noun_lfr := lexical_filtering_rule &
+  [ +CONTEXT < [ SYNSEM.LOCAL.CAT.HEAD noun ] >,
+    +INPUT < [ NOMINALIZED +,
+              SYNSEM.LOCAL.CAT.HEAD noun ] >,
+    +OUTPUT < >,
+    +POSITION "!C1>I1" ].
