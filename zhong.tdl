@@ -1220,6 +1220,8 @@ np3-bottom-coord-rule := unary-bottom-coord-rule & np-bottom-coord-phrase &
 
 ;;; Coordination Strategy 3
 
+
+
 s1-top-coord-rule := basic-s-top-coord-rule & apoly-top-coord-rule &
   [ SYNSEM.LOCAL.COORD-STRAT "1" ].
 
@@ -2021,6 +2023,29 @@ Some classifiers (i.e. time classifiers) expect to be able to pumped into time a
 
 ;; SSH 2015-04-21: Generic NPs have an underspecified COG-ST value.
 ;; [CONT.HOOK.INDEX.COG-ST type-id] is deleted.
+
+;===============================================================================
+; Bare Classifier (no numeral): 是 个 人 (implicit 一)
+;===============================================================================
+
+bare-nominal-cls-nospr-phrase := basic-bare-nominal-phrase &
+"""
+Like bare-nominal-cls-phrase but accepts classifiers WITHOUT a numeral.
+Handles 是 个 人 (= 是 一 个 人 with implicit 一).
+The classifier's SPR is unsatisfied (still has one element).
+"""
+  [ SYNSEM.LOCAL [ CAT [ HEAD.LOC na-or--,
+		         VAL.SPR < [ LOCAL.CAT.HEAD det,
+			             OPT + ] > ],
+		   CONT.HOOK.INDEX.SORT #sort ],
+    ARGS < [ SYNSEM.LOCAL [ COORD na-or--,
+                            CAT [ HEAD classifier &
+				       [ MOD < [ LOCAL.CONT.HOOK [ LTOP #ltop,
+								   INDEX #index & [SORT #sort] ] ] > ],
+				  VAL.SPR < [] > ] ] ] >,
+    C-CONT.HOOK [ LTOP #ltop,
+		  INDEX #index ] ].
+
 generic-np-phrase := basic-bare-np-phrase &
   [ SYNSEM [ LOCAL.CAT [ HEAD noun & [ GENERIC + ],
 			 NONCOMP + ],
@@ -2112,6 +2137,10 @@ It is not clear why [EXISTV -] was added to the HEAD-DTR.
                         NON-LOCAL #non-local ] ] ].
 
 ;;ZZF 2016-12-8: removed CLASSIFIED na-or-- from head-dtr to allow compound to combine with classifiers later.
+
+
+
+
 basic-n-n-compound-phrase := head-final &
 """[EMPTY -] to stop combining NPs with no head noun, like DeP.
 
@@ -2203,10 +2232,38 @@ noun-noun-compound-phrase := basic-n-n-compound-phrase &
 <nex>他 解决 了 我 问题
 For compounds with >2 nouns, we have bracketting ambiguity, e.g. [产品 [质量 问题]] or [[产品 质量] 问题]. 
 The rule allows both interpretations, leaving the ambiguity for statistical ranking model to determine later."""
-  [ NON-HEAD-DTR.SYNSEM.LOCAL [ CAT.VAL.SPR < synsem >,
-                                CONT.HOOK [ LTOP #larg,
-                                            INDEX #nhind ] ],
+  [ NON-HEAD-DTR [ NOMINALIZED -,
+                   SYNSEM.LOCAL [ CAT.VAL.SPR < synsem >,
+                                  CONT.HOOK [ LTOP #larg,
+                                              INDEX #nhind ] ] ],
     HEAD-DTR.SYNSEM.LOCAL.CAT.VAL.SPR < synsem >,
+    C-CONT [ HOOK [ LTOP #ltop,
+                    INDEX #hind ],
+             RELS <! quant-relation & [ PRED exist_q_rel,
+					ARG0 #nhind,
+					RSTR #harg ],
+                      arg12-ev-relation & [ LBL #ltop,
+                                            PRED compound_p_rel,
+                                            ARG1 #hind, 
+				            ARG2 #nhind ] !>,
+             HCONS <! qeq & [ HARG #harg,
+                              LARG #larg ] !> ] ].
+
+nom-noun-compound-phrase := basic-n-n-compound-phrase &
+"""Forms a nominalized-verb + noun compound phrase.
+Only for modifiers produced by the v-nominalization-lex-rule
+(NOMINALIZED +). The head noun must allow nominalized-verb
+compounding (NOM-CMPD-HD defaults to bool, unifying with +;
+set NOM-CMPD-HD - on nouns that should not participate).
+<ex>学习 方法
+<ex>上班 时间
+<nex>坐 汽车 (as compound)"""
+  [ NON-HEAD-DTR [ NOMINALIZED +,
+                   SYNSEM.LOCAL [ CAT.VAL.SPR < synsem >,
+                                  CONT.HOOK [ LTOP #larg,
+                                              INDEX #nhind ] ] ],
+    HEAD-DTR.SYNSEM.LOCAL [ CAT [ VAL.SPR < synsem >,
+                                  HEAD.NOM-CMPD-HD + ] ],
     C-CONT [ HOOK [ LTOP #ltop,
                     INDEX #hind ],
              RELS <! quant-relation & [ PRED exist_q_rel,

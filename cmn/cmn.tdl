@@ -37,8 +37,10 @@
 ;;; Any future lex-rule producing HEAD noun edges should set
 ;;; NOMINALIZED - to avoid being caught by the nominalization LFRs.
 
-word-or-lexrule :+ [ NOMINALIZED bool ].
+sign :+ [ NOMINALIZED bool ].
 lex-item :+ [ NOMINALIZED - ].
+phrase :+ [ NOMINALIZED - ].
+noun :+ [ NOM-CMPD-HD bool ].
 ;;; origially created by Sanghoun Song (2014-08-28)
 ;;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
@@ -413,11 +415,11 @@ v-nominalization-lex-rule := const-lex-rule &
   same-ctxt-lex-rule & same-agr-lex-rule &
   same-non-local-lex-rule & same-modified-lex-rule & same-light-lex-rule &
   [ NOMINALIZED +,
-    DTR.SYNSEM.LOCAL [ CAT [ HEAD verb,
-                              VAL [ COMPS < >,
-                                    SUBJ < synsem > ] ],
-                       CONT.HOOK [ LTOP #ltop,
-                                   INDEX #e ] ],
+    DTR lex-item & [ SYNSEM.LOCAL [ CAT [ HEAD verb,
+                                          VAL [ COMPS < >,
+                                                SUBJ < synsem > ] ],
+                                   CONT.HOOK [ LTOP #ltop,
+                                               INDEX #e ] ] ],
     SYNSEM.LOCAL [ CAT [ HEAD noun & [ EMPTY - ],
                          VAL [ SPR < synsem >,
                                COMPS < >,
@@ -425,7 +427,7 @@ v-nominalization-lex-rule := const-lex-rule &
                                SPEC < > ],
                          POSTHEAD - ],
                   CONT.HOOK [ LTOP #ltop,
-                              INDEX #x & ref-ind ] ],
+                              INDEX #x & ref-ind & [ SORT nontime-s ] ] ],
     C-CONT [ RELS <! arg1-relation & [ PRED "nominalize_rel",
                                          LBL #ltop,
                                          ARG0 #x,

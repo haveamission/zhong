@@ -59005,7 +59005,8 @@ This entry is a source of tokenization problems. Having both 有一点儿 as a s
 
 汽车_n_1 := n_-_c_le &
   [ STEM < "汽车" >,
-    SYNSEM.LOCAL.CAT.HEAD.CHAR [ FCHAR "汽", LENGTH two ],
+    SYNSEM.LOCAL.CAT.HEAD [ CHAR [ FCHAR "汽", LENGTH two ],
+                            NOM-CMPD-HD - ],
     SYNSEM.LKEYS.KEYREL.PRED "_汽车_n_1_rel",
     TRAITS native_token_list ].
 
@@ -106500,4 +106501,3 @@ i.e.
     SYNSEM.LOCAL.CAT.HEAD.CHAR [ FCHAR "开", LENGTH two ],
     SYNSEM.LKEYS.KEYREL.PRED "_开始_v_1_rel",
     TRAITS native_token_list ].
-

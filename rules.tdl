@@ -87,6 +87,7 @@ Both (猫) and (两 只 猫) are bare NPs.
 0-nom-d := bare-nominal-det-cl-phrase.
 0-nom-d-nocl := bare-nominal-det-nocl-phrase.
 0-nom-cls := bare-nominal-cls-phrase.
+0-nom-cls-nospr := bare-nominal-cls-nospr-phrase & [ STYLE robust ].
 
 rbst-meas-np := meas-np-phrase
 """
@@ -243,6 +244,7 @@ extracted-subj := extracted-subj-phrase.
 ;; sent-subj := sent-subj-phrase.
 
 n-n-compound := noun-noun-compound-phrase.
+nom-n-compound := nom-noun-compound-phrase.
 prn-n-compound := pronoun-noun-compound-phrase.
 prp-n-compound := propernoun-noun-compound-phrase.
 n-prp-compound := noun-proper-compound-phrase.
@@ -354,7 +356,6 @@ frg-np := frag-np-rule.
 
 frag-vmod-int := frag-vmod-int-rule.
 frag-vmod-scop := frag-vmod-scop-rule.
-
 
 
 
