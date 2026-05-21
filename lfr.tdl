@@ -71,24 +71,11 @@ bare_cls+preceding_cls_lfr := lexical_filtering_rule &
 
 
 ;;; Verb nominalization LFRs: remove nominalized verb edges in non-compound
-
-;;; Verb nominalization LFRs: remove nominalized verb edges in non-compound
 ;;; contexts. The v-nominalization-lex-rule creates noun edges from all
-;;; intransitive verbs. These two rules control overgeneration:
-;;;
-;;; 1. Remove when a native noun already exists at the same position
-;;;    (the native entry has correct nominal semantics; the nominalized
-;;;    version is redundant)
-;;; 2. Remove when NO noun follows at the next position (using negated
-;;;    position constraint !C1>I1). This covers all non-compound contexts
-;;;    including sentence-final position, pre-verb, pre-adverb, etc.
-;;;    in a single rule. The negation also correctly handles the
-;;;    ambiguous-following-word case: if the next position has BOTH a
-;;;    noun and a verb edge, the nominalization survives (because a noun
-;;;    DOES follow), preserving the compound analysis.
-;;;
-;;; Requires ACE with negation support (! prefix on position constraints).
-;;; See the NOMINALIZED feature documentation in cmn.tdl.
+;;; intransitive verbs. These LFRs remove them everywhere EXCEPT before
+;;; nouns (the N-N compound context). Uses NOMINALIZED + as the INPUT
+;;; discriminator — see cmn.tdl header for why this feature exists.
+;;; Position operator > (lookahead) confirmed functional in ACE source.
 
 nominalized_v+native_noun_lfr := lexical_filtering_rule &
   [ +CONTEXT < [ SYNSEM.LOCAL [ CAT.HEAD noun,
@@ -99,9 +86,93 @@ nominalized_v+native_noun_lfr := lexical_filtering_rule &
     +OUTPUT < >,
     +POSITION "C1@I1" ].
 
-nominalized_v+no_following_noun_lfr := lexical_filtering_rule &
-  [ +CONTEXT < [ SYNSEM.LOCAL.CAT.HEAD noun ] >,
+nominalized_v+following_verb_lfr := lexical_filtering_rule &
+  [ +CONTEXT < [ SYNSEM.LOCAL.CAT.HEAD verb ] >,
     +INPUT < [ NOMINALIZED +,
               SYNSEM.LOCAL.CAT.HEAD noun ] >,
     +OUTPUT < >,
-    +POSITION "!C1>I1" ].
+    +POSITION "C1>I1" ].
+
+nominalized_v+following_adv_lfr := lexical_filtering_rule &
+  [ +CONTEXT < [ SYNSEM.LOCAL.CAT.HEAD adv ] >,
+    +INPUT < [ NOMINALIZED +,
+              SYNSEM.LOCAL.CAT.HEAD noun ] >,
+    +OUTPUT < >,
+    +POSITION "C1>I1" ].
+
+nominalized_v+following_adj_lfr := lexical_filtering_rule &
+  [ +CONTEXT < [ SYNSEM.LOCAL.CAT.HEAD adj ] >,
+    +INPUT < [ NOMINALIZED +,
+              SYNSEM.LOCAL.CAT.HEAD noun ] >,
+    +OUTPUT < >,
+    +POSITION "C1>I1" ].
+
+nominalized_v+following_adp_lfr := lexical_filtering_rule &
+  [ +CONTEXT < [ SYNSEM.LOCAL.CAT.HEAD adp ] >,
+    +INPUT < [ NOMINALIZED +,
+              SYNSEM.LOCAL.CAT.HEAD noun ] >,
+    +OUTPUT < >,
+    +POSITION "C1>I1" ].
+
+nominalized_v+following_det_lfr := lexical_filtering_rule &
+  [ +CONTEXT < [ SYNSEM.LOCAL.CAT.HEAD det ] >,
+    +INPUT < [ NOMINALIZED +,
+              SYNSEM.LOCAL.CAT.HEAD noun ] >,
+    +OUTPUT < >,
+    +POSITION "C1>I1" ].
+
+nominalized_v+following_num_lfr := lexical_filtering_rule &
+  [ +CONTEXT < [ SYNSEM.LOCAL.CAT.HEAD num ] >,
+    +INPUT < [ NOMINALIZED +,
+              SYNSEM.LOCAL.CAT.HEAD noun ] >,
+    +OUTPUT < >,
+    +POSITION "C1>I1" ].
+
+nominalized_v+following_cls_lfr := lexical_filtering_rule &
+  [ +CONTEXT < [ SYNSEM.LOCAL.CAT.HEAD classifier ] >,
+    +INPUT < [ NOMINALIZED +,
+              SYNSEM.LOCAL.CAT.HEAD noun ] >,
+    +OUTPUT < >,
+    +POSITION "C1>I1" ].
+
+nominalized_v+following_prep_lfr := lexical_filtering_rule &
+  [ +CONTEXT < [ SYNSEM.LOCAL.CAT.HEAD prep ] >,
+    +INPUT < [ NOMINALIZED +,
+              SYNSEM.LOCAL.CAT.HEAD noun ] >,
+    +OUTPUT < >,
+    +POSITION "C1>I1" ].
+
+nominalized_v+following_postp_lfr := lexical_filtering_rule &
+  [ +CONTEXT < [ SYNSEM.LOCAL.CAT.HEAD postp ] >,
+    +INPUT < [ NOMINALIZED +,
+              SYNSEM.LOCAL.CAT.HEAD noun ] >,
+    +OUTPUT < >,
+    +POSITION "C1>I1" ].
+
+nominalized_v+following_marker_lfr := lexical_filtering_rule &
+  [ +CONTEXT < [ SYNSEM.LOCAL.CAT.HEAD marker ] >,
+    +INPUT < [ NOMINALIZED +,
+              SYNSEM.LOCAL.CAT.HEAD noun ] >,
+    +OUTPUT < >,
+    +POSITION "C1>I1" ].
+
+nominalized_v+following_conj_lfr := lexical_filtering_rule &
+  [ +CONTEXT < [ SYNSEM.LOCAL.CAT.HEAD conj ] >,
+    +INPUT < [ NOMINALIZED +,
+              SYNSEM.LOCAL.CAT.HEAD noun ] >,
+    +OUTPUT < >,
+    +POSITION "C1>I1" ].
+
+nominalized_v+sentence_end_lfr := lexical_filtering_rule &
+  [ +CONTEXT < >,
+    +INPUT < [ NOMINALIZED +,
+              SYNSEM.LOCAL.CAT.HEAD noun ] >,
+    +OUTPUT < >,
+    +POSITION "I1<$" ].
+
+nominalized_v+following_punct_lfr := lexical_filtering_rule &
+  [ +CONTEXT < [ SYNSEM.LOCAL.CAT.HEAD punct ] >,
+    +INPUT < [ NOMINALIZED +,
+              SYNSEM.LOCAL.CAT.HEAD noun ] >,
+    +OUTPUT < >,
+    +POSITION "C1>I1" ].

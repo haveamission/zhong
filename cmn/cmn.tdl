@@ -3,6 +3,42 @@
 ;;; Grammar of Mandarin Chinese - Core
 ;;;
 ;;; 
+
+;;; NOMINALIZED feature: discriminator for verb-nominalization LFRs
+;;;
+;;; Chinese intransitive verbs productively nominalize (~75% of 1,034
+;;; intransitive verbs). The v-nominalization-lex-rule creates noun
+;;; readings from intransitive verbs so they can enter N-N compounds
+;;; (e.g., 睡觉方式 "sleep method", 上班时间 "work time"). Without
+;;; filtering, this causes massive overgeneration (35/107 test items
+;;; regress) because every intransitive verb gets a noun edge in every
+;;; sentence.
+;;;
+;;; Forward-looking LFRs (using the > position operator confirmed in
+;;; ACE source: lattice-mapping.c) remove nominalized edges when a
+;;; non-noun follows, keeping them only before nouns (the compound
+;;; context). These LFRs need to distinguish nominalized-verb edges
+;;; from native noun edges. Standard feature-structure discriminators
+;;; fail because:
+;;;   - CONT.RELS.LIST.FIRST event-relation: temporal nouns (n_-_tm_le)
+;;;     have underspecified INDEX (individual, not ref-ind), so their
+;;;     KEYREL unifies with event-relation
+;;;   - CONT.RELS.LIST.REST: diff-list tails are underspecified in ACE,
+;;;     so REST.FIRST unifies on single-rel entries
+;;;   - TRAITS: lex-rule :+ in tmt.tdl forces TRAITS identification
+;;;     between mother and daughter, preventing override
+;;;
+;;; NOMINALIZED bool on word-or-lexrule solves this cleanly:
+;;;   - Native entries (lex-item) default to NOMINALIZED -
+;;;   - The nominalization lex-rule sets NOMINALIZED + on its output
+;;;   - lex-rule :+ does NOT copy NOMINALIZED (only TRAITS and STEM.TO)
+;;;   - LFRs check NOMINALIZED + to match only nominalized edges
+;;;
+;;; Any future lex-rule producing HEAD noun edges should set
+;;; NOMINALIZED - to avoid being caught by the nominalization LFRs.
+
+word-or-lexrule :+ [ NOMINALIZED bool ].
+lex-item :+ [ NOMINALIZED - ].
 ;;; origially created by Sanghoun Song (2014-08-28)
 ;;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
@@ -363,3 +399,36 @@ _mei_polar_x_rel := neg_x_rel.
 _hen_x_rel := intensifier_x_rel.
 _feichang_x_rel := intensifier_x_rel.
 _ting_x_rel := intensifier_x_rel.
+
+;;; Verb nominalization: creates noun readings from intransitive verbs.
+;;; Uses C-CONT (not same-cont) to introduce a new ref-ind INDEX and a
+;;; nominalize_rel linking it to the verb's event. This is necessary
+;;; because N-N compound quantifiers require ref-ind ARG0 — a rule that
+;;; preserves the verb's event INDEX (via same-cont-lex-rule) produces
+;;; nominalized nouns that cannot enter compounds.
+;;; Overgeneration is controlled by forward-looking LFRs in lfr.tdl.
+;;; See the NOMINALIZED feature documentation at the top of this file.
+
+v-nominalization-lex-rule := const-lex-rule &
+  same-ctxt-lex-rule & same-agr-lex-rule &
+  same-non-local-lex-rule & same-modified-lex-rule & same-light-lex-rule &
+  [ NOMINALIZED +,
+    DTR.SYNSEM.LOCAL [ CAT [ HEAD verb,
+                              VAL [ COMPS < >,
+                                    SUBJ < synsem > ] ],
+                       CONT.HOOK [ LTOP #ltop,
+                                   INDEX #e ] ],
+    SYNSEM.LOCAL [ CAT [ HEAD noun & [ EMPTY - ],
+                         VAL [ SPR < synsem >,
+                               COMPS < >,
+                               SUBJ < >,
+                               SPEC < > ],
+                         POSTHEAD - ],
+                  CONT.HOOK [ LTOP #ltop,
+                              INDEX #x & ref-ind ] ],
+    C-CONT [ RELS <! arg1-relation & [ PRED "nominalize_rel",
+                                         LBL #ltop,
+                                         ARG0 #x,
+                                         ARG1 #e ] !>,
+             HCONS <! !>,
+             ICONS <! !> ] ].

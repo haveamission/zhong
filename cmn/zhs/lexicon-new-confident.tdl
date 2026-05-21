@@ -49417,3 +49417,15 @@
     SYNSEM.LOCAL.CAT.HEAD.CHAR [ FCHAR "出", LENGTH two ],
     SYNSEM [ LKEYS.KEYREL.PRED "_出门_v_2_rel" ],
     TRAITS native_token_list ].
+
+调查_v_3 := v_-_le &
+  [ STEM < "调查" >,
+    SYNSEM.LOCAL.CAT.HEAD.CHAR [ FCHAR "调", LENGTH two ],
+    SYNSEM [ LKEYS.KEYREL.PRED "_调查_v_3_rel" ],
+    TRAITS native_token_list ].
+
+睡觉_n_1 := n_-_le &
+  [ STEM < "睡觉" >,
+    SYNSEM.LOCAL.CAT.HEAD.CHAR [ FCHAR "睡", LENGTH two ],
+    SYNSEM [ LKEYS.KEYREL.PRED "_睡觉_n_1_rel" ],
+    TRAITS native_token_list ].
