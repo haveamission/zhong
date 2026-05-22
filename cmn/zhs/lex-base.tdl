@@ -172,7 +172,7 @@ This is the normal perfective marker LE.
     TRAITS native_token_list ].
 
 我们_n := n_-_pr-1pl-excl_le &
-  [ STEM < "我们" >,
+  [ STEM < "我", "们" >,
     SYNSEM.LOCAL.CAT.HEAD.CHAR [ FCHAR "我", LENGTH more-than-one ],
     TRAITS native_token_list ].
 
@@ -190,7 +190,7 @@ This is the normal perfective marker LE.
 
 
 咱们_n := n_-_pr-1pl-incl_le &
-  [ STEM < "咱们" >,
+  [ STEM < "咱", "们" >,
     SYNSEM.LOCAL.CAT.HEAD.CHAR [ FCHAR "咱", LENGTH more-than-one ],
     TRAITS native_token_list ].
 
@@ -206,7 +206,7 @@ This is the normal perfective marker LE.
 
 
 你们_n := n_-_pr-2pl_le &
-  [ STEM < "你们" >,
+  [ STEM < "你", "们" >,
     SYNSEM.LOCAL.CAT.HEAD.CHAR [ FCHAR "你", LENGTH more-than-one ],
     TRAITS native_token_list ].
 
@@ -217,21 +217,21 @@ s_你们_n := n_-_pr-2pl_le &
 
 
 他们_n := n_-_pr-3pl_le &
-  [ STEM < "他们" >,
+  [ STEM < "他", "们" >,
     SYNSEM.LOCAL.CAT.HEAD.CHAR [ FCHAR "他", LENGTH more-than-one ],
     SYNSEM.LOCAL.CONT.HOOK.INDEX.PNG [ GENDER masc,
 				       ANIMACY human ],
     TRAITS native_token_list ].
 
 她们_n := n_-_pr-3pl_le &
-  [ STEM < "她们" >,
+  [ STEM < "她", "们" >,
     SYNSEM.LOCAL.CAT.HEAD.CHAR [ FCHAR "她", LENGTH more-than-one ],
     SYNSEM.LOCAL.CONT.HOOK.INDEX.PNG [ GENDER fem,
 				       ANIMACY human ],
     TRAITS native_token_list ].
 
 它们_n := n_-_pr-3pl_le &
-  [ STEM < "它们" >,
+  [ STEM < "它", "们" >,
     SYNSEM.LOCAL.CAT.HEAD.CHAR [ FCHAR "它", LENGTH more-than-one ],
     SYNSEM.LOCAL.CONT.HOOK.INDEX.PNG.ANIMACY non-human,
     TRAITS native_token_list ].

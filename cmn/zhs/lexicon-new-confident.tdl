@@ -9989,7 +9989,7 @@
 
 ; Sentence-initial interjection meaning "that's right/exactly"
 没错_r_1 := adv_-_ij-prehd_le &
-  [ STEM < "没错" >,
+  [ STEM < "没", "错" >,
     SYNSEM.LOCAL.CAT.HEAD.CHAR [ FCHAR "没", LENGTH two ],
     SYNSEM.LKEYS.KEYREL.PRED "_没错_a_1_rel",
     TRAITS native_token_list ].
@@ -11172,7 +11172,7 @@
 
 ; Transitive verb with resultative aspect - 见 + 过, seen (从未见过, 以前见过)
 见过_v_1 := v_np_le &
-  [ STEM < "见过" >,
+  [ STEM < "见", "过" >,
     SYNSEM.LOCAL.CAT.HEAD.CHAR [ FCHAR "见", LENGTH two ],
     SYNSEM [ LKEYS.KEYREL.PRED "_见过_v_1_rel" ],
     TRAITS native_token_list ].
@@ -13377,7 +13377,7 @@
 
 ; Transitive verb meaning "to bypass/circumvent"; 绕过加州官员, 绕过国会 takes NP object
 绕过_v_1 := v_np_le &
-  [ STEM < "绕过" >,
+  [ STEM < "绕", "过" >,
     SYNSEM.LOCAL.CAT.HEAD.CHAR [ FCHAR "绕", LENGTH two ],
     SYNSEM [ LKEYS.KEYREL.PRED "_绕过_v_1_rel" ],
     TRAITS native_token_list ].
@@ -17745,7 +17745,7 @@
 
 ; Interjection/exclamation meaning "great/wonderful" (那太好了, 太好了)
 太好了_r_1 := adv_-_ij_le &
-  [ STEM < "太好了" >,
+  [ STEM < "太好", "了" >,
     SYNSEM.LOCAL.CAT.HEAD.CHAR [ FCHAR "太", LENGTH more-than-two ],
     SYNSEM.LKEYS.KEYREL.PRED "_太好了_a_1_rel",
     TRAITS native_token_list ].
@@ -22540,7 +22540,7 @@
 
 ; 就算 "even if" - pre-head subordinating conjunction
 就算_sc := conj_-_sub-pre_le &
-  [ STEM < "就算" >,
+  [ STEM < "就", "算" >,
     SYNSEM.LOCAL.CAT.HEAD.CHAR [ FCHAR "就", LENGTH two ],
     SYNSEM.LKEYS.KEYREL.PRED "_就算_subord_rel",
     TRAITS native_token_list ].
@@ -30198,7 +30198,7 @@
 
 ; Intransitive verb meaning "to take office/inaugurate": 就职以来, 举行就职典礼
 就职_v_1 := v_-_le &
-  [ STEM < "就职" >,
+  [ STEM < "就", "职" >,
     SYNSEM.LOCAL.CAT.HEAD.CHAR [ FCHAR "就", LENGTH two ],
     SYNSEM [ LKEYS.KEYREL.PRED "_就职_v_1_rel" ],
     TRAITS native_token_list ].
@@ -37905,7 +37905,7 @@
 
 ; "far exceed" - transitive verb (远超过复兴党)
 远超过_v_1 := v_np_le &
-  [ STEM < "远超过" >,
+  [ STEM < "远超", "过" >,
     SYNSEM.LOCAL.CAT.HEAD.CHAR [ FCHAR "远", LENGTH more-than-two ],
     SYNSEM [ LKEYS.KEYREL.PRED "_远超过_v_1_rel" ],
     TRAITS native_token_list ].
@@ -41391,7 +41391,7 @@
 
 ; Common noun "employment opportunities/job opportunities"
 就业机会_n_1 := n_-_le &
-  [ STEM < "就业机会" >,
+  [ STEM < "就", "业机会" >,
     SYNSEM.LOCAL.CAT.HEAD.CHAR [ FCHAR "就", LENGTH more-than-two ],
     SYNSEM.LKEYS.KEYREL.PRED "_就业机会_n_1_rel",
     TRAITS native_token_list ].
@@ -43169,7 +43169,7 @@
 
 ; Adverb - "have no way to", modal adverb modifying VP
 没法_r_1 := adv_-_vp-pre_le &
-  [ STEM < "没法" >,
+  [ STEM < "没", "法" >,
     SYNSEM.LOCAL.CAT.HEAD.CHAR [ FCHAR "没", LENGTH two ],
     SYNSEM.LKEYS.KEYREL.PRED "_没法_a_1_rel",
     TRAITS native_token_list ].
@@ -44506,7 +44506,7 @@
 
 ; 美的 means "beautiful" - predicative adjective
 美的_j_1 := a_-_pred_le &
-  [ STEM < "美的" >,
+  [ STEM < "美", "的" >,
     SYNSEM.LOCAL.CAT.HEAD.CHAR [ FCHAR "美", LENGTH two ],
     SYNSEM.LKEYS.KEYREL.PRED "_美的_a_1_rel",
     TRAITS native_token_list ].
@@ -46515,14 +46515,14 @@
 
 ; "go to bed" - verb-object compound, intransitive (准备就寝)
 就寝_v_1 := v_-_le &
-  [ STEM < "就寝" >,
+  [ STEM < "就", "寝" >,
     SYNSEM.LOCAL.CAT.HEAD.CHAR [ FCHAR "就", LENGTH two ],
     SYNSEM [ LKEYS.KEYREL.PRED "_就寝_v_1_rel" ],
     TRAITS native_token_list ].
 
 ; "inauguration ceremony" - general common noun
 就职典礼_n_1 := n_-_le &
-  [ STEM < "就职典礼" >,
+  [ STEM < "就", "职典礼" >,
     SYNSEM.LOCAL.CAT.HEAD.CHAR [ FCHAR "就", LENGTH more-than-two ],
     SYNSEM.LKEYS.KEYREL.PRED "_就职典礼_n_1_rel",
     TRAITS native_token_list ].
@@ -49326,7 +49326,7 @@
     TRAITS native_token_list ].
 
 就业_n_1 := n_-_le &
-  [ STEM < "就业" >,
+  [ STEM < "就", "业" >,
     SYNSEM.LOCAL.CAT.HEAD.CHAR [ FCHAR "就", LENGTH two ],
     SYNSEM [ LKEYS.KEYREL.PRED "_就业_n_1_rel" ],
     TRAITS native_token_list ].
