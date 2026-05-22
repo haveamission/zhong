@@ -3687,7 +3687,7 @@ This is assumed this is to be a single token because it can take 了 as an aspec
 There are many many examples, but most are semantically very:
 <ex> 你 是 空气 ， 但是 好闻 胜过 了 空气 。
 """
-  [ STEM < "胜过" >,
+  [ STEM < "胜", "过" >,
     SYNSEM.LOCAL.CAT.HEAD.CHAR [ FCHAR "胜", LENGTH two ],
     SYNSEM [ LKEYS.KEYREL.PRED "_胜过_v_1_rel" ],
     TRAITS native_token_list ].
@@ -3782,7 +3782,7 @@ For now, assume this works as 没 (mei), except it can't modify 有 (you, to hav
 
 Added [EXISTV -] to block 有 from being modified with this.
 """
-  [ STEM < "没有" >,
+  [ STEM < "没", "有" >,
     SYNSEM.LOCAL.CAT.POSTHEAD -,
     SYNSEM.LOCAL.CAT.HEAD.CHAR [ FCHAR "没", LENGTH two ],
     ; SYNSEM [ LOCAL.CAT.HEAD.MOD < [ LOCAL [ CAT.HEAD [ LZG guo-zhe-mei-asp,
@@ -5310,7 +5310,7 @@ This is special tokenized form.
 """
 [méi shì] It's nothing!; Forget it!; It's ok!; 
 """
-  [ STEM < "没事" >,
+  [ STEM < "没", "事" >,
     SYNSEM.LOCAL.CAT.HEAD.CHAR [ FCHAR "没", LENGTH two ],
     SYNSEM.LKEYS.KEYREL.PRED "_没事_x_rel",
     TRAITS native_token_list ].
@@ -5319,7 +5319,7 @@ This is special tokenized form.
 """
 [méi shìr] It's nothing!; Forget it!; It's ok!; 
 """
-  [ STEM < "没事儿" >,
+  [ STEM < "没", "事儿" >,
     SYNSEM.LOCAL.CAT.HEAD.CHAR [ FCHAR "没", LENGTH more-than-two ],
     SYNSEM.LKEYS.KEYREL.PRED "_没事儿_x_rel",
     TRAITS native_token_list ].
@@ -5394,7 +5394,7 @@ s_不是么_ij_1 := adv_-_ij-prehd_le &
 """
 [méi guān xi] never mind; no problem; you're welcome;
 """
-  [ STEM < "没关系" >,
+  [ STEM < "没", "关系" >,
     SYNSEM.LOCAL.CAT.HEAD.CHAR [ FCHAR "没", LENGTH more-than-two ],
     SYNSEM.LKEYS.KEYREL.PRED "_没关系_x_rel",
     TRAITS native_token_list ].

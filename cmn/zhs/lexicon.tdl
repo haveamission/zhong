@@ -3068,7 +3068,7 @@ LMC: For now, I need to this as a word with spaces, since ZHONG has no treatment
 Mostly used after 得!
 <ex> 他 忙 得 不得了 。
 """
-  [ STEM < "不得了" >,
+  [ STEM < "不得", "了" >,
     SYNSEM.LOCAL.CAT.HEAD.CHAR [ FCHAR "不", LENGTH more-than-two ],
     SYNSEM.LKEYS.KEYREL.PRED "_不得了_a_1_rel",
     TRAITS native_token_list ].
@@ -3343,7 +3343,7 @@ s_不是_sc := conj_-_sub-pre_le &
 
 [FIXME] Not sure if this should be a word. The ARG-ST sure seems funny. Maybe 了 can be dropped?
 """
-  [ STEM < "不见了" >,
+  [ STEM < "不见", "了" >,
     SYNSEM.LOCAL.CAT.HEAD.CHAR [ FCHAR "不", LENGTH more-than-two ],
     SYNSEM.LKEYS.KEYREL.PRED "_不见了_a_1_rel",
     TRAITS native_token_list ].
@@ -4725,7 +4725,7 @@ s_不是_sc := conj_-_sub-pre_le &
 """
 [zhòng dì] to hit the target; to hit the nail on the head;
 """
-  [ STEM < "中的" >,
+  [ STEM < "中", "的" >,
     SYNSEM.LOCAL.CAT.HEAD.CHAR [ FCHAR "中", LENGTH two ],
     SYNSEM [ LKEYS.KEYREL.PRED "_中的_v_1_rel" ],
     TRAITS native_token_list ].
@@ -104611,7 +104611,7 @@ v. have one's eye on (e.g. a goal), to have something in mind
 """
 [jīng guò] to pass by; to go through; to experience; to undergo;
 """
-  [ STEM < "经过" >,
+  [ STEM < "经", "过" >,
     SYNSEM.LOCAL.CAT.HEAD.CHAR [ FCHAR "经", LENGTH two ],
     SYNSEM [ LKEYS.KEYREL.PRED "_经过_v_1_rel" ],
     TRAITS native_token_list ].
@@ -105041,7 +105041,7 @@ originally le + zhe but there is evidence for GUO
 """
 [chāo guò] to surpass; to go beyond; to exceed;
 """
-  [ STEM < "超过" >,
+  [ STEM < "超", "过" >,
     SYNSEM.LOCAL.CAT.HEAD.CHAR [ FCHAR "超", LENGTH two ],
     SYNSEM.LKEYS.KEYREL.PRED "_超过_v_1_rel",
     TRAITS native_token_list ].
@@ -105133,7 +105133,7 @@ originally le + zhe but there is evidence for GUO
 """
 [tōng guò] to pass; to pass through;
 """
-  [ STEM < "通过" >,
+  [ STEM < "通", "过" >,
     SYNSEM.LOCAL.CAT.HEAD.CHAR [ FCHAR "通", LENGTH two ],
     SYNSEM [ LKEYS.KEYREL.PRED "_通过_v_1_rel" ],
     TRAITS native_token_list ].
