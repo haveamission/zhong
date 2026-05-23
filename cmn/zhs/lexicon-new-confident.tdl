@@ -49429,3 +49429,208 @@
     SYNSEM.LOCAL.CAT.HEAD.CHAR [ FCHAR "睡", LENGTH two ],
     SYNSEM [ LKEYS.KEYREL.PRED "_睡觉_n_1_rel" ],
     TRAITS native_token_list ].
+
+;;; -*- Mode: TDL; Coding: utf-8 -*-
+;;;
+;;; LFR root cause fix: 34 new lexicon entries
+;;;
+;;; The lexical filtering rule generic_non_ne+native_lfr (lfr.tdl) kills
+;;; ALL generic entries when ANY native entry exists at the same chart
+;;; position. Words with native entries of the wrong syntactic category
+;;; for a given context cannot fall back to generic entries. These entries
+;;; add the missing categories.
+;;;
+;;; Append to cmn/zhs/lexicon-new-confident.tdl
+;;; Also add _该_q_rel, _各_q_rel, _这次_q_rel to cmn/zhs/zhong-zhs.tdl
+
+;;; ====================================================================
+;;; JJ+NN: Attributive adjective entries (17)
+;;;
+;;; These words had only a_-_pred_le (predicative). The LFR killed
+;;; generic_jj (attr-adj-lex) because a native entry existed. Per the
+;;; grammar comment on a_-_att_le: "If an adjective can be used both
+;;; attributively and predicatively, then we currently have two lexical
+;;; entries."
+;;; ====================================================================
+
+健康_j_2 := a_-_att_le &
+  [ STEM < "健康" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_健康_a_1_rel" ].
+
+全球性_j_2 := a_-_att_le &
+  [ STEM < "全球性" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_全球性_a_1_rel" ].
+
+劣质_j_2 := a_-_att_le &
+  [ STEM < "劣质" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_劣质_a_1_rel" ].
+
+平均_j_2 := a_-_att_le &
+  [ STEM < "平均" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_平均_a_1_rel" ].
+
+恶劣_j_2 := a_-_att_le &
+  [ STEM < "恶劣" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_恶劣_a_1_rel" ].
+
+最新_j_2 := a_-_att_le &
+  [ STEM < "最新" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_最新_a_1_rel" ].
+
+有力_j_2 := a_-_att_le &
+  [ STEM < "有力" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_有力_a_1_rel" ].
+
+有毒_j_2 := a_-_att_le &
+  [ STEM < "有毒" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_有毒_a_1_rel" ].
+
+激进_j_2 := a_-_att_le &
+  [ STEM < "激进" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_激进_a_1_rel" ].
+
+灰白色_j_2 := a_-_att_le &
+  [ STEM < "灰白色" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_灰白色_a_1_rel" ].
+
+热烈_j_2 := a_-_att_le &
+  [ STEM < "热烈" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_热烈_a_1_rel" ].
+
+独立_j_2 := a_-_att_le &
+  [ STEM < "独立" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_独立_a_1_rel" ].
+
+相关_j_2 := a_-_att_le &
+  [ STEM < "相关" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_相关_a_1_rel" ].
+
+真诚_j_2 := a_-_att_le &
+  [ STEM < "真诚" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_真诚_a_1_rel" ].
+
+紧张_j_2 := a_-_att_le &
+  [ STEM < "紧张" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_紧张_a_1_rel" ].
+
+紧急_j_2 := a_-_att_le &
+  [ STEM < "紧急" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_紧急_a_1_rel" ].
+
+重大_j_2 := a_-_att_le &
+  [ STEM < "重大" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_重大_a_1_rel" ].
+
+;;; ====================================================================
+;;; NN entries for verb-noun ambiguous words (3)
+;;;
+;;; These words had only verb entries. The LFR killed generic_common-noun.
+;;; The v-nominalization-lex-rule does NOT cover these cases:
+;;;   - 欢迎/感谢 are transitive-only, so the rule (which requires
+;;;     intransitive COMPS < >) cannot fire at all.
+;;;   - 调查 has a v_-_le entry so the rule CAN fire, but the
+;;;     nominalization LFRs kill the result in every position except
+;;;     before another noun (N-N compound). As subject before a verb,
+;;;     as head noun after an adjective, or at sentence end, the
+;;;     nominalized edge is removed.
+;;; Native n_-_le entries work in all syntactic positions.
+;;; ====================================================================
+
+调查_n_1 := n_-_le &
+  [ STEM < "调查" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_调查_n_1_rel" ].
+
+欢迎_n_1 := n_-_le &
+  [ STEM < "欢迎" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_欢迎_n_1_rel" ].
+
+感谢_n_1 := n_-_le &
+  [ STEM < "感谢" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_感谢_n_1_rel" ].
+
+;;; ====================================================================
+;;; AD+VV: Adverb entries for manner adverbs (9)
+;;;
+;;; spaCy tags these as AD when modifying verbs. Native a_-_pred_le or
+;;; verb entries kill generic entries via LFR. Additionally, no
+;;; generic_ad entry exists in the grammar at all (gle.tdl handles NR,
+;;; FW, CD, NN, NT, M, VV, VA, JJ, PU — but not AD). So even without
+;;; the LFR, AD-tagged words with no native adverb entry would fail.
+;;; ====================================================================
+
+普遍_r_1 := adv_-_vp-pre_le &
+  [ STEM < "普遍" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_普遍_a_1_rel" ].
+
+勤奋_r_1 := adv_-_vp-pre_le &
+  [ STEM < "勤奋" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_勤奋_a_1_rel" ].
+
+主动_r_1 := adv_-_vp-pre_le &
+  [ STEM < "主动" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_主动_a_1_rel" ].
+
+正常_r_1 := adv_-_vp-pre_le &
+  [ STEM < "正常" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_正常_a_1_rel" ].
+
+和平_r_1 := adv_-_vp-pre_le &
+  [ STEM < "和平" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_和平_a_1_rel" ].
+
+异常_r_1 := adv_-_vp-pre_le &
+  [ STEM < "异常" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_异常_a_1_rel" ].
+
+自主_r_1 := adv_-_vp-pre_le &
+  [ STEM < "自主" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_自主_a_1_rel" ].
+
+公开_r_1 := adv_-_vp-pre_le &
+  [ STEM < "公开" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_公开_a_1_rel" ].
+
+那样_r_2 := adv_-_vp-pre_le &
+  [ STEM < "那样" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_那样_a_2_rel" ].
+
+;;; ====================================================================
+;;; DT+NN: Determiner entries (4)
+;;;
+;;; No generic_dt exists in gle.tdl. 该/各/这次 only had adverb entries.
+;;; 此 had d_-_le (classifier-required) but needs d_-_nocls_le for
+;;; bare DT+NN in formal/written Chinese.
+;;;
+;;; Requires q_rel type declarations in cmn/zhs/zhong-zhs.tdl:
+;;;   _该_q_rel := q_rel.
+;;;   _各_q_rel := q_rel.
+;;;   _这次_q_rel := q_rel.
+;;; ====================================================================
+
+该_d_1 := d_-_nocls_le &
+  [ STEM < "该" >,
+    SYNSEM.LKEYS.KEYREL.PRED _该_q_rel ].
+
+各_d_1 := d_-_nocls_le &
+  [ STEM < "各" >,
+    SYNSEM.LKEYS.KEYREL.PRED _各_q_rel ].
+
+此_d_nocls := d_-_nocls_le &
+  [ STEM < "此" >,
+    SYNSEM.LKEYS.KEYREL.PRED _此_q_rel ].
+
+这次_d_1 := d_-_nocls_le &
+  [ STEM < "这次" >,
+    SYNSEM.LKEYS.KEYREL.PRED _这次_q_rel ].
+
+;;; ====================================================================
+;;; Missing noun: 国 (1)
+;;;
+;;; 国 had no lexicon entry at all. As a common bound morpheme meaning
+;;; "country," it appears in compounds (中国, 美国) but also stands
+;;; alone after determiners like 各 ("各国" = each country).
+;;; ====================================================================
+
+国_n_1 := n_-_le &
+  [ STEM < "国" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_国_n_1_rel" ].
