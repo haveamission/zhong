@@ -89,7 +89,7 @@ jobs:
 
             REGRESSIONS=$(echo "$DIFF" | grep -E '<[0-9]+,[0-9]+,[1-9]' || true)
             if [ -n "$REGRESSIONS" ]; then
-              echo "::error::Regression in $SUITE — lost parses:"
+              echo "::error::Regression in $SUITE - lost parses:"
               echo "$REGRESSIONS"
               FAILURES=$((FAILURES + 1))
             else
