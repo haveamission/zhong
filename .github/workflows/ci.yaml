@@ -123,7 +123,7 @@ jobs:
         with:
           name: maxent-model
           path: ${{ env.GRAMMAR_DIR }}/zhong.mem
-          if-no-files-found: ignore
+          if-no-files-found: error
           retention-days: 7
 
       - name: Upload test results
@@ -148,69 +148,28 @@ jobs:
         uses: actions/download-artifact@v4
         with:
           name: maxent-model
-        continue-on-error: true
 
-      - name: Backup current grammar
-        uses: appleboy/ssh-action@v1
-        with:
-          host: ${{ secrets.DROPLET_HOST }}
-          username: root
-          key: ${{ secrets.DROPLET_SSH_KEY }}
-          script: |
-            cp /mnt/volume_nyc3_01/grammars/${{ env.GRAMMAR_NAME }}.dat /mnt/volume_nyc3_01/grammars/${{ env.GRAMMAR_NAME }}.dat.bak 2>/dev/null || true
-
-      - name: Copy grammar to droplet
+      - name: Upload to Spaces
+        env:
+          AWS_ACCESS_KEY_ID: ${{ secrets.SPACES_ACCESS_KEY_ID }}
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.SPACES_SECRET_ACCESS_KEY }}
+          DEST: s3://pandaist/grammar-engine/grammars
+          ENDPOINT: https://nyc3.digitaloceanspaces.com
         run: |
-          mkdir -p ~/.ssh
-          echo "${{ secrets.DROPLET_SSH_KEY }}" > ~/.ssh/deploy_key
-          chmod 600 ~/.ssh/deploy_key
-          ssh-keyscan -H ${{ secrets.DROPLET_HOST }} >> ~/.ssh/known_hosts 2>/dev/null
-          scp -i ~/.ssh/deploy_key ${{ env.GRAMMAR_NAME }}.dat root@${{ secrets.DROPLET_HOST }}:/mnt/volume_nyc3_01/grammars/
-          rm ~/.ssh/deploy_key
-
-      - name: Copy MaxEnt model to droplet
-        run: |
-          if [ -f zhong.mem ]; then
-            mkdir -p ~/.ssh
-            echo "${{ secrets.DROPLET_SSH_KEY }}" > ~/.ssh/deploy_key
-            chmod 600 ~/.ssh/deploy_key
-            ssh-keyscan -H ${{ secrets.DROPLET_HOST }} >> ~/.ssh/known_hosts 2>/dev/null
-            scp -i ~/.ssh/deploy_key zhong.mem root@${{ secrets.DROPLET_HOST }}:/mnt/volume_nyc3_01/grammars/
-            rm ~/.ssh/deploy_key
-            echo "MaxEnt model deployed"
-          else
-            echo "No MaxEnt model found, skipping"
-          fi
-
-      - name: Restart grammar engine
-        uses: appleboy/ssh-action@v1
-        with:
-          host: ${{ secrets.DROPLET_HOST }}
-          username: root
-          key: ${{ secrets.DROPLET_SSH_KEY }}
-          script: |
-            docker restart grammarengine
-            echo "Waiting for grammar engine to start..."
-            sleep 10
-
-      - name: Verify deployment
-        uses: appleboy/ssh-action@v1
-        with:
-          host: ${{ secrets.DROPLET_HOST }}
-          username: root
-          key: ${{ secrets.DROPLET_SSH_KEY }}
-          script: |
-            echo "Deployed grammar:"
-            ls -lh /mnt/volume_nyc3_01/grammars/${{ env.GRAMMAR_NAME }}.dat
-            echo ""
-            echo "MaxEnt model:"
-            ls -lh /mnt/volume_nyc3_01/grammars/zhong.mem 2>/dev/null || echo "No MaxEnt model deployed"
-            echo ""
-            echo "Parse verification:"
-            docker exec grammarengine bash -c "echo '他 说 了' | ace -g /runpod-volume/grammars/${{ env.GRAMMAR_NAME }}.dat -n 1 2>/dev/null | head -1"
-            if [ $? -eq 0 ]; then
-              echo "Deployment verified"
-            else
-              echo "::warning::Parse verification failed - consider rolling back"
-              echo "Rollback: cp /mnt/volume_nyc3_01/grammars/${{ env.GRAMMAR_NAME }}.dat.bak /mnt/volume_nyc3_01/grammars/${{ env.GRAMMAR_NAME }}.dat"
+          set -euo pipefail
+          for f in ${{ env.GRAMMAR_NAME }}.dat zhong.mem; do
+            test -f "$f" || { echo "::error::$f was not produced"; exit 1; }
+            # Keep the previous file as <name>.bak, as the droplet deploy did.
+            if aws s3 ls "$DEST/$f" --endpoint-url "$ENDPOINT" >/dev/null; then
+              aws s3 cp "$DEST/$f" "$DEST/$f.bak" --acl private --endpoint-url "$ENDPOINT"
             fi
+            aws s3 cp "$f" "$DEST/$f" --acl private --endpoint-url "$ENDPOINT"
+          done
+
+      - name: Rebuild the engine workers with the new grammar
+        run: |
+          curl -sS --fail-with-body -X POST \
+            "https://api.github.com/repos/haveamission/GrammarEngine/dispatches" \
+            -H "Authorization: Bearer ${{ secrets.REPO_ACCESS_TOKEN }}" \
+            -H "Accept: application/vnd.github.v3+json" \
+            -d '{"event_type": "grammar-updated"}'
