@@ -13,29 +13,26 @@ env:
 jobs:
   compile-and-test:
     runs-on: ubuntu-latest
+    # Same base as the engine worker image (GrammarEngine Dockerfile.worker): ACE is built with
+    # bookworm's toolchain and links bookworm's Boost and ICU, so the grammar is compiled and
+    # tested by the same ACE build that loads it in production.
+    container: python:3.12-slim-bookworm
     steps:
       - uses: actions/checkout@v4
 
-      - name: Set up Python
-        uses: actions/setup-python@v5
-        with:
-          python-version: "3.11"
-
       - name: Build ACE from fork
         run: |
-          sudo apt-get update && sudo apt-get install -y libboost-regex-dev
+          apt-get update && apt-get install -y gcc g++ make git autoconf automake libtool libboost-regex-dev libicu-dev
           git clone --depth 1 https://github.com/haveamission/REPP.git /tmp/repp-src
           cd /tmp/repp-src
           ./configure
           make
-          sudo make install
-          sudo ldconfig
+          make install
+          ldconfig
           git clone --depth 1 https://github.com/haveamission/ACE.git /tmp/ace-src
           cd /tmp/ace-src
           make DELPHIN_CFLAGS= DELPHIN_LIBS= ace
-          sudo mkdir -p /opt/ace
-          sudo cp ace /opt/ace/
-          echo "/opt/ace" >> $GITHUB_PATH
+          cp ace /usr/local/bin/
 
       - name: Install pyDelphin
         run: pip install pydelphin
